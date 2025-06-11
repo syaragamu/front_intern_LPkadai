@@ -330,3 +330,49 @@ a {
     font-size: 0.7rem;
     line-height: 1.5rem;
 }
+
+/* product */
+
+.product__main-wrapper {
+    position: relative;
+}
+
+.product-container {
+    position: relative;
+    margin: 5% 5%;
+}
+
+.product__main-title {
+    position: absolute;
+    top: 2%;
+    font-size: 24px;
+    z-index: 100;
+}
+
+.product__main-img {
+    width: 100%;
+}
+
+.product__main-img>img {
+    object-fit: contain;
+    width: 100%;
+}
+
+.product__sub-container {
+    display: block;
+    background-color: white;
+}
+
+.product__sub-title {
+    margin: 5% 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.product__sub-text {
+    line-height: 1.2rem;
+}
+
+#scone-title {
+    right: 0%;
+}
