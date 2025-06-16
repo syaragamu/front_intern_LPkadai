@@ -168,3 +168,326 @@ body * {
 }
 
 /* ここまで リセットcss */
+
+img {
+    width: 100vw;
+    height: auto;
+}
+
+html {
+  color: #000;
+  font-size: 62%;
+  height: 100%;
+}
+
+body {
+  font-family: "Zen Maru Gothic", "ヒラギノ角ゴ ProN W3",
+    "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+  font-weight: 500;
+  font-size: 160%;
+  line-height: 2;
+  height: 100%;
+}
+
+a {
+  color: #000;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #000;
+  text-decoration: none;
+}
+
+.text-1 {
+    font-size: 1.4rem;
+}
+
+.text-2 {
+    font-size: 1.6rem;
+    padding-bottom: 24px;
+}
+
+.heading02 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.heading03 {
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+}
+
+.header {
+    position: relative;
+    margin-bottom: 128px;
+}
+
+.head-logo {
+    width: 256px;
+    height: auto;
+    position: absolute;
+    bottom: 16px;
+    left: 32px;
+}
+
+.head-btns {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 16px;
+    right: 32px;
+}
+
+.head-btns a span {
+    display: block;
+    width: 32px;
+    height: 32px;
+}
+
+.head-btns span::before {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.head-btns-shop span::before {
+    background-image: url(img/icon_cart.svg);
+}
+
+.head-btns-instagram span::before {
+    background-image: url(img/icon_ig.svg);
+}
+
+.head-btns-shop, .head-btns-instagram {
+    margin-right: 32px;
+}
+
+.head-btns-menu span::before {
+    background-image: url(img/icon_menu.svg);
+}
+
+.news-title {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 64px;
+}
+
+.news-img {
+    width: 96px;
+}
+
+.news-instagram-pc {
+    display: flex;
+    width: 192px;
+    height: 32px;
+    justify-content: center;
+    align-items: center;
+}
+
+.news-instagram-pc p {
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.news-instagram-pc p::before {
+    content: "";
+    background-image: url(img/icon_ig.svg);
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    display: flex;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.news-articles {
+    display: flex;
+    padding: 64px 64px;
+}
+
+.news-tea {
+    width: 256px;
+    margin-right: 64px;
+}
+
+.news-tea-img {
+    width: 100%;
+    height: auto;
+}
+
+.news-link {
+    margin-bottom: 16px;
+    font-size: 1.8rem;
+}
+
+.news-date {
+    border-top: 1px solid #000;
+    display: flex;
+    height: 4rem;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.news-notion {
+    width: 256px;
+}
+
+.news-notion-img {
+    width: 100%;
+    height: auto;
+}
+
+.news-instagram-sp {
+    padding: 64px 0;
+    position: relative;
+}
+
+.news-instagram-sp-btn {
+    display: flex;
+    width: 256px;
+    height: 64px;
+    border: 3px solid #000;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.news-instagram-sp-btn p {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.news-instagram-sp-btn p::before {
+    content: "";
+    background-image: url(img/icon_ig.svg);
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    display: flex;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.about-head, .about-tea, .about-tempting {
+    width: 60vw;
+    margin-left: 20vw;
+    margin-right: 20vw;
+}
+
+.about-head {
+    margin-bottom: 64px;
+}
+
+.about-tea, .about-tempting {
+    display: flex;
+    position: relative;
+    margin-bottom: 64px;
+}
+
+.about-tea-title, .about-tempting-title {
+    width: 20%;
+}
+
+.about-tea-text, .about-tempting-text {
+    width: 80%;
+}
+
+.product {
+    margin-top: 128px;
+}
+
+.product-ceylontea {
+    display: flex;
+    width: 60vw;
+    left: 20vw;
+    right: 20vw;
+    position: relative;
+    margin-bottom: 128px;
+}
+
+.product-ceylontea-title {
+    width: 128px;
+    height: auto;
+    position: absolute;
+    top: 10%;
+    left: -1.5%;
+}
+
+.product-ceylontea-img {
+    width: 70%;
+    height: 768px;
+    left: 5%;
+}
+
+.product-ceylontea-textbox {
+    width: 40%;
+    height: auto;
+    background-color: #ffffff;
+    position: absolute;
+    left: 55%;
+    top: 20%;
+    padding: 5% 5%;
+}
+
+.product-ceylontea-textbox h2 {
+    font-size: 3.5rem;
+}
+
+@media screen and (max-width: 767px) {
+    html {
+        font-size: 45%;
+    }
+
+    .head-btns {
+        transform: translate(0, 150%);
+    }
+
+    .news-instagram-pc {
+        display: none;
+    }
+
+    .news-title {
+        padding: 0 16px;
+    }
+
+    .news-articles {
+        padding: 8px 8px;
+    }
+
+    .news-tea {
+        margin-right: 16px;
+    }
+
+    .about-head, .about-tea, .about-tempting {
+    width: 80vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    }
+
+    .about-tea, .about-tempting {
+    display: block
+    }
+
+    .about-tea-title, .about-tempting-title, .about-tea-text, .about-tempting-text {
+    width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px), print {
+    .news-instagram-sp {
+        display: none;
+    }
+}
