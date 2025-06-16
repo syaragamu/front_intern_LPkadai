@@ -171,7 +171,7 @@ body * {
 
 .hero-section {
     position: relative;
-    width: 100vw;
+    width: 100%;
     padding-bottom: 66.6875%;
 }
 
@@ -224,7 +224,7 @@ a {
     position: absolute;
     top: 100%;
     left: 64px;
-    width: 300px;
+    width: 30.2%;
     padding-bottom: 16px;
     transform: translate(0, -100%);
     z-index: 1;
@@ -243,16 +243,16 @@ main {
 }
 
 .news-section {
-    padding-left: 70px;
-    padding-right: 70px;
-    height: 710px;
     position: relative;
+    padding-right: 7.04%;
+    height: 710px;
     margin-top: 145px;
 }
 
 .news-img1 {
     position: absolute;
     width: 100px;
+    left: 7.04%;
 }
 
 .wrapper1 {
@@ -295,8 +295,8 @@ main {
 
 .news1,
 .news2 {
-    width: 256px;
-    margin-right: 64px;
+    width: 25.754%;
+    margin-left: 6.43%;
 }
 
 .news-img2 {
