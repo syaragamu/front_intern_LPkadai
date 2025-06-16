@@ -168,3 +168,68 @@ body * {
 }
 
 /* ここまで リセットcss */
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    padding-bottom: 66.6875%;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding-bottom: 133.34%;
+    }
+}
+
+.bg-image {
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+}
+
+.header-content {
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    transform: translate(-100%, -100%);
+    width: 224px;
+    padding-bottom: 16px;
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        padding-top: 40px;
+        transform: translate(-100%, 0);
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+.icon {
+    display: flex;
+}
+
+.icon img {
+    margin-right: 32px;
+    width: 32px;
+    height: 32px;
+}
+
+.logo {
+    position: absolute;
+    top: 100%;
+    left: 64px;
+    width: 300px;
+    padding-bottom: 16px;
+    transform: translate(0, -100%);
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        left:16px;
+    }
+}
