@@ -1,170 +1,112 @@
 @charset "UTF-8";
 
-/* リセットcss */
-abbr,
-address,
-article,
-aside,
-audio,
-b,
-blockquote,
-body,
-canvas,
-caption,
-cite,
-code,
-dd,
-del,
-details,
-dfn,
-div,
-dl,
-dt,
-em,
-fieldset,
-figcaption,
-figure,
-footer,
-form,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-header,
-hgroup,
-html,
-i,
-iframe,
-img,
-ins,
-kbd,
-label,
-legend,
-li,
-mark,
-menu,
-nav,
-object,
-ol,
-p,
-pre,
-q,
-samp,
-section,
-small,
-span,
-strong,
-sub,
-summary,
-sup,
-table,
-tbody,
-td,
-tfoot,
-th,
-thead,
-time,
-tr,
-ul,
-var,
-video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: 0 0
+@media (max-width:599px){
+    .header{
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 0 32px;
+        box-sizing: border-box;
+        height: 830px;
+        position: relative;
+        background: url('./img/header/hd_img01_a_sp.jpg') center/cover no-repeat;
+        background-size: 100% 100%;
+    }
+
+    img.logo{
+        left: 50px;
+    }
+
+    .header-right {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        bottom: -32px;
+        right: 0px;
+    }
+
+    .header img{
+        height: 20px;
+        object-fit: contain;
+        margin: 10px;   
+    }
 }
 
-body {
-    line-height: 1
+@media (min-width:600px) {
+    .header{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 0 32px;
+        box-sizing: border-box;
+        height: 830px;
+        position: relative;
+        background: url('./img/header/hd_img01_a.jpg') center/cover no-repeat;
+        background-size: 100% 100%;
+    }
+
+    img.logo{
+        left: 50px;
+    }
+
+    .header-right {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .header img{
+        height: 32px;
+        object-fit: contain;
+        margin: 10px;   
+    }
 }
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block
+@media (max-width:599px){}
+@media (min-width:600px){
+    .news {
+        position: relative;
+    }
+    img.news_ttl {
+        position: absolute;
+        width: 8vw;
+        top: 8vw;
+        left: 5vw;   
+    }
+    .news-logo::before{
+        content: url(./img/icon_ig.svg);
+        vertical-align: middle;
+        margin: 1vw;
+    }
+    .news-logo{
+        position: absolute;
+        top: 8vw;
+        right: 5vw;   
+    }
+    .news-notion{
+        position: absolute;
+        object-fit: cover;
+        width: 250px;
+        height: 250px;
+        top: 12vw;
+        left: 32vw;
+    }
+    .news-tea{
+        position: absolute;
+        object-fit: cover;
+        width: 250px;
+        height: 250px;
+        top: 12vw;
+        left: 5vw;
+    }
+    .tea-article{
+        position: absolute;
+        top: 32vw;
+        left: 5vw;
+        display: block;
+    }
 }
 
-ul {
-    list-style: none
-}
-
-blockquote,
-q {
-    quotes: none
-}
-
-blockquote:after,
-blockquote:before,
-q:after,
-q:before {
-    content: none
-}
-
-a {
-    margin: 0;
-    padding: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: 0 0
-}
-
-ins {
-    background-color: #ff9;
-    color: #000;
-    text-decoration: none
-}
-
-mark {
-    background-color: #ff9;
-    color: #000;
-    font-style: italic;
-    font-weight: 700
-}
-
-del {
-    text-decoration: line-through
-}
-
-abbr[title],
-dfn[title] {
-    border-bottom: 1px dotted;
-    cursor: help
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0
-}
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0
-}
-
-input,
-select {
-    vertical-align: middle
-}
-
-body * {
-    box-sizing: border-box;
-}
-
-/* ここまで リセットcss */
