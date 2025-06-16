@@ -168,3 +168,358 @@ body * {
 }
 
 /* ここまで リセットcss */
+
+.body {
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.head1 {
+    background: url(img/header/hd_img01_a.jpg) no-repeat center center/cover;
+    width: 100%;    
+    height: 66.96vw;
+    margin-bottom: 10%;
+}
+
+.pro_by {
+    display: block;
+    position: relative;
+    top: 94%;
+    left: 4.5vw;
+    width: 400px;
+}
+
+.producer1 {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 600;
+    display: inline;
+    font-size: 135%;
+}
+
+.by {
+    font-family: "Zen Maru Gothic", sans-serif;
+    display: inline;
+    margin-left: 4%;
+    font-size: 67%;
+    vertical-align: 40%;
+}
+
+.producer2 {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 600;
+    display: inline;
+    font-size: 135%;
+}
+
+.icons1 {
+    display: flex;
+    position: relative;
+    top: 88%;
+    height: 30px;
+    width: 15%;
+    left: calc(100vw - 15% - 70px);
+    gap: 20%;
+    }
+.cart {
+    width: 100%;
+    height: 100%;
+}
+
+.instagram {
+    width: 100%;
+    height: 100%;
+}
+
+.menu {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width:660px) {
+
+    .head1 {
+    background-image: url(img/header/hd_img01_a_sp.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 140vw;
+    }
+
+    .pro_by {
+    display: block;
+    position: relative;
+    top: 95%;
+    left: 5%;
+    width: 60%;
+    }
+
+    .producer1 {
+        font-family: "Zen Maru Gothic", sans-serif;
+        font-weight: 600;
+        display: inline;
+        font-size: 13px;
+    }
+
+    .by {
+        font-family: "Zen Maru Gothic", sans-serif;
+        display: inline;
+        margin-left: 7.8px;
+        font-size: 6.5px;
+        margin-top: 1px;
+        vertical-align: 5px;
+        margin-right: 0.5px;
+    }
+
+    .producer2 {
+        font-family: "Zen Maru Gothic", sans-serif;
+        font-weight: 600;
+        display: inline;
+        font-size: 13px;
+    }
+
+    .icons1 {
+        display: flex;
+        position: relative;
+        top: 100%;
+        height: 20px;
+        width: 40px;
+        left: 70%;
+        gap: 15px;
+        }
+    .cart {
+        width: 20px;
+        height: 20px;
+    }
+
+    .instagram {
+        width: 20px;
+        height: 20px;
+    }
+
+    .menu {
+        width: calc(20px*131/150);
+        height: 20px;
+    }
+}
+
+.news {
+    font-family: "Zen Maru Gothic", sans-serif;
+    width: 100%;
+    height: auto;
+    margin-bottom: 200px;
+    position: relative;
+    top: 10px;
+}
+
+.news_letters {
+    width: 125px;
+    height: auto;
+    position: relative;
+    top: 2px;
+    left: 75px;
+}
+
+.newest_info {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    position: relative;
+    left: calc(100% - 250px);
+    text-align:center;
+    top: -35px;
+    text-decoration: none;
+    width: 200px;
+}
+
+.newest_info_b {
+    text-decoration: none;
+}
+
+.newest_info_b::before {
+    content: url(img/icon_ig.svg);
+    display: inline;
+    size: 22px;
+    margin-right: 5px;
+    
+}
+
+.news_container {
+    position: relative;
+    top: 70px;
+    left: 75px;
+    display: flex;
+    width:  550px;
+    gap: 50px;
+}
+
+.news_box {
+    width: 250px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid black;
+}
+
+.news_img {
+    width: 250px;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.news_title {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.phrase {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 600;
+    font-size: 13.5px;
+    line-height: 24px;
+    padding-bottom: 24px;
+}
+
+.detail {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.news_date {
+    position: relative;
+    top: 55px;
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-size: 13.5px;
+    font-weight: 800;
+}
+
+@media screen and (max-width:660px) {
+
+
+.news_letters {
+    width: 125px;
+    height: auto;
+    position: relative;
+    top: 2px;
+    left: 8%;
+}
+
+.newest_info {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    position: absolute;
+    display: block;
+    left: 0;
+    right: 0;
+    top: 125%;
+    margin: 0 auto;
+    padding: 10px 5%;
+    border: solid 1px black;
+}
+
+.newest_info_b {
+    text-decoration: none;
+}
+
+.newest_info_b::before {
+    content: url(img/icon_ig.svg);
+    display: inline;
+    size: 22px;
+    margin-right: 5px;
+    
+}
+
+.news_container {
+    position: relative;
+    top: 50px;
+    left: 8%;
+    display: flex;
+    width:  84%;
+    gap: 9%;
+}
+
+.news_box {
+    width: 45.5%;
+    padding-bottom: 30px;
+    border-bottom: 1px solid black;
+}
+
+.news_img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.news_title {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.phrase {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 600;
+    font-size: 10.5px;
+    line-height: 24px;
+    padding-bottom: 24px;
+}
+
+.detail {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.news_date {
+    position: absolute;
+    top: calc(100% + 20px);
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-size: 10.5px;
+    font-weight: 800;
+}
+}    
+
+.about {
+    position: relative;
+    left: 120px;
+    width: calc(100% - 240px);
+}
+
+.about_big {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 36px;
+    margin-bottom: 50px;
+}
+
+.about_box {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.about_title {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 900;
+    display: block;
+    font-size: 20px;
+    width: auto;
+    height: auto;
+    line-height: 32px;
+}
+
+.about_content {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 700;
+    display: block;
+    height: auto;
+    font-size: 18px;
+    position:absolute;
+    left: 25%;
+    line-height: 30px;
+}
