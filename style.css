@@ -179,4 +179,285 @@ body * {
   font-weight: 700;
   font-style: normal;
 }
+/* 0) ユーティリティ ------------------------------ */
+.visually-hidden{
+  position:absolute !important;
+  width:1px; height:1px;
+  padding:0; margin:-1px;
+  overflow:hidden; clip:rect(0 0 0 0);
+  white-space:nowrap; border:0;
+}
+
+/* 1) header 全体 -------------------------------- */
+#hd{
+  position:relative;
+  z-index:1000;
+  line-height:1;
+}
+
+/* 2) ロゴ配置（mobile-first） -------------------- */
+.hd-logo{
+  position:absolute;
+  left:1.6rem;      
+  bottom:.8rem;     
+}
+@media(min-width:768px){
+  .hd-logo{
+    left:6.4rem;    
+    bottom:1.6rem;  
+  }
+}
+
+/* 3) 画像 ------------------------------- */
+.hd-img img{ width:100vw; height:auto; display:block; }
+
+/* 4) ナビアイコン ------------------------------- */
+.hd-btns{
+  position:absolute;
+  right:1.6rem;
+  bottom:0;
+  transform:translateY(14vw); 
+}
+.hd-btns ul{
+  display:flex;         
+  gap:6vw;             
+  padding:0;
+  margin:0;
+  list-style:none;
+}
+@media(min-width:768px){
+  .hd-btns{
+    right:2.4rem;
+    bottom:1.6rem;
+    transform:none;
+  }
+  .hd-btns ul{ display:flex; gap:2.0rem; } 
+}
+
+.hd-btns a,
+.hd-btns button{
+  display:flex; align-items:center; justify-content:center;
+  width:10vw; height:10vw;      
+  border:0; background:none;     
+}
+
+@media(min-width:768px){
+  .hd-btns a,
+  .hd-btns button{ width:32px; height:32px; }
+}
+
+.hd-btns .icon-cart::before,
+.hd-btns .icon-ig::before,
+.hd-btns .icon-menu::before{
+  content:""; display:block;
+  width:100%; height:100%;
+  background-size:contain;
+  background-position:center;
+  background-repeat:no-repeat;
+}
+.icon-cart::before{ background-image:url(img/icon_cart.svg); }
+.icon-ig::before  { background-image:url(img/icon_ig.svg);   }
+.icon-menu::before{ background-image:url(img/icon_menu.svg); }
+
+/* ─────────────────────── */
+/* ========= generic utilities ========= */
+.scroll-snap-x {
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.scroll-snap-child {
+  scroll-snap-align: start;
+}
+
+/* ========= generic utilities ========= */
+.scroll-snap-x { scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; }
+.scroll-snap-child { scroll-snap-align: start; }
+
+/* ========= NEWS section ========= */
+#news {
+  padding-block: 9rem 0;
+  position: relative;
+  background-color: #fafafa;
+}
+
+/* タイトル＋PC用リンクコンテナ */
+.news-title-container {
+  display: flex;
+  flex-direction: column;      /* モバイル: 縦並び */
+  gap: 1.2rem;
+  padding-inline: 2rem;
+}
+
+@media (min-width: 768px) {
+  .news-title-container {
+    flex-direction: row;        /* PC: 横並び */
+    justify-content: space-between;
+  }
+}
+
+/* NEWS 見出し画像 */
+.news-ttl img { height: 4.2rem; width: auto; display: block; }
+
+/* 共通リンクスタイル */
+.news-more a {
+  display: inline-flex;
+  align-items: center;
+  gap: .6rem;
+  font-weight: 700;
+  text-decoration: underline;
+  font-size: 1.4rem;
+}
+
+/* PC / SP 表示切替 */
+.news-more--pc { display: none; }
+.news-more--sp { margin-top: 2.4rem; text-align: center; }
+
+@media (min-width: 768px) {
+  .news-more--pc { display: inline-flex; }
+  .news-more--sp { display: none; }
+}
+
+/* Instagram アイコン */
+.icon-ig { position: relative; padding-left: 2rem; }
+.icon-ig::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.6rem;
+  height: 1.6rem;
+  background: url("img/icon_ig.svg") center/contain no-repeat;
+}
+
+/* スクロールストリップ */
+.news-strip { margin-top: 3rem; overflow-x: auto; display: flex; gap: 2.4rem; padding-inline: 2rem 1rem; }
+
+/* ニュースカード */
+.news-card { position: relative; flex: 0 0 28rem; background: #fff; border: 1px solid #e5e5e5; border-radius: .8rem; box-shadow: 0 2px 4px rgb(0 0 0 / 6%); text-decoration: none; color: inherit; transition: box-shadow .2s ease; }
+.news-card:hover { box-shadow: 0 4px 8px rgb(0 0 0 / 10%); }
+.news-card img { display: block; width: 100%; height: 18rem; object-fit: cover; border-radius: .8rem .8rem 0 0; }
+.news-card-body { padding: 1.6rem; display: flex; flex-direction: column; height: calc(100% - 18rem); }
+.news-card-title { font-size: 1.8rem; font-weight: 700; line-height: 1.3; }
+.news-card-text { margin-top: 1.2rem; font-size: 1.3rem; line-height: 1.6; flex: 1; }
+.news-card-date { margin-top: 1.6rem; padding-top: .8rem; border-top: 1px solid #000; font-size: 1.2rem; font-weight: 700; }
+.news-card{
+  /* 28rem 固定 → 最小 250px, 最大 400px に自動調整 */
+  flex: 0 0 clamp(25rem, 42vw, 40rem);
+}
+
+.news-more--sp a {
+  border: 1px solid #000;
+  border-radius: 0.4rem;
+  padding: 0.8rem 1.6rem;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 767px) {
+  .news-title-container {
+    padding-left: 16px;    /* ← 追加：左寄せのための余白 */
+    padding-right: 0;
+    text-align: left;      /* ← 追加：中央寄せ解除 */
+  }
+
+  .news-ttl {
+    text-align: left;      /* ← 追加：中央寄せ解除 */
+  }
+
+  .news-ttl img {
+    display: block;        /* ← inline から block に */
+    margin: 0;             /* ← 自動中央寄せを防止 */
+    padding: 0;
+  }
+}
+
+
+@media (min-width: 768px) {
+  #news { padding-block: 12rem; }
+  .news-strip { overflow-x: visible; justify-content: flex-start; }
+}
+/* ---------------- iPad 2-column fix ---------------- */
+@media (min-width:768px) and (max-width:1023.98px){
+  .news-strip{
+    padding-inline: 2rem;
+    gap: 2.4rem;
+    justify-content: flex-start;
+  }
+  .news-card{
+    flex: 0 0 calc((100% - 2.4rem) / 2);
+  }
+}
+/* ========= about section ========= */
+/* ===== ベース ===== */
+#about {
+  padding-top: 144px;
+}
+.about-in {
+  padding: 0 56px;
+}
+
+/* キャッチコピー & リード */
+.about-ttl,
+.about-lead {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.6;
+  margin: 0 0 1rem;
+}
+
+/* セクション群ラッパー */
+.about-list {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+
+/* セクションタイトル */
+.about-sct-ttl {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0 0 1rem;
+  white-space: nowrap;      /* 改行抑制 */
+}
+
+/* セクション本文 */
+.about-sct-text {
+  font-size: 1.6rem;
+  line-height: 1.75;
+}
+.about-sct-text p + p {
+  margin-top: 32px;
+}
+
+/* ===== モバイル (<768px) ===== */
+@media (max-width: 767.98px) {
+  .about-sct-ttl {
+    font-size: 1.4rem;
+  }
+  .about-sct-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  .about-sct-text p + p {
+    margin-top: 20px;
+  }
+}
+
+/* ===== PC (≥768px) ===== */
+@media (min-width: 768px) {
+  .about-list {
+    gap: 96px;
+  }
+  .about-sct {
+    display: grid;
+    grid-template-columns: 12rem 1fr;  /* タイトル列を明示的に固定幅に */
+    column-gap: 4%;
+    align-items: baseline;
+  }
+}
+
+
+
+
 

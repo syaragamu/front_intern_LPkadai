@@ -12,13 +12,148 @@
     <title>DeMiA CAFE</title>
 </head>
 <body>
-    <header calss="hd">
-        <picture>
-              <source media="(min-width: 768px)" srcset="img/header/hd_img01_a.jpg">
-              <source media="(max-width: 767px)" srcset="img/header/hd_img01_a_sp.jpg">
-              <img src="img/header/hd_img01_a.jpg" alt="おいしい紅茶でやすらぎに満ちた至福のひと時を。スリランカの茶葉を使用した本格手作りのティープロダクツ">
-        </picture>
+    <!-- ========================== HEADER ========================== -->
+<header id="hd" role="banner">
 
-    </header>    
+  <h1 class="hd-logo">
+    <img src="img/header/hd_logo.svg"
+         alt="DeMiA CAFE"
+         width="240" height="24"
+         decoding="async"
+         loading="eager">
+  </h1>
+
+  <picture class="hd-img" aria-hidden="true">
+    <source
+      srcset="img/header/hd_img01_a_sp.jpg"
+      media="(max-width: 767px)">
+    <img
+      src="img/header/hd_img01_a.jpg"
+      alt="美味しい紅茶でやすらぎに満ちた至福のひと時を。 スリランカの茶葉を使用した本格手作りティープロダクツ"
+      width="1920" height="1080"
+      sizes="100vw"
+      decoding="async"
+      loading="eager">
+  </picture>
+
+  <nav class="hd-btns" aria-label="グローバル操作">
+    <ul>
+      <li>
+        <a href="#"
+           class="icon-cart"
+           aria-label="オンラインショップを開く">
+          <span class="visually-hidden">ONLINE SHOP</span>
+        </a>
+      </li>
+      <li>
+        <a href="#"
+           class="icon-ig"
+           rel="noopener"
+           target="_blank"
+           aria-label="Instagram へ">
+          <span class="visually-hidden">INSTAGRAM</span>
+        </a>
+      </li>
+      <li>
+        <button type="button"
+                class="icon-menu js-menu-toggle"
+                aria-label="メニューを開閉"
+                aria-expanded="false">
+          <span class="visually-hidden">MENU</span>
+        </button>
+      </li>
+    </ul>
+  </nav>
+
+</header>
+<!-- ====================== main ======================= -->
+ <main id="main">
+    <article>
+        <!-- ========================= news ========================= -->
+        <section id="news">
+            <div class="news-title-container">
+                <h2 class="news-ttl">
+                <img src="img/news/news_ttl.svg" alt="NEWS" width="120" height="42">
+                </h2>
+                <!-- PC 専用リンク：タイトルの右側 -->
+                <p class="news-more news-more--pc"><a href="#" class="icon-ig">最新情報はこちら</a></p>
+            </div>
+
+            <!-- 横スクロールできるカードストリップ -->
+            <div class="news-strip scroll-snap-x" aria-label="最新ニュース一覧">
+
+            <!-- CARD 1 -->
+            <a class="news-card scroll-snap-child" href="#">
+            <img src="img/news/tea_day.jpg" alt="紅茶の日" width="280" height="180" loading="lazy" decoding="async">
+                <div class="news-card-body">
+                    <h3 class="news-card-title">「紅茶の日」</h3>
+                    <p class="news-card-text">11月1日は、大黒屋光太夫が日本人として初めて外国の正式な茶会で紅茶を飲んだ記念日。</p>
+                    <p class="news-card-text">2022年11月1日から一週間限定商品を発売予定です。</p>
+                    <time datetime="2022-09-10" class="news-card-date">2022.09.10</time>
+                </div>
+            </a>
+
+            <!-- CARD 2 -->
+            <a class="news-card scroll-snap-child" href="#">
+                
+                <img src="img/news/notion.jpg" alt="大切なお知らせ" width="280" height="180" loading="lazy" decoding="async">
+                <div class="news-card-body">
+                <h3 class="news-card-title">大切なお知らせ</h3>
+                <p class="news-card-text">この度、創業10周年を記念して、セールを開催します。</p>
+                <p class="news-card-text">セールには、定番商品の各種フレーバーティーからその他アレンジ商品まで様々なものが対象になっています。</p>
+                <time datetime="2022-06-30" class="news-card-date">2022.06.30</time>
+                </div>
+            </a>
+
+            <!-- 追加カードは同テンプレートで挿入 -->
+            </div>
+
+            <!-- モバイル専用リンク：カード帯の下中央 -->
+            <p class="news-more news-more--sp"><a href="#" class="icon-ig">最新情報はこちら</a></p>
+        </section>
+        <!-- ================ about ================ -->
+        <section id="about" aria-labelledby="about-heading">
+            <div class="box-c">
+                <div class="about-in">
+
+                <!-- キャッチコピー & リード文 -->
+                <h2 id="about-heading" class="about-ttl">TEAの無限の可能性を私たちは信じている。</h2>
+                <p  class="about-lead">「DeMiA CAFE」は、スリランカから仕入れた茶葉や紅茶にマリアージュする原料を世界中から仕入れ、手作りでアレンジし、店舗で販売しています。</p>
+
+                <div class="about-list"><!-- ★改 : グリッド制御用ラッパー -->
+
+                    <!-- セクション 1 -->
+                    <section class="about-sct" aria-labelledby="about-t-tea">
+                    <h3 id="about-t-tea" class="about-sct-ttl">T; Tea</h3>
+                    <div class="about-sct-text">
+                        <p>DeMiA CAFEは、十数年前、イギリスで本場の紅茶と共にティータイムを嗜んだ創業メンバーがこの習慣を日本でも広めたいということで始まりました。</p>
+                        <p>紅茶は本格的な茶葉を使用するとともに、それに見合ったお茶菓子も必要だ。</p>
+                        <p>このような精神の元、本格的な茶葉を提供するとともにそれにマリアージュするお菓子を販売したり、レシピを紹介しています。</p>
+                    </div>
+                    </section>
+
+                    <!-- セクション 2 -->
+                    <section class="about-sct" aria-labelledby="about-t-tempting">
+                    <h3 id="about-t-tempting" class="about-sct-ttl">T; Tempting</h3>
+                    <div class="about-sct-text">
+                        <p>紅茶は17世紀ごろ大英帝国のコーヒーハウスが大衆化したことで、そこで売られていた紅茶は一般の人にも愛飲されるようになりました。</p>
+                        <p>人々はこのような紅茶の持つ魅惑に心酔し、紅茶の取引の利益が大英帝国の礎を築き、産業革命にまでつながったと言われるほどです。</p>
+                        <p>「おいしい紅茶で、やすらぎに満ちた至福のひと時を」過ごしてほしい。</p>
+                        <p>魅力の詰まった我々のプロダクトをぜひお楽しみください。</p>
+                    </div>
+                    </section>
+
+                </div><!-- /.about-list -->
+
+                </div><!-- /.about-in -->
+            </div><!-- /.box-c -->
+        </section>
+        <!-- ================ menu ================ -->
+        <section></section>
+
+
+    </article>
+ </main>
+  
 </body>
 </html>
