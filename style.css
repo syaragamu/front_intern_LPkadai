@@ -497,29 +497,178 @@ body * {
 }
 
 .about_box {
-    display: block;
+    display:block;
     position: relative;
     width: 100%;
     height: auto;
+    margin-bottom: 200px;
 }
 
 .about_title {
     font-family: "Zen Maru Gothic", sans-serif;
     font-weight: 900;
-    display: block;
+    display: inline-block;
     font-size: 20px;
     width: auto;
     height: auto;
     line-height: 32px;
+    vertical-align: top;
 }
 
-.about_content {
+.about_content1 {
     font-family: "Zen Maru Gothic", sans-serif;
     font-weight: 700;
-    display: block;
+    display: inline-block;
     height: auto;
     font-size: 18px;
-    position:absolute;
-    left: 25%;
-    line-height: 30px;
+    position: relative;
+    width: calc(80% - 54.5px);
+    left: calc(25% - 54.5px);
+    line-height: 36 px;
 }
+
+.about_content2 {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 700;
+    display: inline-block;
+    height: auto;
+    font-size: 18px;
+    position: relative;
+    width: calc(80% - 54.5px);
+    left: calc(25% - 105.25px);
+    line-height: 36px;
+}
+
+@media screen and (max-width:660px) {
+
+    .about {
+        position: relative;
+        left: 50px;
+        width: calc(100% - 100px);
+        padding-top: 10%;
+    }
+
+    .about_big {
+        font-family: "Zen Maru Gothic", sans-serif;
+        font-size: 20px;
+        font-weight: 900;
+        line-height: 36px;
+        margin-bottom: 50px;
+    }
+
+    .about_box {
+        display:block;
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin-bottom: 75px;
+    }
+
+    .about_title {
+        font-family: "Zen Maru Gothic", sans-serif;
+        font-weight: 900;
+        display: block;
+        font-size: 20px;
+        width: auto;
+        height: auto;
+        line-height: 32px;
+        margin-bottom: 15px;
+    }
+
+    .about_content1 {
+        font-family: "Zen Maru Gothic", sans-serif;
+        font-weight: 500;
+        display: block;
+        height: auto;
+        font-size: 18px;
+        position: relative;
+        width: 100%;
+        left: 0;
+        line-height: 30px;
+    }
+
+    .about_content2 {
+        font-family: "Zen Maru Gothic", sans-serif;
+        font-weight: 500;
+        display: block;
+        height: auto;
+        font-size: 18px;
+        position: relative;
+        width: 100%;
+        left: 0;
+        line-height: 30px;
+    }
+}
+
+.product {
+    position: relative;
+    left: 80px;
+    width: calc(100% - 80px);
+}
+
+.ceylontea {
+    width: 55%;
+    height: 600px;
+}
+
+.ceylontea_img {
+    width: 100%;
+    height: 600px;
+}
+
+.ceylontea_text {
+    width: 180px;
+    position: relative;
+    top: -540px;
+    left: -5px;
+}
+
+.ceylontea_textbox {
+    width: 54%;
+    position: relative;
+    left: 90%;
+    height: auto;  
+    align-items: center;
+    top: -340px;
+    background: #fff;
+    transform: translate(0%, -50%);   
+}   
+
+.cbox_wrap {
+    padding: 70px 0;
+}
+
+.cbox_title {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 900;
+    display: block;
+    font-size: 32px;
+    margin-bottom: 40px;
+    position: relative;
+    left: 45px;
+    width: calc(100% - 40px);
+}
+
+.cbox_description {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 600;
+    display: block;
+    font-size: 14px;
+    margin-bottom: 30px;
+    line-height: 30px;
+    position: relative;
+    left: 45px;
+    width: calc(100% - 40px);
+}
+
+.cbox_size_yen {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 600;
+    display: block;
+    font-size: 14px;
+    margin-bottom: 14px;
+    position: relative;
+    left: 45px;
+    width: calc(100% - 40px);
+}
+
