@@ -168,3 +168,388 @@ body * {
 }
 
 /* ここまで リセットcss */
+
+* {
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.header_wrap {
+    position: relative;
+}
+
+.key_sp {
+    width: 100%;
+}
+
+.key_pc {
+    width: 100%;
+}
+
+
+@media print, screen and (min-width: 768px) {
+.key_sp {
+    display: none;
+}
+}
+@media print, screen and (max-width: 767px) {
+    .key_pc {
+        display: none;
+    }
+}
+
+.key_logo {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    width: 200px;
+    z-index: 2;
+}
+
+@media print, screen and (min-width: 768px) {
+    .key_logo {
+        position: absolute;
+        left: 50px;
+        bottom: 15px;
+        width: 250px;
+        z-index: 2;
+    }
+}
+
+.header_shop {
+    display: flex;
+    position: absolute;
+    right: 28px;
+    bottom: -34px;
+}
+
+@media print, screen and (min-width: 768px) {
+    .header_shop {
+    right: 45px;
+    bottom: 10px;
+}
+}
+
+.header a {
+    margin-left: 22px;
+}
+
+@media print, screen and (min-width: 768px) {
+    .header a {
+    margin-left: 30px;
+}
+}
+
+.header_shop img {
+    width: 17px;
+}
+
+@media print, screen and (min-width: 768px) {
+    .header_shop img {
+    width: 25px;
+}
+}
+
+.header {
+    margin-bottom: 135px;
+}
+
+@media print, screen and (min-width: 768px) {
+    .header {
+    margin-bottom: 125px;
+}
+}
+
+/* ここからNEWS */
+
+
+.NEWS {
+    margin-bottom: 150px;
+}
+
+@media print, screen and (min-width: 768px) {
+    .NEWS {
+        margin: 0 50px 100px;
+        position: relative;
+}
+}
+
+
+.news_ttl {
+    width: 65px;
+    margin-left: 20px;
+}
+
+@media print, screen and (min-width: 768px) {
+    .news_ttl {
+    width: 90px;
+    margin-left: 0;
+}
+}
+
+
+.news_content_wrap {
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+@media print, screen and (min-width: 768px) {
+    .news_content_wrap {
+    gap: 48px;
+    justify-content: left;
+    margin: 30px auto;
+}
+}
+
+.news_content_01, .news_content_02, .content_img {
+    width: 140px;
+}
+
+@media print, screen and (min-width: 768px) {
+    .news_content_01, .news_content_02, .content_img {
+    width: 200px;
+}
+}
+
+.text_wrap {
+    height: 230px;
+}
+
+@media print, screen and (min-width: 768px) {
+    .text_wrap {
+    height: 200px;
+}
+}
+
+.news_content_title {
+    font-weight: 500;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+@media print, screen and (min-width: 768px) {
+    .news_content_title {
+    margin: 20px 0;
+}
+}
+
+.news_text {
+    width: 140px;
+    margin: 10px 0;
+    font-size: 11.5px;
+    line-height: 1.5;
+}
+
+@media print, screen and (min-width: 768px) {
+    .news_text {
+        width: 200px;
+        line-height: 2;
+}
+}
+
+.news_detail, .latest_text {
+    font-weight: 500;
+    margin: 10px 0;
+    color: #000;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+hr {
+    background-color: #000;
+}
+
+.news_time {
+    font-size: 11px;
+    font-weight: bold;
+}
+
+
+.latest_link {
+    text-decoration: none;
+}
+
+@media print, screen and (min-width: 768px) {
+    .latest_link {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+}
+
+.latest_news {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #000;
+    width: 200px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+@media print, screen and (min-width: 768px) {
+    .latest_news {
+    border: none 1px #000;
+    width: 140px;
+}
+}
+
+.ig_logo {
+    width: 17px;
+    margin-right: 10px;
+}
+
+
+/* ここからABOUT */
+
+
+.about {
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+@media print, screen and (min-width: 768px) {
+    .about {
+    width: 900px;
+    }
+}
+
+.main_text {
+    font-size: 14px;
+    line-height: 1.8;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+@media print, screen and (min-width: 768px) {
+    .main_text {
+    font-size: 16px;
+    line-height: 2;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+}
+
+.T_wrap {
+    margin: 40px 0;
+}
+
+@media print, screen and (min-width: 768px) {
+    .T_wrap {
+    display: flex;
+    align-items: flex-start;
+}
+}
+
+.Tea, .Tempting {
+    font-size: 14px;
+    line-height: 1.8;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+@media print, screen and (min-width: 768px) {
+    .Tea, .Tempting {
+    margin: 0 0;
+    width: 180px;
+}
+}
+
+.Tea_text, .Tempting_text {
+    font-size: 11.5px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+@media print, screen and (min-width: 768px) {
+    .Tea_text, .Tempting_text {
+    font-size: 14px;
+    line-height: 2;
+    width: 720px;
+}
+}
+
+
+/* ここからPRODUCT */
+
+.product01 {
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+@media print, screen and (min-width: 768px) {
+    .product01 {
+    position: relative;
+}
+}
+
+.product_img_wrap {
+    position: relative;
+}
+
+
+.product_img_01 {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.product_ttl_img_01 {
+    width: 200px;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+}
+
+@media print, screen and (min-width: 768px) {
+    .product_feature_01 {
+    position: absolute;
+    background-color: white;
+    left: 50px;
+    top: 50px;
+}
+}
+
+.product_name {
+    font-size: 18px;
+    line-height: 1.8;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.product_text {
+    font-size: 13px;
+    line-height: 1.5;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.product_opt_wrap {
+    margin: 30px 0;
+}
+
+.product_opt {
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 500;
+    margin: 5px 0;
+}
+
+.product02 {
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.product_img_02 {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.product_ttl_img_02 {
+    width: 110px;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
