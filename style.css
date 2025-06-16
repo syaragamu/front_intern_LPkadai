@@ -80,7 +80,8 @@ video {
 }
 
 body {
-    line-height: 1
+    line-height: 1;
+    font-family: "Roboto", sans-serif;
 }
 
 article,
@@ -168,3 +169,369 @@ body * {
 }
 
 /* ここまで リセットcss */
+body{
+    font-family: "Zen Maru Gothic", sans-serif;
+    line-height: 1.7;
+}
+section{
+    position: relative;
+}
+a{
+    color:#000;
+    text-decoration: none;
+}
+.h2{
+    font-weight: bold;
+}
+.h1{
+    font-weight: bold;
+}
+.letters{
+    position: absolute;
+}
+.icons{
+    position: absolute;
+    display: flex;
+}
+.icon{
+    margin: 15px;
+}
+@media (max-width: 599px){
+    h1{
+        font-weight: bold;
+        margin: 15px 0;
+        font-size: 20px;
+    }
+    h2 {
+        margin: 10px 0;
+        font-size: 15px;
+    }
+    p{
+        font-size: 12px;
+    }
+    .news-sentences{
+        font-size: 10px;
+    }
+    .header{
+        position: relative;
+        display: block;
+        background: url(img/header/hd_img01_a_sp.jpg) no-repeat center center;
+        background-size: contain;
+        width: 100vw;
+        height: 600px; 
+    }
+    .letters{
+        bottom: 10px;
+        left: 10px;
+        width: 250px;
+    }
+    .icons{
+        position: absolute;
+        display: flex;
+        bottom: -60px;
+        right: 8px;
+    }
+    .icon{
+        width: 18px;
+    } 
+}
+@media (min-width: 600px){
+    h2 {
+        margin: 20px 20px 20px 0;
+        font-size: 22px;
+    }
+    h1{
+        margin:  20px 35px 35px 0;
+        font-size: 35px;
+    }
+    .header{
+        position: relative;
+        display: block;
+        background: url(img/header/hd_img01_a.jpg);
+        width: 100vw;
+        height: 1050px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .letters{
+        bottom: 20px;
+        left: 80px;
+        width: 300px;
+    }
+    .icons{
+        bottom: 8px;
+        right: 50px;
+    }
+    .icon{
+        width: 35px;
+    }
+}
+
+
+
+.news-wrap{
+    margin-top: 100px;
+}
+.news-pic{
+    width: 100px;
+}
+.news-item{
+    display: block;
+    width: 300px;
+}
+.news-item-pic{
+    width: 100%;
+}
+.detail{
+    font-weight: bold;
+    text-decoration: underline;
+}
+.line{
+    border:0.1px solid #000;
+}
+.insta{
+    vertical-align: text-bottom;
+    margin-right: 8px;
+}
+@media (max-width: 599px){
+    .news-wrap{
+        margin-left: 20px;
+    }
+    .news-items{
+        display: flex;
+    }
+    .news-item{
+        position: relative;
+        margin: 40px 20px 0 0;
+        height: 450px;
+    }
+    .detail{
+        position: relative;
+        font-size: 12px;
+        margin: 10px 0 30px 0;
+    }
+    .line{
+        position: absolute;
+        bottom: 20px;
+        width: 100%;
+    } 
+    .date{
+        position: absolute;
+        font-size: 12px;
+        bottom: 0px;
+    }
+    .newest{
+        position: relative;
+        font-size: 12px;
+        margin-top: 40px;
+        border: 1px solid #000 ;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        padding: 18px;
+        max-width: 250px;
+    } 
+    .insta{
+    width: 17px;
+    }
+}
+@media (min-width: 600px){
+    .news-wrap{
+        margin-left: 60px;
+    }
+    .pc-flex{
+        display: flex;
+    }
+    .news-items{
+        display: flex;
+    }
+    .news-item{
+        margin: 40px 70px 0 0;
+    }
+    .detail{
+        font-size: 20px;
+        margin: 30px 0 30px 0;
+    }
+    .newest{
+        position: absolute;
+        top: 25px;
+        right: 60px;
+        font-size: 20px;
+    }
+    .insta{
+    width: 25px;
+    }
+}
+
+
+
+@media (max-width: 599px){
+    .about{
+        padding: 35px;
+        margin: 100px auto;
+    }
+    .T0{
+        margin-top: 40px;
+    }
+    .T1{
+        margin-bottom: 13px;
+    }
+}
+@media (min-width: 600px){
+    .about{
+        width: 1200px;
+        height: 1000px;
+        margin: 150px auto;
+    } 
+    .T0{
+        display: flex;
+        font-size: 20px;
+        margin: 80px 0;
+    }
+    .T1{
+        display: block;
+        width: 200px;
+    }
+    .T3{
+        display: block;
+        width: 1000px;
+    }
+}
+
+
+
+.product{
+        position: relative;
+        display: block;
+        margin: 0 auto;
+}
+ .product-name, .product-name-2, .product-pic, .explanation{
+        position: absolute;
+}
+ .product-name, .product-name-2{
+    z-index: 1;
+ }
+@media (max-width: 599px){
+    .product{
+        width: 85%; 
+        height: 600px;
+   }
+    .product-name{
+        left: -20px;
+        height: 40px;
+    }
+    .product-name-2{
+        right: -20px;
+        height: 40px;
+    }
+    .product-pic{
+        width: 100%;
+    }
+    .explanation{
+        top: 340px;
+    }
+}
+@media (min-width: 600px){
+    .product{
+        width: 1200px;
+        height: 800px;
+    }
+    .product-name{
+        height: 55px;
+        left: -10px;
+        top: 50px;
+    }
+    .product-name-2{
+        height: 55px;
+        left: -10px;
+        top: 50px;
+    }
+    .product-pic{
+        width: 700px;
+    }
+    .explanation{
+        display: block;
+        width: 480px;
+        height: 480px;
+        text-align: left;
+        z-index: 1;
+        background-color: #fff;
+        left: 630px;
+        top: 110px;
+        padding: 80px;
+    }
+    .reverse, .reverse > .product-name, .reverse > .product-name-2{
+        transform-origin: center center;
+        transform: scaleX(-1);
+    }
+}
+
+
+
+.feature{
+        margin: 0 auto;
+}
+.title{
+        font-weight: bold;
+        text-align: center;
+}
+.feature-pic, .feature-text{
+    display: block;
+}
+.feature-smalltitle{
+        font-weight: bold;
+}
+.text{
+    position: relative;
+    margin-top: 50px;
+    text-align: center;
+}
+@media (max-width: 599px){
+    .title{
+        font-size: 20px;
+    }
+    .feature-pic{
+        padding-top: 30px;
+        margin: 0 auto;
+        width: 80%;
+    }
+    .feature-text{
+        margin: 0 auto;
+        width: 80%;
+    }
+    .feature-smalltitle{
+        font-size: 18px;
+        padding: 15px 0;
+    }
+}
+@media (min-width: 600px){
+    .feature{
+        display: flex;
+        width: 980px;
+        padding-top: 50px;
+    }
+    .title{
+        font-size: 38px;
+    }
+    .feature-pic{
+        height: 450px;
+    }
+    .feature-text{
+        height: 450px;
+        width: 300px;
+        margin-left: 60px;
+    }
+    .feature-smalltitle{
+        font-size: 30px;
+        margin: 20px 0;
+    }
+    .reverse > .feature > .feature-pic, .reverse > .feature > .feature-text{
+        transform-origin: center center;
+        transform: scaleX(-1);
+    }
+}
+
+
+
+
+
