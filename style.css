@@ -203,6 +203,7 @@ body * {
         padding-top: 40px;
         transform: translate(-100%, 0);
         object-fit: cover;
+        width: 40%;
     }
 }
 
@@ -215,9 +216,8 @@ a {
 }
 
 .icon img {
-    margin-right: 32px;
-    width: 32px;
-    height: 32px;
+    margin-right: 14.3%;
+    width: 14.3%;
 }
 
 .logo {
@@ -245,14 +245,14 @@ main {
 .news-section {
     position: relative;
     padding-right: 7.04%;
-    height: 710px;
+    width: 100%;
     margin-top: 145px;
+    margin-left: 6.43%;
 }
 
 .news-img1 {
     position: absolute;
     width: 100px;
-    left: 7.04%;
 }
 
 .wrapper1 {
@@ -260,27 +260,51 @@ main {
     position: absolute;
     height: 24px;
     line-height: 24px;
-    right: 72px;
+    right: 160px;
     font-size: 16px;
 }
 
+.wrapper1.down {
+    position: relative;
+    display: none;
+}
+
 @media (max-width: 768px) {
-    .wrapper1 {
+    .wrapper1.up {
+        display: none;
+    }
+
+    .wrapper1.down {
         display: block;
-        position: absolute;
-        top: 100%;
-        right: 50%;
-        height: 60px;
+        height: 56px;
+        top: 130px;
+        width: 60%;
+        left: 46.756%;
+        transform: translate(-50%, 0);
         text-align: center;
         border: solid 1px #000;
-        padding: 10px 100px;
+        font-size: 3vw;
+    }
+
+
+    .news-icon {
+        width: 60%;
+    }
+
+    .news-icon>* {
+        margin-top: 16px;
+        margin-bottom: 16px;
     }
 }
 
 .news-icon {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
     display: flex;
     color: #000;
 }
+
 
 .wrapper1 img {
     width: 24px;
@@ -288,15 +312,23 @@ main {
 }
 
 .news-wrapper {
-    position: absolute;
+    position: relative;
     top: 100px;
     display: flex;
 }
 
 .news1,
 .news2 {
-    width: 25.754%;
-    margin-left: 6.43%;
+    width: 256px;
+    margin-right: 6.43%;
+}
+
+@media (max-width: 768px) {
+
+    .news1,
+    .news2 {
+        width: 40%;
+    }
 }
 
 .news-img2 {
@@ -335,4 +367,8 @@ main {
 .date {
     font-size: 14px;
     font-weight: 700;
+}
+
+.about div {
+    height: 600px;
 }
