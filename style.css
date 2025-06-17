@@ -462,7 +462,8 @@ main {
 }
 
 b {
-    font-size: 28px;
+    font-size: 27px;
+    letter-spacing: -2px;
 }
 
 .wrapper3.reverse {
@@ -500,5 +501,47 @@ b {
         left: 100%;
         transform: translate(-100%,100%);
         width: 20%;
+    }
+}
+
+.feature {
+    padding: 0 10%;
+}
+
+.feature h1 {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.feature .wrapper3 {
+    width: 100%;
+    margin-top: 0;
+}
+
+.feature .wrapper3 img {
+    width: 60%;
+    margin-left: 5%;
+}
+
+.feature-detail {
+    padding-left: 30px;
+    line-height: 2;
+}
+
+@media (max-width: 768px) {
+    .feature .wrapper3 img {
+        width: 100%;
+        margin-left: 0;
+    }
+    .feature b {
+        font-size: 20px;
+        letter-spacing: 0;
+    }
+
+    .feature-detail {
+        padding-left: 0;
+        padding: 10px 0;
+        line-height: 1.2;
     }
 }
