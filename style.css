@@ -248,6 +248,7 @@ main {
     width: 100%;
     margin-top: 145px;
     margin-left: 6.43%;
+    height: auto;
 }
 
 .news-img1 {
@@ -277,7 +278,7 @@ main {
     .wrapper1.down {
         display: block;
         height: 56px;
-        top: 130px;
+        top: 160px;
         width: 60%;
         left: 46.756%;
         transform: translate(-50%, 0);
@@ -359,16 +360,15 @@ main {
     color: #000;
 }
 
-.line {
-    margin-top: 30px;
-    margin-bottom: 10px;
-    height: 1px;
-    background-color: #000;
-}
-
 .date {
+    position: absolute;
+    top: 100%;
+    transform: translate(0,50%);
+    width: 36vw;
+    border-top: solid 1px #000;
     font-size: 14px;
     font-weight: 700;
+    padding: 10px;
 }
 
 .about div {
