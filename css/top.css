@@ -62,11 +62,6 @@
     border-bottom: 1px solid #000;
 }
 
-.news1_pr {
-    margin: 5px;
-    font-family: "Zen Maru Gothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "sans-serif";
-}
-
 .news2 {
     width: 270px;
     height: 540px;
@@ -74,9 +69,4 @@
     display: inline-block;
     vertical-align: top;
     border-bottom: 1px solid #000;
-}
-
-.news2_pr {
-    margin: 5px;
-    font-family: "Zen Maru Gothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "sans-serif";
 }
