@@ -23,7 +23,7 @@
         display: flex;
         align-items: center;
         gap: 10px;
-        bottom: -32px;
+        bottom: -50px;
         right: 0px;
     }
 
@@ -65,10 +65,88 @@
     }
 }
 
-@media (max-width:599px){}
+@media (max-width:599px){
+    .news {
+        position: relative;
+        font-family: "Zen Maru Gothic", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    img.news_ttl {
+        position: absolute;
+        width: 30vw;
+        top: 58vw;
+        left: 5vw;   
+    }
+    .news-logo::before{
+        content: url(./img/icon_ig.svg);
+        vertical-align: middle;
+        margin: 1vw;
+    }
+    .news-logo{
+        position: absolute;
+        top: 180vw;
+        left: 50%;
+        transform: translate(-50%,0); 
+        border: solid #000 1px;
+        padding: 10px 15px;
+    }
+    .news-notion{
+        position: absolute;
+        object-fit: cover;
+        width: 150px;
+        height: 150px;
+        top: 70vw;
+        left: 52vw;
+    }
+    .news-tea{
+        position: absolute;
+        object-fit: cover;
+        width: 150px;
+        height: 150px;
+        top: 70vw;
+        left: 5vw;
+    }
+    .tea-article{
+        position: absolute;
+        width: 150px;
+        top: 102vw;
+        left: 5vw;
+        text-align: justify;
+        border-bottom: solid #000 1px;
+        padding-bottom: 9.3vw;
+    }
+    .notion-article{
+        position: absolute;
+        width: 150px;
+        top: 102vw;
+        left: 52vw;
+        text-align: justify;
+        border-bottom: solid #000 1px;
+        padding-bottom: 5vw;
+    }
+    p{
+        font-size: 0.72rem;
+    }
+    .under-month1{
+        position: absolute;
+        top: 162vw;
+        left: 5vw;
+        font-size: 0.72rem;
+    }
+    .under-month2{
+        position: absolute;
+        top: 162vw;
+        left: 52vw;
+        font-size: 0.72rem;
+    }
+}
 @media (min-width:600px){
     .news {
         position: relative;
+        font-family: "Zen Maru Gothic", sans-serif;
+        font-weight: 400;
+        font-style: normal;
     }
     img.news_ttl {
         position: absolute;
@@ -104,9 +182,65 @@
     }
     .tea-article{
         position: absolute;
+        width: 250px;
         top: 32vw;
         left: 5vw;
-        display: block;
+        text-align: justify;
+        border-bottom: solid #000 1px;
+        padding-bottom: 2vw;
     }
+    .notion-article{
+        position: absolute;
+        width: 250px;
+        top: 32vw;
+        left: 32vw;
+        text-align: justify;
+        border-bottom: solid #000 1px;
+        padding-bottom: 2vw;
+    }
+    p{
+        font-size: 0.85rem;
+    }
+    .under-month1{
+        position: absolute;
+        top: 52vw;
+        left: 5vw;
+    }
+    .under-month2{
+        position: absolute;
+        top: 52vw;
+        left: 32vw;
+    }    
 }
 
+@media (max-width:599px){}
+@media (min-width:600px){
+    .about{
+        position: relative;
+        top: 60vw;
+        font-family: "Zen Maru Gothic", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    .tea-infinit{
+        position: absolute;
+        left: 11vw;
+        font-size: 1.2rem;
+        text-align: start;
+    }
+    .T-container{
+        position: absolute;
+        top: 10vw;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .T{
+        margin-left:11vw;
+        font-size: 1.5rem;
+    }
+    .T-article{
+        margin-left: 10vw;
+        font-size: 1.2rem;
+        line-height: 3rem;
+    }
+}
