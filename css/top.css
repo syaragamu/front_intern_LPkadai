@@ -56,6 +56,12 @@
 
 .news {
     font-size: 1.1rem;
+    text-align: left;
+    display: flex;
+}
+
+.news_top {
+    display: flex;
 }
 
 .news1 {
@@ -66,11 +72,34 @@
     border-bottom: 1px solid #000;
 }
 
-.news2 {
-    width: 270px;
-    height: 540px;
-    margin: 20px;
-    display: inline-block;
-    vertical-align: top;
-    border-bottom: 1px solid #000;
+@media screen and (max-width: 768px) {
+    .news1 {
+        width: 40vw;
+        font-size: 75%;
+    }
+    .news {
+        flex-direction: column;
+    }
+}
+
+.latest_info {
+    width: 50vw;
+    height: auto;
+    font-size: 18px;
+    padding: 10px;
+    text-align: right;
+}
+
+.latest_info::before {
+    content: url(../img/icon_ig.svg);
+}
+
+@media screen and (max-width: 768px) {
+    .latest_info {
+        font-size: 12px;
+        border: 1px solid #000;
+        margin: 0 auto;
+        width: 60vw;
+        text-align: center;
+    }
 }
