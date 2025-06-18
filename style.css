@@ -213,7 +213,47 @@
     }    
 }
 
-@media (max-width:599px){}
+@media (max-width:599px){
+    .about{
+        position: relative;
+        top: 240vw;
+        font-family: "Zen Maru Gothic", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    .tea-infinit{
+        position: absolute;
+        left: 11vw;
+        font-size: 1.2rem;
+        text-align: start;
+    }
+    .T-container{
+        position: absolute;
+        top: 100vw;
+    }
+    .T{
+        margin-left:11vw;
+        font-size: 1.5rem;
+    }
+    .T-article{
+        margin-left: 10vw;
+        font-size: 1.2rem;
+        line-height: 3rem;
+    }
+    .Te-container{
+        position: absolute;
+        top: 250vw;
+    }
+    .Te{
+        margin-left:11vw;
+        font-size: 1.5rem;
+    }
+    .Te-article{
+        margin-left: 10vw;
+        font-size: 1.2rem;
+        line-height: 3rem;
+    }
+}
 @media (min-width:600px){
     .about{
         position: relative;
@@ -240,6 +280,22 @@
     }
     .T-article{
         margin-left: 10vw;
+        font-size: 1.2rem;
+        line-height: 3rem;
+    }
+    .Te-container{
+        position: absolute;
+        top: 32vw;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .Te{
+        margin-left:11vw;
+        font-size: 1.5rem;
+        white-space: nowrap;
+    }
+    .Te-article{
+        margin-left: 6vw;
         font-size: 1.2rem;
         line-height: 3rem;
     }
