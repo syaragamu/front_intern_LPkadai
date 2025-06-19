@@ -292,6 +292,7 @@ main {
         height: 56px;
         padding-left: 20%;
         font-size: 3vw;
+        border: solid 1px #000;
     }
 
     .news-icon>* {
@@ -305,6 +306,7 @@ main {
     left: 50%;
     transform: translate(-50%, 0);
     display: flex;
+    align-items: center;
     color: #000;
 }
 
@@ -509,11 +511,13 @@ b {
 
 .feature {
     padding: 0 10%;
+    margin-bottom: 50px;
 }
 
 .feature h1 {
     font-size: 35px;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .feature .wrapper3 {
@@ -529,6 +533,7 @@ b {
 .feature-detail {
     padding-left: 30px;
     line-height: 2;
+    margin-bottom: 30px;
 }
 
 @media (max-width: 768px) {
@@ -559,10 +564,10 @@ b {
 }
 
 .recipe>img {
-    margin-top: 30px;
     position: relative;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 0);
+    margin-bottom: 30px;
     width: 10%;
 }
 
@@ -695,12 +700,6 @@ td {
     color: #000000;
     font-size: 16px;
     margin-top: 20px;
-}
-
-.ig-icon {
-    width: 24px;
-    height: 24px;
-    margin-right: 8px;
 }
 
 .btn>* {
