@@ -407,6 +407,8 @@ a:visited {
 
 .product {
     margin-top: 128px;
+    width: 100%;
+    height: auto;
 }
 
 .product-ceylontea, .product-scone {
@@ -415,7 +417,7 @@ a:visited {
     right: 20vw;
     position: relative;
     margin-bottom: 128px;
-    min-height: 500px;
+    min-height: 768px;
 }
 
 .product-ceylontea-title {
@@ -475,6 +477,43 @@ a:visited {
 
 .product-scone-textbox h2 {
     font-size: 3.5rem;
+}
+
+.feature {
+    width: 55vw;
+    margin-left: 22.5vw;
+    margin-right: 22.5vw;
+}
+
+.feature-title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.feature-title h2 {
+    font-size: 3.5rem;
+}
+
+.feature01, .feature02 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-bottom: 80px;
+}
+
+.feature01-img, .feature02-img {
+    width: 65%;
+}
+
+.feature01-textbox, .feature02-textbox {
+    width: 35%;
+    padding: 2% 5%;
+    background-color: #ffffff;
+}
+
+.feature01-textbox h2, .feature02-textbox h2 {
+    font-size: 2.5rem;
 }
 
 @media screen and (max-width: 767px) {
@@ -559,6 +598,30 @@ a:visited {
 
     .product-ceylontea, .product-scone {
         margin-bottom: 0;
+    }
+
+    .feature {
+    width: 90vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    }
+
+    .feature-title h2 {
+        font-size: 2rem;
+    }
+
+    .feature01 {
+        display: block;
+        margin-bottom: 0;
+    }
+
+    .feature01-img, .feature01-textbox, .feature02-img, .feature02-textbox {
+        width: 100%;
+    }
+
+    .feature02 {
+        display: flex;
+        flex-direction: column-reverse;
     }
 }
 
