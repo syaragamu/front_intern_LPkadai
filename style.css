@@ -563,6 +563,11 @@ b {
     text-align: center;
 }
 
+.recipe .wrapper3 {
+    align-items: flex-start;
+    margin-top: 100px;
+}
+
 .recipe>img {
     position: relative;
     left: 50%;
@@ -676,6 +681,29 @@ b {
     letter-spacing: 0px;
 }
 
+.shop .news-icon {
+    display: flex;
+    width: 80%;
+    height: 60px;
+    font-size: 14px;
+    font-weight: 700;
+    border: solid 1px #000;
+}
+
+@media (max-width: 768px) {
+    .shop .news-icon {
+        padding-left: 0;
+    }
+}
+
+.shop .news-icon img {
+    margin-left: auto;
+}
+
+.shop .news-icon div {
+    margin-right: auto;
+}
+
 table {
     width: 100%;
     margin: 30px 0;
@@ -727,6 +755,7 @@ td {
 @media (max-width: 768px) {
     .online {
         display: block;
+        border-top: none;
     }
 }
 
