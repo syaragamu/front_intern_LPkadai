@@ -203,7 +203,7 @@ body * {
         padding-top: 40px;
         transform: translate(-100%, 0);
         object-fit: cover;
-        width: 40%;
+        width: 35%;
     }
 }
 
@@ -211,13 +211,27 @@ a {
     text-decoration: none;
 }
 
+.icon a {
+    width: 18%;
+    margin-right: 18%;
+    
+}
+
 .icon {
     display: flex;
 }
 
 .icon img {
-    margin-right: 14.3%;
-    width: 14.3%;
+    width: 32px;
+}
+
+@media (max-width: 768px) {
+    .icon {
+        margin-right: 0;
+    }
+    .icon img {
+        width: 100%;
+    }
 }
 
 .logo {
