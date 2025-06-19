@@ -1,170 +1,1045 @@
 @charset "UTF-8";
+.icon {
+    display: flex;
+}
+@media (max-width: 599px) {
+    .header_p {
+        display: none;
+    }
+    .header_i {
+        position: relative;
+        width: 100vw;
+    }
+    .icon img {
+        margin-right: 20px;
+        margin-top: 10px;
+        width: 20px;
+    }
+    .header_low {
+        position: absolute;
+        left: 10px;
+        width: 200px;
+        top: 490px;
+    }
+    .cart {
+        position: absolute;
+        right: 90px;
+    }
+    .ig {
+        position: absolute;
+        right: 50px;
+    }
+    .menu {
+        position: absolute;
+        right: 10px;
+    }
+    .news12 {
+        display: flex;
+        margin-bottom: 30px;
+    }
+    .news {
+        margin-top: 160px;
+        margin-left: 30px;
+        width: 80px;
+        
+    }
+    .news1 {
+        border-bottom: 1px solid black;
+        display: inline-block;
+        width: 160px;
+        height: 440px;
+        margin-right: 20px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+    .news1 h2 {
+        padding-top: 20px;
+        font-family: "Zen Maru Gothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
+        font-size: 15px;
+        margin-left: 20px;
+    }
+    .news1 img {
+        width: 160px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 25px;
+    }
+    .news1 p {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 5px;
+        font-size: 12px;
+        line-height: 1.2;
+    }
+    .news1 .detail {
+        font-size: 15px;
+        margin-left: 20px;
+        font-weight: bold;
+        text-decoration: underline;
+        display: inline-block;
+        margin-bottom: 70px;
+    }
+    .news2 {
+        border-bottom: 1px solid black;
+        display: inline-block;
+        width: 160px;
+        height: 440px;
+        margin-right: 20px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+    .news2 h2 {
+        padding-top: 20px;
+        font-family: "Zen Maru Gothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
+        font-size: 15px;
+        margin-left: 10px;
+    }
+    .news2 img {
+        width: 160px;
+        margin-left: 10px;
+        margin-right: 20px;
+        margin-top: 25px;
+    }
+    .news2 p {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 5px;
+        font-size: 12px;
+        line-height: 1.2;
+    }
+    .news2 .detail {
+        font-size: 15px;
+        margin-top: 0;
+        margin-left: 10px;
+        font-weight: bold;
+        text-decoration: underline;
+        display: inline-block;
+        margin-bottom: 50px;
+    }
+    .subtext {
+        font-family: "Zen Maru Gothic", "ヒラギノ角ゴ ProN W3",
+         "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
+    }
+    .new_news::before{
+        content: url("img/icon_ig.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: inline-block;
+        vertical-align: middle;
+        width: 20px;
+        height: 20px;
+        padding-right: 5px;
+    }
+    .new_news {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 250px;
+        margin-left: 60px;
+        padding: 10px 50px;
+        font-size: 13px;
+        border: 1px solid black;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    .introduction {
+        margin-top: 100px;
+        margin-left: 30px;
+        margin-right: 30px;
+        font-size: 15px;
+        font-family: "Zen Maru Gothic", "ヒラギノ角ゴ ProN W3",
+         "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
+        line-height: 1.7;
+    }
+    .talk {
+        margin-top: 40px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .talk1 {
+        margin-bottom: 40px;
+    }
+    .talk_name {
+        margin-bottom: 20px;
+        font-family: "Zen Maru Gothic", "ヒラギノ角ゴ ProN W3",
+         "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
+         width: 60px;
+    }
+    .talking p {
+        margin-bottom: 30px;
+        font-size: 14px;
+        margin-left: 10px;
+        font-family: "Zen Maru Gothic", "ヒラギノ角ゴ ProN W3",
+         "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
+        line-height: 1.7;
+    }
+    .talk2 .talking {
+        margin-bottom: 180px;
+    }
+    .ceylontea {
+        margin-bottom: 60px;
+    }
+    .tea_img {
+        width: 350px;
+        margin-left: 20px;
+        height: 750px;
+        position: relative;
+    }
+    .tea_ttl {
+        position: absolute;
+        right: 160px;
+        width: 200px;
+        height: 100px;
+    }
+    .ceylontea_d {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+    .ceylontea_ja {
+        margin-bottom: 15px;
+        font-size: 25px;
+    }
+    .ceylontea_ex {
+        margin-bottom: 15px;
+        font-family: "Zen Maru Gothic", "ヒラギノ角ゴ ProN W3",
+         "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
+        line-height: 1.7;
+        font-size: 15px;
+    }
+    .size_price_tea {
+        margin-bottom: 5px;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    .scone {
+        margin-bottom: 200px;
+    }
+    .scone_img {
+        width: 350px;
+        margin-left: 20px;
+        height: 750px;
+        position: relative;
+    }
+    .scone_ttl {
+        position: absolute;
+        right: 50px;
+        width: 120px;
+        height: 70px;
+    }
+    .scone_d {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+    .scone_ja {
+        margin-bottom: 15px;
+        font-size: 25px;
+    }
+    .scone_ex {
+        margin-bottom: 15px;
+        font-family: "Zen Maru Gothic", "ヒラギノ角ゴ ProN W3",
+         "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
+        line-height: 1.7;
+        font-size: 15px;
+    }
+    .size_price_sc {
+        font-size: 14px;
+        font-family: "Zen Maru Gothic", "ヒラギノ角ゴ ProN W3",
+         "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
+    }
+    .products h2 {
+        text-align: center;
+        font-size: 18px;
+        font-family: "Zen Maru Gothic", "ヒラギノ角ゴ ProN W3",
+         "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
+    }
+    .product1 img {
+        width: 330px;
+        margin-left: 32px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+    .product2 img {
+        width: 330px;
+        margin-left: 32px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+    .product_title {
+        margin-left: 32px;
+        margin-right: 32px;
+        margin-bottom: 15px;
+        width: 160px;
+        line-height: 1.5;
+        font-size: 18px;
+        font-family: "Zen Maru Gothic", "ヒラギノ角ゴ ProN W3",
+         "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
+    }
+    .product_ex {
+        margin-left: 32px;
+        margin-right: 32px;
+        line-height: 1.7;
+        font-family: "Zen Maru Gothic", "ヒラギノ角ゴ ProN W3",
+         "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
+    }
+    .product_ex p {
+        margin-top: 10px;
+        font-family: "Zen Maru Gothic", "ヒラギノ角ゴ ProN W3",
+         "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
+    }
+    .recipe {
+        margin-top: 30px;
+        margin-bottom: 180px;
+        display: flex;
+        overflow-y: scroll;
+    }
+    .recipe_top {
+        display: flex;
+        margin-bottom: 100px;
+    }
+    .recipe_ img {
+        width: 250px;
+        margin-bottom: 15px;
+    }
+    .recipe_ {
+        margin-right: 15px;
+    }
+    .recipe_ttl img {
+        width: 100px;
+    }
+    .recipe_ttl {
+        text-align: center;
+        font-size: 20px;
+        margin-top: 130px;
+        line-height: 1.7;
+        font-family: "Zen Maru Gothic", "ヒラギノ角ゴ ProN W3",
+         "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
+    }
+    .recipe_title {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 20px;
+        font-family: "Zen Maru Gothic", "ヒラギノ角ゴ ProN W3",
+         "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
+    }
+    .recipe_ex {
+        font-size: 12px;
+        line-height: 1.6;
+        font-family: "Zen Maru Gothic", "ヒラギノ角ゴ ProN W3",
+         "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
+    }
+    .tea_products {
+        writing-mode: vertical-lr;
+        padding-top: 30px;
+        padding-left: 5px;
+        margin-top: 20px;
+        margin-left: 25px;
+        margin-right: 40px;
+        border-top: 2px solid black;
+        width: 80px;
+    }
+    .tea_products h2 {
+        font-size: 23px;
+        margin-right: 20px;
+        font-family: "Zen Maru Gothic", "ヒラギノ角ゴ ProN W3",
+         "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
+    }
+    .tea_products h3 {
+        font-size: 15px;
+        font-family: "Zen Maru Gothic", "ヒラギノ角ゴ ProN W3",
+         "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
+    }
+    .shop {
+        margin-bottom: 30px;
+        width: 280px;
+        margin-left: 30px;
+    }
+    .side1 img {
+        width: 400px;
+        height: 400px;
+    }
+    .side2 img {
+        width: 70px;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        margin-left: 40px;
+    }
+    .side3 {
+        margin: 0  30px 40px;
+        font-size: 15px;
+        line-height: 1.6;
+        font-family: "Zen Maru Gothic", "ヒラギノ角ゴ ProN W3",
+         "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
+    }
+    .side3 p {
+        margin-bottom: 10px;
+        font-family: "Zen Maru Gothic", "ヒラギノ角ゴ ProN W3",
+         "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
+    }
+    tr {
+        font-size: 13px;
+        line-height: 1.4;
+        font-family: "Zen Maru Gothic", "ヒラギノ角ゴ ProN W3",
+         "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
+    }
+    th {
+        width: 100px;
+        height: 60px;
+        font-family: "Zen Maru Gothic", "ヒラギノ角ゴ ProN W3",
+         "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
+    }
+    .side4 {
+        padding-top: 20px;
+        padding-bottom: 0;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        margin: 0 40px;
+    }
+    .side5 {
+        margin: 40px 40px;
+        font-size: 15px;
+        font-family: "Zen Maru Gothic", "ヒラギノ角ゴ ProN W3",
+         "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
+    }
+    .side6::before {
+        content:"";
+        background-image: url("img/icon_ig.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: inline-block;
+        vertical-align: middle;
+        width: 20px;
+        height: 20px;
+        padding-right: 5px;
+    }
+    .side6 {
+        width: 250px;
+        margin-left: 60px;
+        padding: 10px 50px;
+        font-size: 13px;
+        border: 1px solid black;
+    }
+    .onlineshop img {
+        width: 120px;
+        margin: 50px 0 20px 10px;
+    }
+    .onlineshop_left {
+        margin: 0 40px;
+        font-size: 15px;
+    }
+    .onlineshop_left p {
+        margin: 15px 0;
+        font-family: "Zen Maru Gothic", "ヒラギノ角ゴ ProN W3",
+         "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
+    }
+    .onlineshop_right::before {
+        content:"";
+        background-image: url("img/icon_cart.svg");
+        width: 20px;
+        height: 20px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: inline-block;
+        vertical-align: middle;
+        padding-right: 10px;
+    }
+    .onlineshop_right {
+        margin: 30px 60px;
+        border: 1px solid black;
+        width: 250px;
+        padding: 15px 80px;
+    }
+    .contact img {
+        width: 120px;
+        margin: 100px 0 80px 120px;
+    }
+    .contact {
+        margin: 0 10px;
+    }
+    .form_group label {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+    .form_group input {
+        padding: 15px;
+        margin-bottom: 30px;
+    }
+    .policy {
+        font-size: 13px;
+        margin: 30px 60px;
+    }
+    button {
+        color: white;
+        background-color: #808080;
+        text-decoration: none;
+        padding: 10px 90px;
+        margin-left: 80px;
+        margin-bottom: 50px;
+        appearance: none;
+    }
+    footer {
+        margin: 0 120px 140px 120px;
+        width: 150px;
+    }
 
-/* リセットcss */
-abbr,
-address,
-article,
-aside,
-audio,
-b,
-blockquote,
-body,
-canvas,
-caption,
-cite,
-code,
-dd,
-del,
-details,
-dfn,
-div,
-dl,
-dt,
-em,
-fieldset,
-figcaption,
-figure,
-footer,
-form,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-header,
-hgroup,
-html,
-i,
-iframe,
-img,
-ins,
-kbd,
-label,
-legend,
-li,
-mark,
-menu,
-nav,
-object,
-ol,
-p,
-pre,
-q,
-samp,
-section,
-small,
-span,
-strong,
-sub,
-summary,
-sup,
-table,
-tbody,
-td,
-tfoot,
-th,
-thead,
-time,
-tr,
-ul,
-var,
-video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: 0 0
 }
 
-body {
-    line-height: 1
+@media (min-width: 600px) {
+    .header_i  {
+        display: none;
+    }
+    .only {
+        display: none;
+    }
+    .header_p {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        object-fit: contain;
+        display: block;
+    }
+    .icon img {
+        padding-right: 40px;
+        width: 70px;
+    }
+    .cart {
+        position: absolute;
+        bottom: 20px;
+        right: 156px;
+        cursor: pointer;
+    }
+    .ig {
+        position: absolute;
+        bottom: 20px;
+        right: 104px;
+        cursor: pointer;
+    }
+    .menu {
+        position: absolute;
+        bottom: 20px;
+        right: 52px;
+        cursor: pointer;
+    }
+    .header_low {
+        position: absolute;
+        bottom: 20px;
+        left: 70px;
+        width: 300px;
+    }
+    .news {
+        display: flex;
+        justify-content: space-between;
+    }
+    .news img {
+        margin-right: 400px;
+        width: 100px;
+    }
+    .NEWS {
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 150px;
+        position: relative;
+    }
+    .news12 {
+        display:flex;
+        align-items:flex-start;
+        margin-bottom: 30px;
+    }
+    .news1 {
+        padding-top: 60px;
+        width: 250px;
+        height: 600px;
+        margin-right: 60px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid black;
+        display: inline-block;
+    }
+    .news1 h2 {
+        padding-top: 20px;
+        font-family: "Zen Maru Gothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
+        font-size: 20px;
+    }
+    .news1 p {
+        padding-top: 10px;
+        font-family: "Zen Maru Gothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
+        font-size: 15px;
+        line-height: 1.8;
+    }
+    .news1 .detail {
+        font-size: 15px;
+        margin-top: 15px;
+        font-weight: bold;
+        text-decoration: underline;
+        display: inline-block;
+        margin-bottom: 50px;
+    }
+    .news2 {
+        padding-top: 60px;
+        margin-right: 60px;
+        margin-bottom: 20px;
+        width: 250px;
+        height: 600px;
+        border-bottom: 1px solid black;
+        display: inline-block;
+    }
+    .news2 h2 {
+        padding-top: 20px;
+        font-family: "Zen Maru Gothic", "ヒラギノ角ゴ ProN W3",
+         "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
+        font-size: 20px;
+    }
+    .news2 p {
+        padding-top: 10px;
+        font-family: "Zen Maru Gothic", "ヒラギノ角ゴ ProN W3",
+         "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
+        font-size: 15px;
+        line-height: 1.8;
+    }
+    .news2 .detail {
+        font-size: 15px;
+        font-family: "Zen Maru Gothic", "ヒラギノ角ゴ ProN W3",
+         "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
+        font-weight: bold;
+        text-decoration: underline;
+        display: inline-block;
+        margin-bottom: 33px;
+    }
+    .news1 img {
+        width: 250px;
+    }
+    .news2 img {
+        width: 250px;
+    }
+    .subtext {
+        font-family: "Zen Maru Gothic", "ヒラギノ角ゴ ProN W3",
+         "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
+        font-size: 13px;
+    }
+    .news {
+        top: 0;
+        right: 20px;
+    }
+    .new_news::before{
+        content: url("img/icon_ig.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: inline-block;
+        vertical-align: middle;
+        width: 20px;
+        height: 20px;
+        padding-right: 5px;
+    }
+    .new_news {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 260px;
+        margin-left: 60px;
+        padding: 10px 50px;
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        cursor: pointer;
+    }
+    .new_news p {
+        width: 200px;
+    }
+    .detail {
+        cursor: pointer;
+    }
+    .introduction {
+        font-size: 20px;
+        font-family: "Zen Maru Gothic", "ヒラギノ角ゴ ProN W3",
+         "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
+        margin: 180px 30px 80px;
+        letter-spacing: 0.1rem;
+        line-height: 1.8;
+    }
+    .talk1 {
+        display: flex;
+        margin-bottom: 25px;
+    }
+    .talk1 .talking {
+        margin-left: 14px;
+    }
+    .talk2 {
+        display: flex;
+        margin-bottom: 80px;
+    }
+    .talk_name {
+        margin-left: 80px;
+        margin-top: 50px;
+        width: 200px;
+        font-family: "Zen Maru Gothic", "ヒラギノ角ゴ ProN W3",
+         "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
+    }
+    .talking {
+        margin-top: 50px;
+        font-family: "Zen Maru Gothic", "ヒラギノ角ゴ ProN W3",
+         "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
+        line-height: 1.8;
+    }
+    .talking p {
+        margin-bottom: 30px;
+        font-size: 17px;
+        margin-left: 10px;
+        font-family: "Zen Maru Gothic", "ヒラギノ角ゴ ProN W3",
+         "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
+    }
+    .ceylontea {
+        display: flex;
+        align-items: center;
+    }
+    .tea_ttl {
+        width: 200px;
+        position: absolute;
+        left: 92px;
+        height: 180px;
+    }
+    .tea_img {
+        width: 700px;
+        position: relative;
+        left: 50px;
+        margin-bottom: 80px;
+    }
+    .ceylontea_d {  
+        position: absolute;
+        width: 400px;
+        left: 700px;
+        height: 400px;
+        padding: 50px;
+        background-color: white;
+    }
+    .ceylontea_ja {
+        font-size: 32px;
+        margin-bottom: 10px;
+        font-family: "Zen Maru Gothic", "ヒラギノ角ゴ ProN W3",
+         "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
+    }
+    .ceylontea_ex {
+        margin-top: 40px;
+        line-height: 1.8;
+        margin-bottom: 40px;
+        font-family: "Zen Maru Gothic", "ヒラギノ角ゴ ProN W3",
+         "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
+    }
+    .size_price {
+        line-height: 1.8;
+        font-family: "Zen Maru Gothic", "ヒラギノ角ゴ ProN W3",
+         "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
+    }
+    .scone {
+        margin-bottom: 180px;
+        display: flex;
+        align-items: center;
+    }
+    .scone_ttl {
+        width: 140px;
+        position: absolute;
+        right: 45px;
+        height: 180px;
+    }
+    .scone_img {
+        width: 700px;
+        position: relative;
+        left: 400px;
+    }
+    .scone_d {
+        position: absolute;
+        width: 400px;
+        left: 50px;
+        height: 400px;
+        padding: 40px;
+        background-color: white;
+        margin-left: 80px;
+    }
+    .scone_ja {
+        font-size: 32px;
+        margin-top: 40px;
+        margin-bottom: 35px;
+        font-family: "Zen Maru Gothic", "ヒラギノ角ゴ ProN W3",
+         "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
+    }
+    .scone_ex {
+        line-height: 1.8;
+        margin-bottom: 35px;
+        font-family: "Zen Maru Gothic", "ヒラギノ角ゴ ProN W3",
+         "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
+    }
+    .products {
+        margin-top: 500px;
+        font-size: 40px;
+    }
+    .products h2 {
+        text-align: center;
+        font-family: "Zen Maru Gothic", "ヒラギノ角ゴ ProN W3",
+         "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
+    }
+    .product1 img {
+        width: 500px;
+        margin-top: 80px;
+    }
+    .product1 {
+        display: flex;
+    }
+    .product2 img {
+        width: 550px;
+        margin-top: 80px;
+        height: 350px;
+    }
+    .product2 {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .product_title {
+        font-size: 30px;
+        font-family: "Zen Maru Gothic", "ヒラギノ角ゴ ProN W3",
+         "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
+        width: 300px;
+        margin-top: 120px;
+        margin-bottom: 30px;
+        margin-left: 70px;
+        line-height: 1.6;
+    }
+    .product_ex {
+        font-family: "Zen Maru Gothic", "ヒラギノ角ゴ ProN W3",
+         "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
+        margin-left: 70px;
+        margin-right: 30px;
+        width: 300px;
+        font-size: 15px;
+        line-height: 1.7;
+    }
+    .recipe_ttl img {
+        margin: 180px 0 50px 500px;
+        width: 140px;
+    }
+    .recipe_ttl h2 {
+        font-size: 35px;
+        font-family: "Zen Maru Gothic", "ヒラギノ角ゴ ProN W3",
+         "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
+         margin-left: 300px;
+    }
+    .recipe_top {
+        display: flex;
+        margin-bottom: 0;
+    }
+    .recipe {
+        display: flex;
+        overflow-y: scroll;
+        margin-top: 100px;
+    }
+    .recipe_ {
+        margin-right: 30px;
+    }
+    .recipe img {
+        width: 350px;
+    }
+    .recipe_title {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 25px;
+        font-family: "Zen Maru Gothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
+    }
+    .recipe_ex {
+        line-height: 1.9;
+        font-size: 15px;
+        font-family: "Zen Maru Gothic", "ヒラギノ角ゴ ProN W3",
+         "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
+    }
+    .tea_products {
+        width: 300px;
+        height: 600px;
+        writing-mode: vertical-lr;
+        padding-top: 20px;
+        padding-left: 5px;
+        margin-top: 100px;
+        margin-left: 15px;
+        margin-right: 40px;
+        border-top: 8px solid black;
+
+    }
+    .tea_products h2 {
+        font-size: 30px;
+        margin-right: 20px;
+        font-family: "Zen Maru Gothic", "ヒラギノ角ゴ ProN W3",
+         "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
+    }
+    .tea_products h3 {
+        font-size: 20px;
+        font-family: "Zen Maru Gothic", "ヒラギノ角ゴ ProN W3",
+         "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
+    }
+    .shop {
+        margin: 50px 0 50px 400px;
+        width: 350px;
+    }
+    .side1 {
+        position:relative;
+    }
+    .side2 img {
+        width: 80px;
+        margin: 20px ;
+    }
+    .side2 {
+        width: 350px;
+        position: absolute;
+        right: 50px;
+    }
+    .side3 p {
+        margin-bottom: 20px;
+        margin-right: 30px;
+        font-size: 16px;
+        font-family: "Zen Maru Gothic", "ヒラギノ角ゴ ProN W3",
+         "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
+        line-height: 1.7;
+    }
+    .shop_infor {
+        display: flex;
+        margin-bottom: 50px;
+    }
+    .side4 {
+        padding-top: 20px;
+        padding-bottom: 0;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+    tr {
+        font-size: 13px;
+        font-family: "Zen Maru Gothic", "ヒラギノ角ゴ ProN W3",
+         "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
+        line-height: 1.4;
+    }
+    th {
+        width: 100px;
+        height: 60px;
+    }
+    .side5 {
+        margin-top: 18px;
+        margin-bottom: 20px;
+        font-size: 17px;
+        font-family: "Zen Maru Gothic", "ヒラギノ角ゴ ProN W3",
+         "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
+        line-height: 1.5;
+    }
+    .side6::before {
+        content:"";
+        background-image: url("img/icon_ig.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: inline-block;
+        vertical-align: middle;
+        width: 20px;
+        height: 20px;
+        padding-right: 8px;
+    }
+    .side6 {
+        width: 300px;
+        margin-left: 10px;
+        padding: 20px 60px;
+        font-size: 14px;
+        font-family: "Zen Maru Gothic", "ヒラギノ角ゴ ProN W3",
+         "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
+        font-weight: bold;
+        border: 1px solid black;
+        cursor: pointer;
+    }
+    .side6:hover {
+        background-color: #f5f5f5;
+    }
+    .onlineshop {
+        display: flex;
+        margin-left: 80px;
+        border-top: 2px solid black;
+        width: 1000px;
+        padding: 30px;
+    }
+    .onlineshop img {
+        width: 120px;
+    }
+    .onlineshop_left {
+        width: 600px;
+        margin-bottom: 20px;
+    }
+    .onlineshop_left p {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-family: "Zen Maru Gothic", "ヒラギノ角ゴ ProN W3",
+         "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
+    }
+    .onlineshop_right::before {
+        content:"";
+        background-image: url("img/icon_cart.svg");
+        width: 22px;
+        height: 22px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: inline-block;
+        vertical-align: middle;
+        padding-right: 5px;
+    }
+    .onlineshop_right {
+        width: 310px;
+        height: 60px;
+        padding: 20px 100px;
+        border: 1px solid black;
+        margin-left: 30px;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+    .onlineshop_right:hover {
+        background-color: #f5f5f5;
+    }
+    .contact {
+        margin: 100px 10px;
+    }
+    .contact img {
+        margin-left: 500px;
+        margin-bottom: 50px;
+        width: 180px;
+    }
+    .form-group {
+        display: flex;
+    }
+    .form_group label {
+        margin-bottom: 10px;
+        margin-top: 10px;
+        font-size: 15px;
+        width: 20vw;
+    }
+    .form_group input {
+        padding: 15px 340px 15px 0;
+        margin-bottom: 30px;
+        width: calc(100%-20vw);
+    }
+    .form {
+        display: flex;
+        margin: 0 30px 30px 100px;
+        text-align: center;
+        align-items: start;
+        justify-content: space-between;
+    }
+    .policy {
+        font-size: 13px;
+        width: 250px;
+        margin: 30px 490px;
+    }
+    button {
+        color: white;
+        background-color: #808080;
+        text-decoration: none;
+        width: 280px;
+        height: 60px;
+        padding: 10px 90px;
+        margin-left: 470px;
+        margin-bottom: 50px;
+        appearance: none;
+    }
+    footer {
+        margin: 0 120px 140px 550px;
+        width: 150px;
+    }
 }
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block
-}
-
-ul {
-    list-style: none
-}
-
-blockquote,
-q {
-    quotes: none
-}
-
-blockquote:after,
-blockquote:before,
-q:after,
-q:before {
-    content: none
-}
-
-a {
-    margin: 0;
-    padding: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: 0 0
-}
-
-ins {
-    background-color: #ff9;
-    color: #000;
-    text-decoration: none
-}
-
-mark {
-    background-color: #ff9;
-    color: #000;
-    font-style: italic;
-    font-weight: 700
-}
-
-del {
-    text-decoration: line-through
-}
-
-abbr[title],
-dfn[title] {
-    border-bottom: 1px dotted;
-    cursor: help
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0
-}
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0
-}
-
-input,
-select {
-    vertical-align: middle
-}
-
-body * {
-    box-sizing: border-box;
-}
-
-/* ここまで リセットcss */
