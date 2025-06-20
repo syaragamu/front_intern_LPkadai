@@ -1,5 +1,448 @@
 @charset "UTF-8";
 
+
+.header {
+  position: relative;
+  width: 100%;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.topimg {
+    position:relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (min-width:768px) {
+.icons {
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 200px;
+    justify-content: space-between;
+}
+
+.icon {
+    font-size: 120px;
+    flex: 1 0 20%;
+    bottom: 0;
+}
+
+
+.products {
+    position: absolute;
+    bottom: 20px;
+    left: 60px;
+    font-family:"Zen Maru Gothic", sans-serif;
+    font-size: x-large;
+  font-weight: 700;
+  font-style: normal;;
+  z-index: 2;
+}
+
+.products span {
+    font-size: xx-small;
+    vertical-align: 7px;
+}
+}
+
+.h2,.h3 {
+font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+@media screen and (max-width:768px) {
+.icons {
+    position: absolute;
+    bottom: -50px;
+    right: 2px;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 150px;
+    height: 30px;
+    justify-content: space-between;
+}
+
+.products {
+    position: absolute;
+    bottom: 20px;
+    left: 12px;
+    font-family:"Zen Maru Gothic", sans-serif;
+    font-size: small;
+  font-weight: 700;
+  font-style: normal;
+  z-index: 2;
+}
+
+.products span {
+    font-size: xx-small;
+    vertical-align: 2px;
+}
+}
+
+.icon {
+    font-size: 20px;
+    flex: 1 0 20%;
+}
+
+.bottun {
+    display: block;
+}
+@media screen and (min-width:768px) {
+    .news-wrapper {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .newstitle  {
+        position: relative;
+        margin-top: 150px;
+        margin-left: 70px;
+        width: 100px;
+    }
+    .info-max {
+        position: absolute;
+        right: 20px;
+        top: 120px;
+        font-family:"Zen Maru Gothic", sans-serif;
+        font-size: large;
+        font-weight: bold;
+        color: #000;
+
+    }
+    .info-max::before {
+     font-family: "Font Awesome 5 Brands";
+     font-weight: 600; 
+     content: "\f16d"; 
+     margin-right: 5px; /
+     
+    }
+
+    .newslink {
+        position: relative;
+        margin-left: 70px;
+        display: flex;
+    }
+
+    .news01,.news02{
+        margin-right: 40px;
+        margin-top: 50px;
+        width: 320px;
+        font-family:"Zen Maru Gothic", sans-serif;
+
+    }
+
+    .news01 > img {
+        width: 100%;
+    }
+
+    .news02 > img {
+        width: 100%;
+    }
+    .news01 > h2 {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        font-size: xx-large;
+        font-family:"Zen Maru Gothic", sans-serif;
+    }
+    .news02 > h2 {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        font-size: xx-large;
+    }
+    .news01 > h3 {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        font-size: large;
+        line-height: 24px;
+        font-weight: 400;
+    }
+    .news02 > h3 {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        font-size: large;
+        line-height: 24px;
+        font-weight: 400;
+    }
+    .detaillink {
+        font-size: x-large;
+        color: #000;
+        margin-top: 24px;
+        margin-bottom: 48px;
+    }
+
+    .news01 > .date {
+        margin-top: 48px;
+        border-top: #000 solid;
+        padding-top: 12px;
+        font-size: medium;
+        bottom: 0;
+    }    
+    .news02 > .date {
+        margin-top: 48px;
+        border-top: #000 solid;
+        padding-top: 12px;
+        font-size: medium;
+        bottom: 0;
+    } 
+
+    .info-min {
+        display: none;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .news-wrapper {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .newstitle  {
+        position: relative;
+        margin-top: 110px;
+        margin-left: 30px;
+        width: 60px;
+    }
+    .info-max {
+        display: none;
+    }
+    .info-min {
+        transform: translate(-50%, 0);
+        font-family: "Zen Maru Gothic", sans-serif;
+        font-weight: bold;
+        font-size: 2vw;
+        border: solid #000 0.5px;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+        white-space: nowrap;
+        text-align: center;
+        width: 50%;
+        margin-top: 3vw;
+        color: #000;
+        display: block;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .info-min::before {
+     font-family: "Font Awesome 5 Brands";
+     font-weight: 600; 
+     content: "\f16d"; 
+     margin-right: 5px; 
+     display: inline;
+     
+    }
+
+    .newslink {
+        position: relative;
+        margin-left: 10px;
+        display: flex;
+        height:550px ;
+    }
+
+    .news01,.news02{
+        margin-right: 5%;
+        margin-top: 40px;
+        width: 40%;
+        left: 0;
+        font-family:"Zen Maru Gothic", sans-serif;
+
+    }
+
+    .news01 > img {
+        width: 100%;
+    }
+
+    .news02 > img {
+        width: 100%;
+    }
+    .news01 > h2 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: medium;
+    }
+    .news02 > h2 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: medium;
+    }
+    .news01 > h3 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: xx-small;
+        line-height: 15px;
+        font-weight: 600;
+    }
+    .news02 > h3 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: xx-small;
+        line-height: 15px;
+        font-weight: 600;
+    }
+    .detaillink {
+        font-size: medium;
+        color: #000;
+        margin-top: 24px;
+        margin-bottom: 48px;
+    }
+
+    .news01 > .date {
+        margin-top: 48px;
+        border-top: #000 solid;
+        padding-top: 12px;
+        font-size: xx-small;
+        position: absolute;
+        bottom: 60px;
+        width: 40%;
+    }    
+    .news02 > .date {
+        margin-top: 48px;
+        border-top: #000 solid;
+        padding-top: 12px;
+        font-size: xx-small;
+        position: absolute;
+        bottom: 60px;
+        width: 40%;
+    } 
+}
+
+@media screen and (min-width:768px)  {
+    .about-wrapper {
+        margin-top: 60px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .concept {
+        margin-right: 10%;
+        margin-left: 10%;
+        margin-right: 15%;
+        text-align: left;
+        font-size: x-large;
+        font-family:"Zen Maru Gothic", sans-serif;
+        line-height: 40px;
+        margin-top: 60px;
+        margin-bottom: 80px;
+    }
+
+    .tea,.tempting {
+        margin-right: 10%;
+        margin-left: 10%;
+        margin-bottom: 80px;
+        text-align: left;
+        font-size: medium;
+        font-family:"Zen Maru Gothic", sans-serif;
+        display: flex;
+        line-height: 30px;
+    }
+
+    .tea > h3, .tempting > h3 {
+        flex: 0 0 15%;
+        margin-right: 10%;
+    }
+
+    .tea > h4, .tempting > h4 {
+        flex: 0 0 70%;
+    }
+}
+
+@media screen and (max-width:768px)  {
+    .about-wrapper {
+        margin-top: 60px;
+    }
+    
+    .concept {
+        width: 80%;
+        margin-left: 10%;
+        text-align: left;
+        font-size: medium;
+        font-family:"Zen Maru Gothic", sans-serif;
+        line-height: 25px;
+        margin-top: 60px;
+        margin-bottom: 80px;
+    }
+
+    .tea,.tempting {
+        width: 80%;
+        margin-left: 10%;
+        margin-bottom: 100px;
+        text-align: left;
+        font-size: small;
+        font-family:"Zen Maru Gothic", sans-serif;
+        line-height: 25px;
+    }
+
+    .tea > h3, .tempting > h3 {
+        margin-right: 10%;
+        margin-bottom: 20px;
+    }
+
+    .tea > h4, .tempting > h4 {
+        font-weight: 500;
+        
+    }
+}
+
+@media screen and (min-width:768px)  {
+.product-wrapper {
+    width: 100%;
+}
+
+.ceylontea {
+    width: 100%;
+}
+
+.main {
+    position: relative;
+    width: 100%;
+}
+
+.scone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10%;
+    margin-left: 10%;
+    position: relative;
+}
+
+.sconeimg {
+    flex: 0 0 40%;
+}
+.sconeproduct {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+}
+
+.sconetitle {
+    width: 10%;
+    left: 85%;
+    position: absolute;
+    top: 20%;
+    z-index: 2;
+
+}
+
+.sconedetail {
+    flex: 0 0 30%
+}
+}
 /* リセットcss */
 abbr,
 address,
