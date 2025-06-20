@@ -42,6 +42,10 @@
     }
 }
 
+main {
+    font-family: "Zen Maru Gothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+}
+
 .img_news {
      width: 10%; 
      height: auto; 
@@ -66,19 +70,39 @@
 
 .news1 {
     width: 270px;
-    height: 540px;
+    height: 520px;
+    margin: 20px;
+    display: inline-block;
+    border-bottom: 1px solid #000;
+}
+
+.news2 {
+    width: 270px;
+    height: 520px;
     margin: 20px;
     display: inline-block;
     border-bottom: 1px solid #000;
 }
 
 @media screen and (max-width: 768px) {
-    .news1 {
+    .news1, .news2 {
         width: 40vw;
+        height: 50vh;
         font-size: 75%;
     }
     .news {
         flex-direction: column;
+    }
+}
+
+.date_news {
+    position: absolute;
+    transform: translate(0,250%);
+}
+
+@media screen and (max-width: 768px) {
+    .date_news {
+        transform: translate(0,600%);
     }
 }
 
@@ -88,6 +112,7 @@
     font-size: 18px;
     padding: 10px;
     text-align: right;
+    transform: translateY(-10vh);
 }
 
 .latest_info::before {
@@ -101,5 +126,24 @@
         margin: 0 auto;
         width: 60vw;
         text-align: center;
+        transform: translateY(3vh);
     }
+}
+
+.about_container {
+    width: 75vw;
+    margin: 15vh auto;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    font-family: "Zen Maru Gothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+    .about_container {
+        font-size: 0.9rem;
+    }
+}
+
+.about {
+    margin: 10vh auto;
 }
