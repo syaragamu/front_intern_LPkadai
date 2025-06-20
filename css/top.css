@@ -110,6 +110,7 @@ main {
     width: 50vw;
     height: auto;
     font-size: 18px;
+    font-weight: bold;
     padding: 10px;
     text-align: right;
     transform: translateY(-10vh);
@@ -131,19 +132,124 @@ main {
 }
 
 .about_container {
-    width: 75vw;
-    margin: 15vh auto;
+    width: 70vw;
+    margin: 15vh auto 0;
     font-size: 1.3rem;
     line-height: 2rem;
+    display: block;
     font-family: "Zen Maru Gothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
 }
 
 @media screen and (max-width: 768px) {
-    .about_container {
-        font-size: 0.9rem;
+    .about_container, .about_title1, .about_content {
+        width: 80vw;
+        font-size: 0.8rem;
     }
+}
+
+.about_title {
+    display: block;
 }
 
 .about {
     margin: 10vh auto;
+    font-size: 1.1rem;
+    display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    .about {
+        display: block;
+    }    
+}
+
+.about_title1 {
+    width: 10vw;
+    height: auto;
+    padding: 0 20px 0 0;
+    font-weight: bold;
+    text-align: start;
+}
+
+.about_content {
+    font-weight: 500;
+}
+
+.img_tea {
+    width: 50vw;
+    height: 75vh;
+    object-fit: cover;
+    overflow: hidden;
+    margin: 10vw 10vw 0;
+    float: left;
+}
+
+.ltr_tea {
+    width: 15vw;
+    height: auto;
+    transform: translate(-60vw, 25vh);
+}
+
+.exp_tea {
+    width: 30vw;
+    height: 50vh;
+    line-height: 2rem;
+    font-weight: bold;
+    clear: both;
+    padding: 5% 3%;
+    transform: translate(53vw, -65vh);
+    background-color: #fff;
+}
+
+.img_scone {
+    width: 50vw;
+    height: 75vh;
+    object-fit: cover;
+    overflow: hidden;
+    margin: 0 10vw;
+    float: right;
+}
+
+.ltr_scone {
+    width: 10vw;
+    height: auto;
+    transform: translate(80vw, 5vh);
+}
+
+.exp_scone {
+    width: 30vw;
+    height: 50vh;
+    line-height: 2rem;
+    font-weight: bold;
+    clear: both;
+    padding: 5% 3%;
+    transform: translate(20vw, -65vh);
+    background-color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .img_tea, .img_scone {
+        width: 90vw;
+        height: auto;
+        float: none;
+        clear: both;
+        margin: 0 auto;
+    }
+
+    .ltr_tea {
+        width: 30vw;
+        height: auto;
+        transform: translate(5vw, -40vh);
+    }
+
+    .ltr_scone {
+        width: 20vw;
+        height: auto;
+        transform: translate(65vw, -40vh);
+    }
+    
+    .exp_tea, .exp_scone {
+        width: 90vw;
+        transform: none;
+    }
 }
