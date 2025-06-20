@@ -187,6 +187,7 @@ body {
   font-size: 160%;
   line-height: 2;
   height: 100%;
+  overflow-x: hidden;
 }
 
 a {
@@ -483,6 +484,8 @@ a:visited {
     width: 55vw;
     margin-left: 22.5vw;
     margin-right: 22.5vw;
+    margin-top: 64px;
+    margin-bottom: 64px;
 }
 
 .feature-title {
@@ -504,16 +507,79 @@ a:visited {
 
 .feature01-img, .feature02-img {
     width: 65%;
+    height: auto;
 }
 
 .feature01-textbox, .feature02-textbox {
     width: 35%;
     padding: 2% 5%;
     background-color: #ffffff;
+    height: auto;
 }
 
 .feature01-textbox h2, .feature02-textbox h2 {
     font-size: 2.5rem;
+}
+
+.recipe {
+    margin-bottom: 128px;
+}
+
+.recipe-title {
+    display: block;
+    width: 128px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+}
+
+.recipe-subtitle {
+    width: 100%;
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 96px;
+}
+
+.recipe-list-wrap {
+    display: flex;
+}
+
+.recipe-list-title {
+    width: 96px;
+    writing-mode: vertical-rl;
+    border-top: 7px solid #000;
+    margin-left: 48px;
+    margin-right: 48px;
+}
+
+.recipe-list-title h2 {
+    font-size: 3.5rem;
+    margin-top: 1.5rem;
+}
+
+.recipe-list-title h3 {
+    padding-top: 1.5rem;
+}
+
+.recipe-list {
+    display: flex;
+    overflow-x: auto;
+    width: 10000px;
+    margin-top: 24px;
+}
+
+.recipe-list h2 {
+    font-size: 2.5rem;
+}
+
+.recipe-list-factor {
+    flex: 0 0 384px;
+    margin-right: 48px;
+}
+
+.recipe-img {
+    width: 100%;
+    height: auto;
 }
 
 @media screen and (max-width: 767px) {
@@ -623,9 +689,30 @@ a:visited {
         display: flex;
         flex-direction: column-reverse;
     }
+
+    .recipe-list-title {
+    width: 96px;
+    writing-mode: vertical-rl;
+    border-top: 2px solid #000;
+    margin-left: 16px;
+    margin-right: 32px;
+    }
+
+    .recipe-subtitle {
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 32px;
+    }
+
+    
 }
 
 @media screen and (min-width: 768px), print {
+    .sp-br {
+        display: none;
+    }
+
     .news-instagram-sp {
         display: none;
     }
