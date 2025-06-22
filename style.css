@@ -289,6 +289,7 @@ a:visited {
     height: 32px;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
 }
 
 .news-instagram-pc p {
@@ -361,6 +362,7 @@ a:visited {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    text-decoration: none;
 }
 
 .news-instagram-sp-btn p {
@@ -582,6 +584,237 @@ a:visited {
     height: auto;
 }
 
+.shop {
+    margin-bottom: 96px;
+}
+
+.shop-title {
+    width: 424px;
+    display: block;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 64px;
+}
+
+.shop-info {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 48px;
+}
+
+.shop-info-img {
+    width: 40%;
+    height: auto;
+    display: block;
+    max-width: 692px;
+}
+
+.shop-info-img img {
+    width: 100%;
+}
+
+.shop-info-text {
+    width: 60%;
+    padding: 16px 64px;
+    background-color: #ffffff;
+    max-width: 600px;
+    box-sizing: border-box;
+}
+
+.shop-info-cafe {
+    width: 72px;
+    height: auto;
+}
+
+.shop-info-table {
+    width: 100%;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    font-size: 1.3rem;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.shop-info-table tr {
+    padding: 16px 16px;
+    display: flex;
+}
+
+.shop-info-table th {
+    text-align: center;
+    display: block;
+    width: 40%;
+}
+
+.shop-info-table td {
+    display: block;
+    width: 60%;
+}
+
+.shop-instagram-btn {
+    display: flex;
+    width: 320px;
+    height: 80px;
+    border: 1px solid #000;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.shop-instagram-btn p {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shop-instagram-btn p::before {
+    content: "";
+    background-image: url(img/icon_ig.svg);
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    display: flex;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.shop-online-wrap {
+    padding: 0 72px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.shop-online {
+    display: flex;
+    width: 100%;
+    max-width: 1136px;
+    margin: 0 auto;
+    border-top: 3px solid #000;
+    justify-content: space-between;
+}
+
+.shop-online-textbox {
+    padding: 36px 72px;
+}
+
+.shop-online-textbox img {
+    width: 128px;
+    height: auto;
+    margin-bottom: 16px;
+}
+
+.shop-shop {
+    width: 320px;
+    height: 64px;
+    margin-top: 72px;
+    margin-right: 64px;
+}
+
+.shop-shop-btn {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #000;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.shop-shop-btn p {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+}
+
+.shop-shop-btn p::before {
+    content: "";
+    background-image: url(img/icon_cart.svg);
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    display: flex;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.contact {
+    padding: 0 96px;
+}
+
+.contact-title {
+    display: block;
+    width: 180px;
+    margin: 0 auto;
+    margin-bottom: 48px;
+}
+
+.form-container {
+    display: flex;
+    margin-bottom: 36px;
+    justify-content: center;
+}
+
+.form-text {
+    width: 25%;
+    max-width: 256px;
+}
+
+.form-input {
+    width: 75%;
+    max-width: 744px;
+    padding: 16px 6px;
+    height: px;
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url(img/select.svg);
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    background-size: 16px 16px;
+}
+
+.form-privacy {
+    width: 274px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.form-submit {
+    display: block;
+    width: 320px;
+    height: 64px;
+    margin: 0 auto;
+    background-color: #7f7f7f;
+    text-align: center;
+    line-height: 64px;
+    color: #ffffff;
+    font-size: 1.5rem;
+    transition: all 0.4s ease;
+}
+
+.form-submit:hover {
+    background-color: #f5f5f5;
+    border: 1px solid #7f7f7f;
+    color: #000;
+}
+
+.footer-img {
+    display: block;
+    margin: 0 auto;
+    padding: 192px 0;
+    width: 192px;
+    height: auto;
+}
+
 @media screen and (max-width: 767px) {
     html {
         font-size: 45%;
@@ -691,21 +924,127 @@ a:visited {
     }
 
     .recipe-list-title {
-    width: 96px;
-    writing-mode: vertical-rl;
-    border-top: 2px solid #000;
-    margin-left: 16px;
-    margin-right: 32px;
+        width: 96px;
+        writing-mode: vertical-rl;
+        border-top: 2px solid #000;
+        margin-left: 16px;
+        margin-right: 32px;
     }
 
     .recipe-subtitle {
-    width: 100%;
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 32px;
+        width: 100%;
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 32px;
     }
 
-    
+    .shop-title {
+        margin-bottom: 48px;
+        width: 284px;
+    }
+
+    .shop-info {
+        display: block;
+    }
+
+    .shop-info-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .shop-info-text {
+        width: 100%;
+        max-width: none;
+        padding: 16px 32px;
+    }
+
+    .shop-info-cafe {
+        width: 100px;
+        height: auto;
+        padding: 24px 0;
+    }
+
+    .shop-info-table {
+        font-size: 1.7rem;
+    }
+
+    .shop-info-table th {
+        width: 30%;
+    }
+
+    .shop-info-table td {
+        width: 70%;
+    }
+
+    .shop-instagram-btn {
+        width: 280px;
+        height: 40px;
+        margin: 0 auto;
+    }
+
+    .shop-instagram-btn p::before {
+        width: 16px;
+        height: 16px;
+    }
+
+    .shop-online {
+        display: block;
+        border-top: none;
+    }
+
+    .shop-online-wrap {
+        padding: 0 32px;
+    }
+
+    .shop-online-textbox {
+        padding: 0 0;
+    }
+
+    .shop-shop {
+        width: 280px;
+        height: 40px;
+        margin: 0 auto;
+    }
+
+    .shop-shop-btn p {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.6rem;
+    }
+
+    .shop-shop-btn p::before {
+        width: 16px;
+        height: 16px;
+    }
+
+    .contact {
+        padding: 0 32px;
+    }
+
+    .form-container {
+        display: block;
+        margin-bottom: 16px;
+    }
+
+    .form-text {
+        width: 100%;
+        max-width: none;
+    }
+
+    .form-input {
+        width: 100%;
+        max-width: none;
+    }
+
+    .footer-img {
+        display: block;
+        margin: 0 auto;
+        padding: 96px 0;
+        width: 192px;
+        height: auto;
+    }
 }
 
 @media screen and (min-width: 768px), print {

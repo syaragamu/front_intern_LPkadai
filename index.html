@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/favicon.svg">
     <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700&amp;display=swap" rel="stylesheet">
     <title>ティーラボ DeMiA CAFE</title>
 </head>
@@ -174,5 +175,89 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section><!--recipe-->
+    <section class="shop">
+        <img src="img/shop/shop_ttl.svg" alt="ショップタイトル" class="shop-title">
+        <div class="shop-info">
+            <picture class="shop-info-img">
+                <source media="(max-width: 767px)" srcset="img/shop/shop_img01_sp.jpg">
+                <source media="(min-width: 768px)" srcset="img/shop/shop_img01.jpg">
+                <img src="img/shop/shop_img01.jpg" alt="ショップインフォ">
+            </picture>
+            <div class="shop-info-text">
+                <div class="shop-info-textbox">
+                    <img src="img/shop/shop_ttl_cafe.svg" alt="ショップカフェ" class="shop-info-cafe">
+                    <p class="text-2">2019年6月に、出町柳駅の近くにカフェがオープンしました。営業する日には、紅茶と共においしいお茶菓子、食事をご堪能いただけます。<br><br>カフェ営業日以外でも、茶葉やテイクアウト用茶菓子はお買い求めいただけます。<br>紹介していないレシピを用いた料理教室や紅茶の知識を学べるワークショップも定期的に開催しています。</p>
+                </div>
+                <table class="shop-info-table">
+                    <tr>
+                        <th>住所</th>
+                        <td>〒600-0000<br>〇〇〇〇〇〇〇〇〇〇〇〇〇〇</td>
+                    </tr>
+                    <tr>
+                        <th>アクセス</th>
+                        <td>京阪出町柳駅から徒歩12分</td>
+                    </tr>
+                    <tr>
+                        <th>営業時間</th>
+                        <td>営業日・時間ともに不定期</td>
+                    </tr>
+                </table>
+                <div class="shop-info-textbox">
+                    <p class="text-2">※営業日など最新情報はInstagramでご確認ください。</p>
+                </div>
+                <div class="shop-instagram">
+                    <a href="#" class="shop-instagram-btn">
+                        <p>最新情報はこちら</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="shop-online-wrap">
+            <div class="shop-online">
+                <div class="shop-online-textbox">
+                    <img src="img/shop/shop_ttl_online.svg" alt="オンラインショップ">
+                    <p class="text-2">オンラインショップをオープンしています。<br>※売り切れ次第閉店します。</p>
+                </div>
+                <div class="shop-shop">
+                    <a href="#" class="shop-shop-btn">
+                        <p class="text-1">OPEN</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section><!--shop-->
+    <section class="contact">
+        <img src="img/contact/contact_ttl.svg" alt="コンタクトタイトル" class="contact-title">
+        <form action="#" class="form">
+            <div class="form-container">
+                <p class="form-text">名前：</p>
+                <input type="text" name="name" placeholder="例) 出見亜 太郎" class="form-input" required>
+            </div>
+            <div class="form-container">
+                <p class="form-text">メールアドレス：</p>
+                <input type="text" name="email" placeholder="例) example@example.com" class="form-input" required>
+            </div>
+            <div class="form-container">
+                <p class="form-text">件名：</p>
+                <select name="kenmei" class="form-input">
+                    <option value="product">商品について</option>
+                    <option value="others">その他</option>
+                </select>
+            </div>
+            <div class="form-container">
+                <p class="form-text">内容：</p>
+                <textarea name="naiyou" class="form-input" style="height: 156px;" required></textarea>
+            </div>
+            <div class="form-privacy">
+                <input type="checkbox" name="checkbox" required>プライバシーポリシーに同意します
+            </div>
+            <input type="checkbox" id="submit" style="display: none;">
+            <button for="submit" class="form-submit">送信</button>
+        </form>
+    </section><!--form-->
+</body>
+<footer>
+    <img src="img/ft_copyright.svg" alt="copyright" class="footer-img">
+</footer>
 </html>
