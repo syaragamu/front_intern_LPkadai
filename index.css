@@ -1,1 +1,94 @@
 @charset "UTF-8";
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.header-area {
+    position: relative;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.header {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.icon_ul {
+    position: absolute;
+    display: flex;
+    list-style: none;
+    bottom: 10px;  /*ここをtop,leftで指定せずにbottomとrightで指定することで右下に配置する*/
+    right: 10px;
+    width: auto;
+    padding: 0;
+    margin: 0;
+    gap: 10px; /*marginとかで指定すると右端に空白が残るためアイコン間の空白はgapを使う*/
+    z-index: 2;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    height: 32px;
+    width: 32px;
+    overflow: hidden; /*ここから2行はちゃんと理解できていない(おいおい理解する予定)*/
+    flex-shrink: 0;
+}
+
+.icon img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+.brand-name {
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.prep {
+    font-size: 10px;
+}
+
+@media (max-width: 768px) {
+    .header-pc {
+        display: none;
+    }
+
+    .header-sp {
+        display: flex;
+    }
+
+    .brand-name {
+        font-size: 10px;
+        bottom: 15px;
+        left: 20px;
+    }
+
+    .prep {
+        font-size: 6px;
+    }
+}
+
+@media (min-width: 769px) {
+    .header-pc {
+        display: flex;
+    }
+    
+    .header-sp {
+        display: none;
+    }
+}

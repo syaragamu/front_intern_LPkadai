@@ -4,14 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, userscarable=yes, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="img/favicon.svg">
+    <title>DeMiA CAFE</title>
 </head>
 <body>
-    <img src="img/header/hd_img01_a.jpg" alt="ヘッダー画像">
-    <div class="icon">
-        <div class="icon_cart"><img src="img/icon_cart.svg" alt="カート画像"></div>
-        <div class="icon_ig"><img src="img/icon_ig.svg" alt="インスタグラムアイコン"></div>
-        <div class="icon_menu"><img src="img/icon_menu.svg" alt="メニューバー"></div>
-    </div>
+    <header class="header-pc">
+        <div class="header-area">
+            <img src="img/header/hd_img01_a.jpg" alt="ヘッダー画像" class="header">
+            <ul class="icon_ul">
+                <li><span class="icon"><img src="img/icon_ig.svg" alt="インスタグラムアイコン"></span></li><!-- ここでなぜspanで挟まないとバグが起きるかは不明(liタグでクラスを設定するのとspanタグでクラスを設定するのの違いもしっかり理解できているか怪しい) -->
+                <li><span class="icon"><img src="img/icon_cart.svg" alt="カート画像"></span></li>
+                <li><span class="icon"><img src="img/icon_menu.svg" alt="メニューバー"></span></li>
+            </ul>
+            <div class="brand-name">TEA PRODUCTS <span class="prep">by</span> DeMiA CAFE</div>
+        </div>
+    </header>
+    <header class="header-sp">
+        <div class="header-area">
+            <img src="img/header/hd_img01_a_sp.jpg" alt="ヘッダー画像" class="header">
+            <ul class="icon_ul">
+                <li><span class="icon"><img src="img/icon_ig.svg" alt="インスタグラムアイコン"></span></li><!-- ここでなぜspanで挟まないとバグが起きるかは不明(liタグでクラスを設定するのとspanタグでクラスを設定するのの違いもしっかり理解できているか怪しい) -->
+                <li><span class="icon"><img src="img/icon_cart.svg" alt="カート画像"></span></li>
+                <li><span class="icon"><img src="img/icon_menu.svg" alt="メニューバー"></span></li>
+            </ul>
+            <div class="brand-name">TEA PRODUCTS <span class="prep">by</span> DeMiA CAFE</div>
+        </div>
+    </header>
 </body>
 </html>
