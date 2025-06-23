@@ -187,7 +187,7 @@ body * {
   overflow:hidden; clip:rect(0 0 0 0);
   white-space:nowrap; border:0;
 }
-
+.box-c{max-width:1280px;margin-inline:auto;padding-inline:24px;}
 /* 1) header 全体 -------------------------------- */
 #hd{
   position:relative;
@@ -265,7 +265,6 @@ body * {
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
 }
-
 .scroll-snap-child {
   scroll-snap-align: start;
 }
@@ -388,18 +387,18 @@ img {
 
 @media screen and (max-width: 767px) {
   .news-title-container {
-    padding-left: 16px;    /* ← 追加：左寄せのための余白 */
+    padding-left: 16px;    /*  追加：左寄せのための余白 */
     padding-right: 0;
-    text-align: left;      /* ← 追加：中央寄せ解除 */
+    text-align: left;      /*  追加：中央寄せ解除 */
   }
 
   .news-ttl {
-    text-align: left;      /* ← 追加：中央寄せ解除 */
+    text-align: left;      /* 追加：中央寄せ解除 */
   }
 
   .news-ttl img {
-    display: block;        /* ← inline から block に */
-    margin: 0;             /* ← 自動中央寄せを防止 */
+    display: block;        /* inline から block に */
+    margin: 0;             /* 自動中央寄せを防止 */
     padding: 0;
   }
 }
@@ -422,12 +421,9 @@ img {
 }
 /* ========= about section ========= */
 /* ===== ベース ===== */
-#about {
-  padding-top: 144px;
-}
-.about-in {
-  padding: 0 56px;
-}
+#about { padding-top: 144px;}
+
+.about-in { padding: 0 56px;}
 
 /* キャッチコピー & リード */
 .about-ttl,
@@ -488,30 +484,18 @@ img {
     align-items: baseline;
   }
 }
-/* ===== product ===== */
-#products {
-  padding-top: 144px;
-}
+/* ========== product =========== */
+#products {padding-top: 144px;}
 
-.products-sct {
-  position: relative;
-}
-
-.products-sct-ttl {
-  position: absolute;
-  top: 64px;
-  z-index: 1;
-}
-
+.products-sct {position: relative;}
+.products-sct-ttl {  position: absolute;top: 64px;z-index: 1;}
 .products-slide {
   cursor: pointer;
   position: relative;
 }
-
 .products-slide-in {
   background-color: #fff;
 }
-
 .products-slide-ttl {
   /* 文字間の調整 */
   letter-spacing: -0.05em;
@@ -520,55 +504,29 @@ img {
   font-size: 3.2rem;
   font-weight: 700;
 }
-
 .products-slide-text {
   margin-top: 32px;
   line-height: 1.8;
 }
-
 .products-slide-text p + p {
   margin-top: 24px;
 }
 
 @media screen and (max-width: 767px) {
 
-  .products-sct {
-    margin-top: 48px;
-  }
+  .products-sct {margin-top: 48px; }
 
   /* ロゴ部分の左右対称 */
-  .products-sct:nth-child(odd) .products-sct-ttl {
-    left: 16px;
-  }
+  .products-sct:nth-child(odd) .products-sct-ttl {left: 16px;}
+  .products-sct:nth-child(even) .products-sct-ttl { right: 16px;}
+  /* 左右対称 end */
 
-  .products-sct:nth-child(even) .products-sct-ttl {
-    right: 16px;
-  }
-  /* 左右対称 ここまで */
-
-  .products-sct-ttl {
-    top: 16px;
-  }
-
-  .products-sct-ttl img {
-    height: 40px;
-    /* width: auto; */
-  }
-  .products-slide {
-    padding: 0 40px;
-  }
-  .products-slide-ttl {
-    margin-top: 24px;
-    font-size: 2.2rem;
-  }
-  .products-slide-text {
-    margin-top: 8px;
-    font-size: 1.3rem;
-  }
-
-  .products-slide-text p + p {
-    margin-top: 16px;
-  }
+  .products-sct-ttl {top: 16px; }
+  .products-sct-ttl img {height: 40px; }
+  .products-slide { padding: 0 40px; }
+  .products-slide-ttl { margin-top: 24px;font-size: 2.2rem;}
+  .products-slide-text {margin-top: 8px;font-size: 1.3rem;}
+  .products-slide-text p + p { margin-top: 16px;}
 }
 
 @media screen and (min-width: 768px), print {
@@ -579,50 +537,21 @@ img {
     padding-left: 72px;
     padding-right: 72px;
   }
-  /* pc版、左右でそれぞれデザインを変える */
-  .products-sct {
-    margin-top: 96px;
-  }
-
-  .products-sct:nth-child(odd) .products-sct-ttl {
-    left: -32px;
-  }
-
-  .products-sct:nth-child(odd) .products-slide-in {
-    right: 5%;
-  }
-
-  .products-sct:nth-child(even) .products-sct-ttl {
-    right: -32px;
-  }
-
-  .products-sct:nth-child(even) .products-slide-img {
-    margin-left: auto;
-  }
-
-  .products-sct:nth-child(even) .products-slide-in {
-    left: 5%;
-  }
-  .products-slide-img {
-    height: 600px;
-    width: 64%;
-  }
-
-  .products-img {
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .products-slide-in {
-    padding: 72px 56px 96px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 40%;
-  }
+  /* pc版、左右それぞれ*/
+  .products-sct {margin-top: 96px;}
+  .products-sct:nth-child(odd) .products-sct-ttl {left: -32px;}
+  .products-sct:nth-child(odd) .products-slide-in {right: 5%;}
+  .products-sct:nth-child(even) .products-sct-ttl {right: -32px;}
+  .products-sct:nth-child(even) .products-slide-img {margin-left: auto;}
+  .products-sct:nth-child(even) .products-slide-in {left: 5%;}
+  .products-slide-img {height: 600px;width: 64%;}
+  .products-img {height: 100%;object-fit: cover; }
+  .products-slide-in { padding: 72px 56px 96px;position: absolute;top: 50%; transform: translateY(-50%);width: 40%;}
 
 }
  /* products 終わり */
+
+ /* ========== feature ========== */
 
  #feature{padding-block:144px;}
 
@@ -659,7 +588,7 @@ img {
 .recipe-ttl{text-align:center;font-size:3.6rem;font-weight:700;line-height:1.4;}
 .recipe-lead{text-align:center;font-size:1.8rem;margin-top:2rem;line-height:1.6;}
 
-/* ========== CATEGORY BLOCK (PC 基本) ========== */
+/*  CATEGORY BLOCK (PC 基本)  */
 .recipe-cat{display:flex;align-items:flex-start;gap:0;margin-top:96px;}
 
 /* 縦書きサイド */
@@ -687,9 +616,101 @@ img {
 .recipe-card-ttl{font-size:2rem;font-weight:700;margin:1.2rem 1.6rem 0;}
 .recipe-card-txt{font-size:1.4rem;line-height:1.6;margin:0.8rem 1.6rem 1.6rem;flex:1;}
 
-/* ========== SP only: aside + card = 100vw ========== */
+/*  SP only: aside + card = 100vw  */
 @media(max-width:767.98px){
   #recipe{padding-block:96px;}
   .recipe-cat{margin-top:64px;}
   .recipe-card{flex:0 0 calc(100vw - var(--asideW));}
+}
+
+/* =========== shop =========== */
+
+/* ---------- SHOP ---------- */
+#shop{padding-block:144px;}
+.shop-ttl{text-align:center;font-size:3.2rem;font-weight:700;margin-bottom:4rem;}
+.shop-inner{display:flex;gap:4%;align-items:flex-start;}
+.shop-img{flex:1;}
+.shop-img img{width:100%;height:auto;display:block;border-radius:.4rem;}
+.shop-about{flex:1;display:flex;flex-direction:column;gap:2rem;}
+.shop-subttl{font-size:2rem;font-weight:700;}
+.shop-table{width:100%;border-top:1px solid #000;border-bottom:1px solid #000;border-collapse:collapse;font-size:1.4rem;}
+.shop-table th,.shop-table td{padding:.8rem .4rem;vertical-align:top;}
+.shop-table th{width:6rem;}
+.shop-note{font-size:1.2rem;}
+.shop-btn{text-align:left;}
+.contact-sns{padding-block:4rem;text-align:center;}
+.online-shop{padding-block:4rem 6rem;text-align:center;border-top:3px solid #000;} /* PC にも線表示 */
+.online-shop h2{font-size:2.4rem;font-weight:700;margin-bottom:2rem;}
+.online-flex{display:flex;align-items:center;justify-content:space-between;gap:4rem;max-width:960px;margin-inline:auto;}
+.shop-text{font-size:1.4rem;line-height:1.7;text-align:left;flex:1;}
+.shop-text small{font-size:1.2rem;}
+/* ===== Responsive ===== */
+@media(max-width:767.98px){
+  #shop{padding-block:96px;}
+  .shop-flex{flex-direction:column;gap:2.4rem;}
+  .shop-figure{width:100%;}
+  .shop-online-flex{flex-direction:column;align-items:flex-start;gap:1.6rem;}
+  .btn01{width:100%;justify-content:center;}
+}
+
+/* ---------- Common ---------- */
+.btn-wide{display:flex;align-items:center;justify-content:center;gap:.8rem;border:1px solid #000;padding:1.2rem 2rem;font-weight:700;text-decoration:none;color:#0066cc;width:100%;max-width:360px;transition:background .3s;}
+.btn-wide:hover{background:#f2f7ff;}
+.icon-ig::before{content:"";display:inline-block;background:url(img/icon_ig.svg) center/contain no-repeat;width:1.6rem;height:1.6rem;}
+.icon-cart::before{content:"";display:inline-block;background:url(img/icon_cart.svg) center/contain no-repeat;width:1.6rem;height:1.6rem;}
+
+
+/* ---------- CONTACT ---------- */
+#contact{padding-block:144px;background:#fafafa;}
+.contact-ttl{text-align:center;font-size:3.2rem;font-weight:700;margin-bottom:3.2rem;}
+.contact-form{max-width:640px;margin-inline:auto;display:flex;flex-direction:column;gap:2rem;}
+.form-row{display:flex;flex-direction:column;gap:.8rem;}
+.form-row label{font-weight:700;font-size:1.4rem;}
+.form-row span{color:#e00;font-size:1.2rem;}
+input,select,textarea{width:100%;padding:1.2rem;border:1px solid #7f7f7f;border-radius:.4rem;font-family:inherit;font-size:1.4rem;}
+select{appearance:none;background:#fff url(img/select.svg) right .8rem center/1.6rem 1.6rem no-repeat;}
+input:focus,select:focus,textarea:focus{outline:none;border-color:#000;}
+.form-consent{
+  margin-inline:auto;
+  display:inline-flex;            
+  justify-content:center;
+  align-items:center;
+  flex-wrap:wrap;                
+  gap:.8rem;
+}
+.form-consent input{flex:0 0 auto;}
+.form-consent label{flex:0 1 auto;white-space:normal;text-align:left;line-height:1.4;}
+.form-consent label{white-space:nowrap;}
+.form-consent label{white-space:nowrap;}
+.btn-submit{align-self:center;background:#666;color:#fff;padding:.8rem 4rem;border:none;border-radius:4px;font-size:1.6rem;font-weight:700;cursor:pointer;transition:background .3s;}
+.btn-submit:hover{background:#000;}
+
+/* ---------- Responsive ---------- */
+@media(max-width:767.98px){
+  #shop,#contact{padding-block:96px;}
+  .shop-ttl{font-size:clamp(1.2rem,5vw,2.4rem);} 
+  .shop-inner{flex-direction:column;gap:2rem;}
+  .shop-img img{border-radius:0;}
+  .shop-table th{width:5.5rem;}
+  .contact-sns{padding-block:3rem;}
+  .onlineshop-ttl{font-size:clamp(1.0rem,5vw,2.2rem);}
+  .btn-wide{max-width:none;width:100%;padding:.8rem 2rem;} 
+  .online-shop{border-top:none;padding-block:3rem;}
+  .online-flex{flex-direction:column;align-items:flex-start;text-align:left;gap:2rem;}
+  .shop-text{text-align:left;width:100%;}
+  .contact-ttl{font-size:2.4rem;}
+  .contact-form{padding-inline:0;}
+}
+/* ---------- FOOTER ---------- */
+#ft{padding-block:80px;text-align:center;background:#f5f5f5;line-height:1.4;}
+.footer-wrap{display:flex;flex-direction:column;gap:2.4rem;align-items:center;}
+.footer-nav ul{display:flex;gap:2.4rem;flex-wrap:wrap;justify-content:center;padding:0;margin:0;list-style:none;}
+.footer-nav a{text-decoration:none;color:#000;font-size:1.4rem;font-weight:700;transition:opacity .3s;}
+.footer-nav a:hover{opacity:.6;}
+.footer-copy{font-size:1.2rem;color:#555;}
+
+/* ---------- Responsive ---------- */
+@media(max-width:767.98px){
+  #ft{padding-block:64px;}
+  .footer-nav ul{gap:1.6rem;}
 }
