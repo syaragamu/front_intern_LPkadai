@@ -654,7 +654,7 @@ img {
 }
 
 /* ---------- Common ---------- */
-.btn-wide{color:#000;display:flex;align-items:center;justify-content:center;gap:.8rem;border:1px solid #000;padding:1.2rem 2rem;font-weight:700;text-decoration:none;color:#0066cc;width:100%;max-width:360px;transition:background .3s;}
+.btn-wide{color:#000;display:flex;align-items:center;justify-content:center;gap:.8rem;border:1px solid #000;padding:1.2rem 2rem;font-weight:700;text-decoration:none;width:100%;max-width:360px;transition:background .3s;}
 .btn-wide:hover{background:#f2f7ff;}
 .icon-ig::before{content:"";display:inline-block;background:url(img/icon_ig.svg) center/contain no-repeat;width:1.6rem;height:1.6rem;}
 .icon-cart::before{content:"";display:inline-block;background:url(img/icon_cart.svg) center/contain no-repeat;width:1.6rem;height:1.6rem;}
