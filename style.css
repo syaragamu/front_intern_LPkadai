@@ -407,13 +407,20 @@ hr {
 
 
 .about {
-    margin: 0 auto;
+    margin: 0 auto 200px;
     padding: 0 40px;
 }
 
 @media print, screen and (min-width: 768px) {
     .about {
-    width: 900px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media print, screen and (min-width: 768px) {
+    .about_wrap {
+    width: 55%;
     }
 }
 
@@ -426,7 +433,7 @@ hr {
 
 @media print, screen and (min-width: 768px) {
     .main_text {
-    font-size: 16px;
+    font-size: 22px;
     line-height: 2;
     font-weight: bold;
     margin-bottom: 60px;
@@ -445,7 +452,7 @@ hr {
 }
 
 .Tea, .Tempting {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.8;
     font-weight: bold;
     margin: 20px 0;
@@ -454,26 +461,31 @@ hr {
 @media print, screen and (min-width: 768px) {
     .Tea, .Tempting {
     margin: 0 0;
-    width: 180px;
+    width: 20%;
+    font-size: 18px;
 }
 }
 
 .Tea_text, .Tempting_text {
-    font-size: 11.5px;
+    font-size: 13px;
     line-height: 1.5;
     font-weight: 500;
 }
 
 @media print, screen and (min-width: 768px) {
     .Tea_text, .Tempting_text {
-    font-size: 14px;
+    font-size: 18px;
     line-height: 2;
-    width: 720px;
+    width: 80%;
 }
 }
 
 
 /* ここからPRODUCT */
+
+.PRODUCT {
+    margin-bottom: 200px;
+}
 
 .product01 {
     margin: 0 auto;
@@ -482,18 +494,45 @@ hr {
 
 @media print, screen and (min-width: 768px) {
     .product01 {
-    position: relative;
+    display: flex;
+    justify-content: center;
+    max-width: 1500px;
 }
 }
 
-.product_img_wrap {
+.product_img_wrap_01 {
     position: relative;
 }
 
+
+
+@media print, screen and (min-width: 768px) {
+    .product_img_wrap_01 {
+    width: 55%;
+    left: 5%;
+}
+}
 
 .product_img_01 {
     width: 100%;
     margin: 0 auto;
+}
+
+@media print, screen and (min-width: 768px) {
+    .product_img_01 {
+    display: none;
+}
+}
+
+@media print, screen and (min-width: 768px) {
+    .product_img_01_pc {
+    width: 100%;
+    height: 550px;
+    margin: 0 auto;
+    background-image: url(/img/products/products_tea.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+}
 }
 
 .product_ttl_img_01 {
@@ -504,19 +543,50 @@ hr {
 }
 
 @media print, screen and (min-width: 768px) {
-    .product_feature_01 {
-    position: absolute;
+    .product_ttl_img_01 {
+        left: -2%;
+        top: 10%;
+    }
+}
+
+@media print, screen and (min-width: 768px) {
+    .container {
+    position: relative;
     background-color: white;
-    left: 50px;
-    top: 50px;
+    width: 40%;
+    z-index: 2;
+    max-width: 400px;
 }
 }
+
+@media print, screen and (min-width: 768px) {
+    .product_feature_01 {
+    position: relative;
+    background-color: white;
+    width: 100%;
+    z-index: 2;
+    top: 50%;
+    left: -10%;
+    transform: translate(0, -50%);
+    padding: 15% 15%;
+}
+}
+
 
 .product_name {
     font-size: 18px;
     line-height: 1.8;
     font-weight: bold;
     margin: 20px 0;
+}
+
+@media print, screen and (min-width: 768px) {
+    .product_name {
+        font-size: 30px;
+        line-height: 1.8;
+        font-weight: bold;
+        margin: 20px 0;
+    }
 }
 
 .product_text {
@@ -526,9 +596,19 @@ hr {
     margin-bottom: 20px;
 }
 
+@media print, screen and (min-width: 768px) {
+    .product_text {
+        font-size: 16px;
+        line-height: 2;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+}
+
 .product_opt_wrap {
     margin: 30px 0;
 }
+
 
 .product_opt {
     font-size: 12px;
@@ -537,9 +617,36 @@ hr {
     margin: 5px 0;
 }
 
+@media print, screen and (min-width: 768px) {
+    .product_opt {
+        font-size: 14px;
+        line-height: 1.5;
+        font-weight: 500;
+        margin: 5px 0;
+    }
+}
+
 .product02 {
-    margin: 0 auto;
+    margin: 120px 0 auto;
     padding: 0 40px;
+}
+
+@media print, screen and (min-width: 768px) {
+    .product02 {
+        display: flex;
+        justify-content: center;
+        flex-direction: row-reverse;
+    }
+}
+
+.product_img_wrap_02 {
+    position: relative;
+}
+
+@media print, screen and (min-width: 768px) {
+    .product_img_wrap_02 {
+    width: 40%;
+}
 }
 
 .product_img_02 {
@@ -547,9 +654,348 @@ hr {
     margin: 0 auto;
 }
 
+@media print, screen and (min-width: 768px) {
+    .product_img_02 {
+        display: none;
+}
+}
+
+@media print, screen and (min-width: 768px) {
+    .product_img_02_pc {
+    width: 100%;
+    height: 550px;
+    margin: 0 auto;
+    background-image: url(/img/products/products_scone.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+}
+
 .product_ttl_img_02 {
     width: 110px;
     position: absolute;
     right: 20px;
     top: 10px;
+}
+
+@media print, screen and (min-width: 768px) {
+    .product_ttl_img_02 {
+        right: -3%;
+        top: 10%;
+        width: 150px;
+    }
+}
+
+@media print, screen and (min-width: 768px) {
+    .product_feature_02 {
+    position: relative;
+    background-color: white;
+    width: 100%;
+    z-index: 2;
+    top: 50%;
+    left: 20%;
+    transform: translate(0, -50%);
+    padding: 15% 10%;
+}
+}
+
+
+/* ここからfeature */
+
+.feature {
+    margin-bottom: 200px;
+}
+
+.feature_title {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+@media print, screen and (min-width: 768px) {
+    .feature_title {
+        font-size: 36px;
+    }
+}
+
+
+.feature01 {
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+@media print, screen and (min-width: 768px) {
+    .feature01 {
+    display: flex;
+    justify-content: center;
+    max-width: 1100px;
+}
+}
+
+.feature_img_01 {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+@media print, screen and (min-width: 768px) {
+    .feature_img_01 {
+    width: 65%;
+    margin: 0 auto;
+}
+}
+
+
+@media print, screen and (min-width: 768px) {
+    .feature_feature_01 {
+    position: relative;
+    background-color: white;
+    width: 35%;
+    padding: 4%;
+}
+}
+
+
+.feature_name {
+    font-size: 18px;
+    line-height: 1.8;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+@media print, screen and (min-width: 768px) {
+    .feature_name {
+        font-size: 24px;
+        line-height: 1.8;
+        font-weight: bold;
+        margin: 20px 0;
+    }
+}
+
+.feature_text {
+    font-size: 13px;
+    line-height: 1.5;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+@media print, screen and (min-width: 768px) {
+    .feature_text {
+        font-size: 16px;
+        line-height: 2;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+}
+
+
+.feature02 {
+    margin: 50px auto 0;
+    padding: 0 20px;
+}
+
+@media print, screen and (min-width: 768px) {
+    .feature02 {
+        display: flex;
+        justify-content: center;
+        flex-direction: row-reverse;
+        max-width: 1100px;
+    }
+}
+
+
+.feature_img_02 {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+@media print, screen and (min-width: 768px) {
+    .feature_img_02 {
+    width: 65%;
+    margin: 0 auto;
+}
+}
+
+
+@media print, screen and (min-width: 768px) {
+    .feature_feature_02 {
+    position: relative;
+    background-color: white;
+    width: 35%;
+    padding: 4%;
+}
+}
+
+/* ここからrecipe */
+
+.recipe {
+    margin-bottom: 150px;
+}
+
+@media print, screen and (min-width: 768px) {
+    .recipe {
+        margin: 0 0 100px;
+        position: relative;
+}
+}
+
+.recipe_ttl_h2 {
+    text-align: center;
+}
+
+.recipe_ttl {
+    width: 130px;
+    margin: 20px;
+}
+
+@media print, screen and (min-width: 768px) {
+    .recipe_ttl {
+    width: 150px;
+}
+}
+
+.recipe_subttl {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+
+@media print, screen and (min-width: 768px) {
+    .recipe_subttl {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 50px 0;
+}
+}
+
+@media print, screen and (min-width: 768px) {
+    .recipe_br {
+    display: none;
+}
+}
+
+.recipe_menu_wrap {
+    display: flex;
+}
+
+.recipe_header_wrap {
+    width: 30%;
+    padding: 5%;
+}
+
+@media print, screen and (min-width: 768px) {
+    .recipe_header_wrap {
+    width: 130px;
+    padding: 1%;
+    margin: 0 40px;
+}
+}
+
+.recipe_header {
+    border-top: solid 2px black;
+    display: flex;
+}
+
+@media print, screen and (min-width: 768px) {
+    .recipe_header {
+    border-top: solid 8px black;
+    padding-top: 20px;
+}
+}
+
+.recipe_header_ttl {
+    width: 50%;
+    writing-mode: vertical-rl;
+    padding: 10% 10%;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+@media print, screen and (min-width: 768px) {
+    .recipe_header_ttl {
+    font-size: 34px;
+}
+}
+
+.recipe_header_text {
+    width: 50%;
+    writing-mode: vertical-rl;
+    padding: 10% 15%;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+@media print, screen and (min-width: 768px) {
+    .recipe_header_text {
+    font-size: 18px;
+}
+}
+
+.recipe_content_wrap {
+    display: flex;
+    overflow: scroll;
+    width: 70%;
+    gap: 30px;
+    padding: 20px;
+}
+
+@media print, screen and (min-width: 768px) {
+    .recipe_content_wrap {
+    width: 100%;
+    gap: 50px;
+    justify-content: left;
+    margin: 10px 0;
+    padding: 20px;
+}
+}
+
+.recipe_content {
+    width: 60vw;
+}
+
+@media print, screen and (min-width: 768px) {
+    .recipe_content {
+        width: 350px;
+    }
+}
+
+.recipe_img {
+    width: 60vw;
+}
+
+@media print, screen and (min-width: 768px) {
+    .recipe_img {
+    width: 100%;
+}
+}
+
+.recipe_content_title {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+@media print, screen and (min-width: 768px) {
+    .recipe_content_title {
+    margin: 20px 0;
+    font-size: 24px;
+}
+}
+
+.recipe_text {
+    margin: 10px 0;
+    font-size: 13px;
+    line-height: 1.5;
+    width: 60vw;
+    font-weight: 500;
+}
+
+@media print, screen and (min-width: 768px) {
+    .recipe_text {
+        line-height: 2;
+        width: 350px;
+        font-size: 14px;
+}
 }
