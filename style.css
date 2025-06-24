@@ -340,7 +340,7 @@ font-family: "Ubuntu", sans-serif;
         margin-bottom: 80px;
     }
 
-    .tea,.tempting {
+    .teaing,.tempting {
         margin-right: 10%;
         margin-left: 10%;
         margin-bottom: 80px;
@@ -351,12 +351,12 @@ font-family: "Ubuntu", sans-serif;
         line-height: 30px;
     }
 
-    .tea > h3, .tempting > h3 {
+    .teaing > h3, .tempting > h3 {
         flex: 0 0 15%;
         margin-right: 10%;
     }
 
-    .tea > h4, .tempting > h4 {
+    .teaing > h4, .tempting > h4 {
         flex: 0 0 70%;
     }
 }
@@ -377,7 +377,7 @@ font-family: "Ubuntu", sans-serif;
         margin-bottom: 80px;
     }
 
-    .tea,.tempting {
+    .teaing,.tempting {
         width: 80%;
         margin-left: 10%;
         margin-bottom: 100px;
@@ -387,27 +387,18 @@ font-family: "Ubuntu", sans-serif;
         line-height: 25px;
     }
 
-    .tea > h3, .tempting > h3 {
+    .teaing > h3, .tempting > h3 {
         margin-right: 10%;
         margin-bottom: 20px;
     }
 
-    .tea > h4, .tempting > h4 {
+    .teaing > h4, .tempting > h4 {
         font-weight: 500;
     }
 }
 
 @media screen and (min-width:768px)  {
-.product-wrapper {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
-.ceylontea {
-    width: 100%;
-}
 
 .main {
     position: relative;
@@ -422,7 +413,18 @@ font-family: "Ubuntu", sans-serif;
     margin-left: 10%;
     margin-top: 100px;
     position: relative;
-    width: 1500px
+    width: 85%
+}
+
+.tea {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 100px;
+    position: relative;
+    width: 85%
 }
 
 .sconeimg {
@@ -461,8 +463,8 @@ font-family: "Ubuntu", sans-serif;
         font-size: medium;
         flex: 0 0 35%;
         height: 60%;
-        padding-top: 10%;
-        padding-bottom: 10%;
+        padding-top: 5%;
+        padding-bottom: 5%;
         padding-right: 5%;
         font-family: "Zen Maru Gothic", sans-serif;
     }
@@ -475,8 +477,8 @@ font-family: "Ubuntu", sans-serif;
         font-size: medium;
         flex: 0 0 35%;
         height: 60%;
-        padding-top: 10%;
-        padding-bottom: 10%;
+        padding-top: 5%;
+        padding-bottom: 5%;
         padding-left: 5%;
         font-family: "Zen Maru Gothic", sans-serif;
     }
@@ -489,10 +491,133 @@ font-family: "Ubuntu", sans-serif;
     font-size: xx-large;
     font-weight: 1000;
     }
+}
 
+@media screen and (min-width:768px) and (max-width:1536px)  {
+.product-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 }    
-    
+@media screen and (min-width:1536px)  {
+.product-wrapper {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20%;
+}
+}  
+
+/*サイズ指定がどうしてもうまくいかないのでメディアクエリで無理やり対応させました*/
+@media screen and (max-width:768px)  {
+
+
+.main {
+    position: relative;
+    width: 100%;
+}
+
+.tea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 100px;
+    position: relative;
+    width: 85%
+}
+
+.scone {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 100px;
+    position: relative;
+    width: 85%
+}
+.sconeimg {
+    flex: 0 0 45%;
+    right: 0;
+}
+.sconeproduct {
+    width: 100%;
+    height: 80%;
+    object-fit: fill;
+    right: 0;
+
+}
+
+.sconetitle {
+    width: 40%;
+    right: 0;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+
+.teatitle {
+    width: 40%;
+    left: 2%;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+
+ .sconedetail {
+        line-height: 200%;
+        z-index: 2;
+        background-color: #fff;
+        font-size: small;
+        flex: 0 0 35%;
+        height: 60%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        padding-right: 5%;
+        font-family: "Zen Maru Gothic", sans-serif;
+    }
+
+ .teadetail {
+        line-height: 200%;
+        z-index: 2;
+        background-color: #fff;
+        font-size: small;
+        flex: 0 0 35%;
+        height: 60%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        padding-left: 5%;
+        font-family: "Zen Maru Gothic", sans-serif;
+    }
+
+  .sconedetail > span {
+    font-size: large;
+    font-weight: medium;
+    }
+
+  .teadetail > span {
+    font-size: large;
+    font-weight: medium;
+    }
+
+  .product-wrapper {
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+}    
+
 /* リセットcss */
 abbr,
 address,
