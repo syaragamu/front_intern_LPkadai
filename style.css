@@ -98,6 +98,9 @@ font-family: "Ubuntu", sans-serif;
 .bottun {
     display: block;
 }
+
+/* ↓mews */
+
 @media screen and (min-width:768px) {
     .news-wrapper {
         width: 100%;
@@ -319,6 +322,8 @@ font-family: "Ubuntu", sans-serif;
     } 
 }
 
+/* ↓about */
+
 @media screen and (min-width:768px)  {
     .about-wrapper {
         margin-top: 60px;
@@ -361,6 +366,7 @@ font-family: "Ubuntu", sans-serif;
     }
 }
 
+/*　↓Product */
 @media screen and (max-width:768px)  {
     .about-wrapper {
         margin-top: 60px;
@@ -397,122 +403,7 @@ font-family: "Ubuntu", sans-serif;
     }
 }
 
-@media screen and (min-width:768px)  {
-
-
-.main {
-    position: relative;
-    width: 100%;
-}
-
-.scone {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 10%;
-    margin-left: 10%;
-    margin-top: 100px;
-    position: relative;
-    width: 85%
-}
-
-.tea {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 10%;
-    margin-left: 10%;
-    margin-top: 100px;
-    position: relative;
-    width: 85%
-}
-
-.sconeimg {
-    flex: 0 0 45%;
-    right: 0;
-}
-.sconeproduct {
-    width: 100%;
-    height: 80%;
-    object-fit: cover;
-    right: 0;
-
-}
-
-.sconetitle {
-    width: 15%;
-    left: 80%;
-    position: absolute;
-    top: 20%;
-    z-index: 2;
-}
-
-.teatitle {
-    width: 21%;
-    right: 75%;
-    position: absolute;
-    top: 20%;
-    z-index: 2;
-}
-
- .sconedetail {
-        line-height: 200%;
-        margin-right: -10%;
-        z-index: 2;
-        background-color: #fff;
-        font-size: medium;
-        flex: 0 0 35%;
-        height: 60%;
-        padding-top: 5%;
-        padding-bottom: 5%;
-        padding-right: 5%;
-        font-family: "Zen Maru Gothic", sans-serif;
-    }
-
- .teadetail {
-        line-height: 200%;
-        margin-left: -10%;
-        z-index: 2;
-        background-color: #fff;
-        font-size: medium;
-        flex: 0 0 35%;
-        height: 60%;
-        padding-top: 5%;
-        padding-bottom: 5%;
-        padding-left: 5%;
-        font-family: "Zen Maru Gothic", sans-serif;
-    }
-
-  .sconedetail > span {
-    font-size: xx-large;
-    font-weight: 1000;
-    }
-  .teadetail > span {
-    font-size: xx-large;
-    font-weight: 1000;
-    }
-}
-
-@media screen and (min-width:768px) and (max-width:1536px)  {
-.product-wrapper {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-}    
-@media screen and (min-width:1536px)  {
-.product-wrapper {
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 20%;
-}
-}  
-
-/*サイズ指定がどうしてもうまくいかないのでメディアクエリで無理やり対応させました*/
+/*↓product*/
 @media screen and (max-width:768px)  {
 
 
@@ -615,9 +506,244 @@ font-family: "Ubuntu", sans-serif;
     flex-direction: column;
     align-items: center;
 }
+}
+@media screen and (min-width:768px)  {
 
-}    
+.main {
+    position: relative;
+    width: 100%;
+}
 
+.product-wrapper {
+    width: 100%;
+    max-width: 1600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.scone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 100px;
+    position: relative;
+    width: 85%
+}
+
+.tea {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 100px;
+    position: relative;
+    width: 85%
+}
+
+.sconeimg {
+    flex: 0 0 45%;
+    right: 0;
+}
+.sconeproduct {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    right: 0;
+}
+
+.sconetitle {
+    width: 15%;
+    left: 80%;
+    position: absolute;
+    top: 20%;
+    z-index: 2;
+}
+
+.teatitle {
+    width: 21%;
+    right: 75%;
+    position: absolute;
+    top: 20%;
+    z-index: 2;
+}
+
+ .sconedetail {
+        line-height: 200%;
+        margin-right: -10%;
+        z-index: 2;
+        background-color: #fff;
+        font-size: medium;
+        flex: 0 0 35%;
+        height: 60%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        padding-right: 5%;
+        font-family: "Zen Maru Gothic", sans-serif;
+    }
+
+ .teadetail {
+        line-height: 200%;
+        margin-left: -10%;
+        z-index: 2;
+        background-color: #fff;
+        font-size: medium;
+        flex: 0 0 35%;
+        height: 60%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        padding-left: 5%;
+        font-family: "Zen Maru Gothic", sans-serif;
+    }
+
+  .sconedetail > span {
+    font-size: xx-large;
+    font-weight: 1000;
+    }
+  .teadetail > span {
+    font-size: xx-large;
+    font-weight: 1000;
+    }
+}
+
+/* ↓feature */
+
+ @media screen and (max-width:768px)  {
+
+    .feature-wrapper {
+        width: 100%;
+    }
+
+    .feature-wrapper > h2 {
+        font-family: "Zen Maru Gothic", sans-serif ;
+        font-size: medium;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .feature-tea > h2, .feature-snack > h2 {
+        width: 100%;
+        margin-top: 50px;  
+        margin-bottom: 25px;      
+        font-size: medium;
+        line-height: 20px;
+        text-align: center;
+        font-family:"Zen Maru Gothic", sans-serif ;
+    }
+
+    .feature-tea, .feature-snack {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    
+    .feature-snack {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 70px;
+    }
+
+
+    .feature-tea > h3 , .feature-snack > h3{
+        font-size: x-small;
+        font-weight: 500;
+        line-height: 15px;
+        width: 80%;
+        font-family:"Zen Maru Gothic", sans-serif ;
+        margin-top: 20px;
+    }
+
+    .feature-tea > h3 > span , .feature-snack > h3 > span {
+        list-style: 18px;
+        font-size: medium;
+        font-weight:  bold;
+        line-height: 20px;
+    }
+
+    .feature-tea > img , .feature-snack > img {
+        width: 80%;
+        object-fit: cover;
+        height: 100%;
+    }
+ }
+
+  @media screen and (min-width:768px)  {
+    .feature-wrapper {
+        width: 100%;
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+
+    .feature-wrapper > h2 {
+        font-family: "Zen Maru Gothic", sans-serif ;
+        font-size: xx-large;
+        margin-top: 70px;
+        margin-bottom: 35px;
+        text-align: center;
+    }
+
+    .feature-tea > h2, .feature-snack > h2 {
+        width: 100%;
+        margin-top: 100px;  
+        margin-bottom: 70px;      
+        font-size: xx-large;
+        text-align: center;
+        font-family:"Zen Maru Gothic", sans-serif ;
+    }
+
+    .feature-tea, .feature-snack {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 70px;
+    }
+    
+    .feature-snack {
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 70px;
+    }
+
+
+    .feature-tea > h3 , .feature-snack > h3{
+        font-size: small;
+        line-height: 25px;
+        width: 15%;
+        font-family:"Zen Maru Gothic", sans-serif ;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .feature-tea > h3 > span , .feature-snack > h3 > span {
+        list-style: 28px;
+        font-size: x-large;
+        font-weight:  bold;
+        line-height: larger;
+    }
+
+    .feature-tea > img , .feature-snack > img {
+        width: 40%;
+        object-fit: cover;
+        height: 100%;
+    }
+  }
 /* リセットcss */
 abbr,
 address,
