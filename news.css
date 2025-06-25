@@ -1,0 +1,95 @@
+@charset "UTF-8";
+body {
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  
+  line-height: normal;
+}
+
+
+h1 {
+    font-size: 5vw;
+    margin: 3vw;
+}
+
+.articles {
+    display: flex;
+    align-items: stretch;
+    margin-left: 2vw;
+    gap: 5vw
+}
+
+.item {
+    width: 30vw;
+    border-bottom: 1px solid #000 ;
+}
+
+.img-item {
+    max-width: 100%;
+    display: block;
+    margin-bottom: 1vw;
+}
+
+.content-item {
+    max-width: 100%;
+    font-size: 2vw;
+    margin: 1vw   
+}
+
+h2 {
+    margin: 2vw;
+    font-weight: 900;
+}
+
+.link {
+    margin-top: auto;
+    text-align: left;
+    font-weight: bold;
+    color: black;
+}
+
+.icon {
+    size: 3vw;
+    vertical-align: middle;
+    margin-right: 1vw;
+}
+
+@media (max-width: 768px) {
+    .header-pc {
+        display: none;
+    }
+
+    .header-sp {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trivial {
+        text-align: center;
+        border: solid 1px black;
+        border-radius: 5px;
+        padding: 2vw;
+        margin: 5vw 30vw;
+        font-size: 3vw;
+    }
+}
+
+@media (min-width: 769px) {
+    .header-pc {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .header-sp {
+        display: none;
+    }
+
+    .trivial {
+        position: fixed;
+        top: 3vw;
+        right: 2vw;
+        border-radius: 5px;
+        padding: 2vw;
+    }
+}
