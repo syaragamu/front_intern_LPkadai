@@ -537,3 +537,7 @@ main {
         float: none;
     }
 }
+
+.online-shop_container {
+    margin: 5vh;
+}
