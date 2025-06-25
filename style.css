@@ -744,6 +744,89 @@ font-family: "Ubuntu", sans-serif;
         height: 100%;
     }
   }
+
+  /* recipe */
+
+  .recipe-wrapper {
+    width: 100%;
+  }
+
+  .recipetitle {
+    position: relative;
+    width: 140px;
+    left: 50%;
+    transform: translate(-50% , 0);
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+
+  .recipe-wrapper > h2 {
+    font-size: xx-large;
+    font-family: "Zen Maru Gothic", sans-serif ;
+    margin-top: 5px;
+    margin-bottom: 60px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+  }
+  
+  .recipelist-container {
+    display: flex;
+    gap: 30px;
+  }
+
+ .recipelist {
+    display: flex;
+    gap: 40px;
+    overflow: auto;
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+  }
+
+ .recipelist:hover {
+    scrollbar-width: inherit; 
+    -ms-overflow-style: inherit; 
+
+  }
+
+  .recipelist-container > h3 {
+    writing-mode: vertical-rl;
+    font-size: medium;
+    font-family: "Zen Maru Gothic", sans-serif;
+    line-height: 50px;
+    margin-left: 30px;
+    border-top: solid #000 5px;
+    padding-top: 20px; 
+  }
+
+  .recipelist-container > h3 > span {
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  .recipe > img {
+    width: 320px;
+    height: auto;
+  }
+
+  .recipe > h4 {
+    font-size: large;
+    line-height: 35px;
+    font-family: "Zen Maru Gothic", sans-serif;
+    margin: 20px 0 ;
+    width: 320px;
+  }
+
+  .recipe > h5 {
+    font-size: medium;
+    line-height: 30px;
+    font-family: "Zen Maru Gothic", sans-serif;
+    margin-bottom: 30px;
+    width: 320px;
+  }
+
+/* shop */
 /* リセットcss */
 abbr,
 address,
