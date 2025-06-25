@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=yes,initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/top.css">
+    <link rel="stylesheet" href="css/top.css" type="text/css">
     <link rel="shortcut icon" href="img/favicon.svg">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
@@ -139,21 +139,40 @@
                 </section>
             </div>
         </div>
-        <div class="shop-information_container">
+                <div class="shop-information_container">
             <img src="img/shop/shop_ttl.svg" alt="" class="shop-information_title">
-            <section class="img_shop-information">
-                <picture>
-                    <source srcset="img/shop/shop_img01.jpg" media="(min-width: 768px)" class="img_shop-information1">
-                    <img src="img/shop/shop_img01_sp.jpg" style="width: 100%; height: auto;" alt="トップ画像">
-                </picture>
-            </section>
-            <section>
-                <h3><img src="img/shop/shop_ttl_cafe.svg" alt="" class="shop-information_title"></h3>
-                2019年6月に、出町柳駅の近くにカフェがオープンしました。営業する日には、紅茶と共においしいお茶菓子、食事をご堪能いただけます。
-                <br><br>カフェ営業日以外でも、茶葉やテイクアウト用茶菓子はお買い求めいただけます。
-                <br>紹介していないレシピを用いた料理教室や紅茶の知識を学べるワークショップも定期的に開催しています。
-                <br><hr>
-            </section>
+            <div class="cafe_container">
+                <section class="img_shop-information">
+                    <picture>
+                        <source srcset="img/shop/shop_img01.jpg" media="(min-width: 768px)" class="img_shop-information1">
+                        <img src="img/shop/shop_img01_sp.jpg" style="width: 100%; height: auto;" alt="トップ画像">
+                    </picture>
+                </section>
+                <section class="shop-information_exp">
+                    <h3><img src="img/shop/shop_ttl_cafe.svg" alt="" class="shop-information_cafe"></h3>
+                    2019年6月に、出町柳駅の近くにカフェがオープンしました。営業する日には、紅茶と共においしいお茶菓子、食事をご堪能いただけます。
+                    <br><br>カフェ営業日以外でも、茶葉やテイクアウト用茶菓子はお買い求めいただけます。
+                    <br>紹介していないレシピを用いた料理教室や紅茶の知識を学べるワークショップも定期的に開催しています。
+                    <br><hr>
+                    <ul style="padding: 0 2vw;">
+                        <li style="display: flex;">
+                            <li style="display: inline-block; padding: 0 2vw; transform: translateY(-2rem);">住所</li>
+                            <li style="display: inline-block;">〒600-0000<br>〇〇〇〇〇〇〇〇〇〇〇〇〇〇</li>
+                        </li>
+                        <li style="display: flex;">
+                            <li style="display: inline-block; padding: 3vh 2vw 0;">アクセス</li>
+                            <li style="display: inline-block;">京阪出町柳駅から徒歩12分</li>
+                        </li>
+                        <li style="display: flex;">
+                            <li style="display: inline-block; padding: 3vh 2vw 0">営業時間</li>
+                            <li style="display: inline-block;">営業日・時間ともに不定期</li>
+                        </li>
+                    </ul>
+                    <br><hr>
+                    ※営業日など最新情報はInstagramでご確認ください。
+                    <a href="#"><div class="latest_info1" style="color: #000;">最新情報はこちら</div></a>
+                </section>
+            </div>
         </div>
     </main>
 </body>
