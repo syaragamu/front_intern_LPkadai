@@ -283,7 +283,7 @@ main {
 .img_feat2 {
     width: 45vw;
     height: auto;
-    margin: 5vw 12vw 0;
+    margin: 10vh 12vw;
     float: right;
 }
 
@@ -330,4 +330,133 @@ main {
         float: left;
         margin: 20px;
     }
+}
+
+.recipe_top {
+    width: 10vw;
+    height: auto;
+    padding: 10vh 0 0;
+    margin: 10vh auto ;
+}
+
+.recipe_title {
+    width: 60vw;
+    height: auto;
+    font-size: 50px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.recipe_content {
+    display: flex;
+}
+
+.recipe_colum {
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10vh 5vw;
+    font-weight: bold;
+    display: inline-block;
+    justify-content: center;
+    writing-mode: vertical-rl;
+    border-top: 6px solid #000;
+}
+
+.recipe_span {
+    font-size: 40px;
+}
+
+.recipe_list_container {
+    width: 85vw;
+    height: auto;
+    overflow: scroll;
+    margin: auto;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 2rem;
+}
+
+.recipe_list_content {
+    display: flex;
+}
+
+.recipe_list {
+    width: 25vw;
+    height: auto;
+    display: inline-block;
+    margin: 10vh 3vw 0 0;
+}
+
+.img_recipe {
+    width: 25vw;
+    height: auto;
+    margin: 10vh 3vw 0 0;
+}
+
+.recipe_exp {
+    width: 25vw;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .recipe_top {
+        width: 25vw;
+        height: auto;
+        margin: 20vh auto;
+        transform: translateY(16vh);
+    }
+
+    .recipe_title {
+        font-size: 18px;
+    }
+
+    .recipe_colum {
+        font-size: 12px;
+        justify-content: center;
+    }
+
+    .recipe_span {
+        font-size: 24px;
+        margin: 0 5px;
+    }
+
+    .recipe_list_container {
+        width: 80vw;
+        line-height: 1.3rem;
+        margin: 0 auto 20vh;
+    }
+
+    .recipe_list {
+        width: 70vw;
+    }
+
+    .img_recipe {
+        width: 70vw;
+        height: auto;
+        margin: 10vh 8vw 0 0;
+    }
+
+    .recipe_exp {
+        width: 70vw;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .br-title {
+        display: none;
+    }
+}
+
+.shop-information_title {
+    width: 30vw;
+    height: auto;
+    margin: 10vh 35vw;
+}
+
+.img_shop-information {
+    width: 45vw;
+    height: auto;
 }
