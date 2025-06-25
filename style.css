@@ -1,6 +1,25 @@
 @charset "UTF-8";
 
+a {
+  color: black; 
+  text-decoration: none; 
+}
 
+a:link {
+  color: black; 
+}
+
+a:visited {
+  color: black; 
+}
+
+a:hover {
+  color: black; 
+}
+
+a:active {
+  color: black; 
+}
 .header {
   position: relative;
   width: 100%;
@@ -749,6 +768,7 @@ font-family: "Ubuntu", sans-serif;
     width: 100%;
   }
 
+@media screen and (min-width:768px)  {
   .recipetitle {
     position: relative;
     width: 140px;
@@ -823,7 +843,83 @@ font-family: "Ubuntu", sans-serif;
     margin-bottom: 30px;
     width: 320px;
   }
+}
+@media screen and (max-width:767px)  {
+  .recipetitle {
+    position: relative;
+    width: 60px;
+    left: 50%;
+    transform: translate(-50% , 0);
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
 
+  .recipe-wrapper > h2 {
+    font-size: medium;
+    font-family: "Zen Maru Gothic", sans-serif ;
+    margin-top: 5px;
+    margin-bottom: 60px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+  }
+  
+  .recipelist-container {
+    display: flex;
+    gap: 15px;
+  }
+
+ .recipelist {
+    display: flex;
+    gap: 20px;
+    overflow: auto;
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+  }
+
+ .recipelist:hover {
+    scrollbar-width: inherit; 
+    -ms-overflow-style: inherit; 
+
+  }
+
+  .recipelist-container > h3 {
+    writing-mode: vertical-rl;
+    font-size: medium;
+    font-family: "Zen Maru Gothic", sans-serif;
+    line-height: 30px;
+    margin-left: 15px;
+    border-top: solid #000 2px;
+    padding-top: 10px; 
+  }
+
+  .recipelist-container > h3 > span {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .recipe > img {
+    width: 200px;
+    height: auto;
+  }
+
+  .recipe > h4 {
+    font-size: medium;
+    line-height: 20px;
+    font-family: "Zen Maru Gothic", sans-serif;
+    margin: 10px 0 ;
+    width: 200px;
+  }
+
+  .recipe > h5 {
+    font-size: x-small;
+    line-height: 20px;
+    font-family: "Zen Maru Gothic", sans-serif;
+    margin-bottom: 30px;
+    width: 200px;
+  }
+}
 /* shop */
 
 .shop-wrapper > img {
