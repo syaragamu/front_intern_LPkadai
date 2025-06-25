@@ -970,14 +970,14 @@ font-family: "Ubuntu", sans-serif;
     height: auto;
 }
 .cafedetail {
-    width: 100%;
+    margin: 0 10%;
     font-family: "Zen Maru Gothic", sans-serif;
 }
 
 .cafedetail > img {
-    width: 100px;
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    height: 20px;
 }
 .cafedetail > h3 {
     font-size: medium;
@@ -1076,7 +1076,7 @@ font-family: "Ubuntu", sans-serif;
 /*　↓contact */
 
 .contacttitle {
-    width: 10%;
+    width: 40%;
     max-width: 160px;
     left: 50%;
     transform: translate(-50%,0);
@@ -1125,7 +1125,7 @@ font-family: "Ubuntu", sans-serif;
 
     .policycheck {
         width: 10px;
-    }
+    
     }
     .policy {
     position: relative;
@@ -1134,17 +1134,117 @@ font-family: "Ubuntu", sans-serif;
     width: max-content;
     display: block;
     }
+
     .submit-btn {
-        width: 30%;
+        transition: 0.5s;
         max-width: 480px;
         position: relative;
         width: max-content;
-        background-color: #ccc;
+        background-color: #444;
         font-size: x-large;
-        padding: 20px;
+        padding: 15px 120px;
         margin: 50px auto;
         display: block;
+        border: none;
+        color: #fff;
+        font-family: "Zen Maru Gothic", sans-serif;
     }    
+   .submit-btn:hover {
+    background-color: #fff;
+    border: #000 solid 1px;
+    color: #000;
+   }
+
+    footer > img {
+    width: 10%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+}
+@media screen and (max-width:767px)  {
+
+    .form-container {
+        width: 85%;
+        max-width: 1600px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        font-family: "Zen Maru Gothic", sans-serif;
+        font-weight: bold;
+        font-size: small;
+        justify-content: space-between;
+        padding-bottom: 50px;
+        align-items: start;
+    }
+
+    .form-container > label  {
+        width: auto;
+    }
+
+    input, select {
+        width: 100%;
+        height: 30px;
+        border-radius: 0;
+        border: solid 1px;
+        margin-top: 10px;
+    }
+
+    textarea {
+        height: 60px;
+        width: 100%;
+        border-radius: 0;
+        margin-top: 10px;
+    }
+
+    .form {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1600px;
+        position: relative;
+    }
+
+    .policycheck {
+        width: 10px;
+    
+    }
+    .policy {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: max-content;
+    display: block;
+    }
+
+    .submit-btn {
+        transition: 0.5s;
+        max-width: 480px;
+        position: relative;
+        width: max-content;
+        background-color: #444;
+        font-size: x-large;
+        padding: 15px 120px;
+        margin: 50px auto;
+        display: block;
+        border: none;
+        color: #fff;
+        font-family: "Zen Maru Gothic", sans-serif;
+    }    
+   .submit-btn:hover {
+    border: #000 solid 1px;
+    color: #000;
+   }
+
+    footer > img {
+    width: 40%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+    margin-bottom: 50px;
+}
+}
 
 
 
