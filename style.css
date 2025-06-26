@@ -538,7 +538,7 @@ hr {
     width: 100%;
     height: 550px;
     margin: 0 auto;
-    background-image: url(/img/products/products_tea.jpg);
+    background-image: url(img/products/products_tea.jpg);
     background-position: 50% 50%;
     background-size: cover;
 }
@@ -674,7 +674,7 @@ hr {
     width: 100%;
     height: 550px;
     margin: 0 auto;
-    background-image: url(/img/products/products_scone.jpg);
+    background-image: url(img/products/products_scone.jpg);
     background-position: 50% 50%;
     background-size: cover;
 }
