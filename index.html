@@ -175,13 +175,23 @@
             </div>
         </div>
         <div class="online-shop_container">
-            <section>
+            <section class="online-shop1">
                 <h4><img src="img/shop/shop_ttl_online.svg" alt="" class="online-shop_title"></h4>
-                オンラインショップをオープンしています。<br><br>※売り切れ次第閉店します。
+                オンラインショップをオープンしています。<br>※売り切れ次第閉店します。
             </section>
+            <a href="#"><section class="online-shop2">OPEN</section></a>
         </div>
         <div class="contact_container">
-            <form action=""></form>
+            <h3><img src="img/contact/contact_ttl.svg" alt="" class="contact_title"></h3>
+            <form action="" method="get" class="form_container">
+                <p class="form"><label class="contact_form">名前：<input type="text" name="formbox" placeholder="例）出見亜　太郎" required class="formbox"></label></p>
+                <p class="form"><label class="contact_form">メールアドレス：<input type="email" name="formbox" placeholder="例）example@example.com" required class="formbox"></label></p>
+                <p class="form"><label class="contact_form">件名：<select name="formbox" id=""><option value="0">商品について</option><option value="1">その他</option></select></label></p>
+                <p class="form"><label class="contact_form">内容：<textarea name="formbox" id="" required></textarea></label></p>
+                <div class="policy_check"><input type="checkbox" required>プライバシーポリシーに同意します</div>
+                <button class="btn_send">送信</button>
+                
+            </form>
         </div>
     </main>
 </body>

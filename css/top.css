@@ -539,5 +539,138 @@ main {
 }
 
 .online-shop_container {
-    margin: 5vh;
+    width: 80vw;
+    padding: 3vh auto;
+    margin: 5vh auto;
+    display: flex;
+    border-top: 4px solid #000;
+}
+
+.online-shop_title {
+    width: 10vw;
+    margin: 5vh auto 0;
+}
+
+.online-shop1 {
+    line-height: 2rem;
+    display: inline-block;
+}
+
+.online-shop2 {
+    width: 20vw;
+    height: 7vh;
+    padding: 2.5vh 5vw;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    justify-content: center;
+    float: right;
+    border: 1px solid #000;
+    transform: translate(35vw, 10vh);
+}
+
+.online-shop2::before {
+    content: url(../img/icon_cart.svg);
+}
+
+@media screen and (max-width: 768px) {
+    .online-shop_container {
+        position: relative;
+        display: block;
+        transform: translateY(90vh);
+    }
+
+    .online-shop_title {
+        width: 30vw;
+        height: auto;
+    }
+
+    .online-shop1 {
+        display: block;
+    }
+
+    .online-shop2 {
+        width: 70vw;
+        height: auto;
+        position: absolute;
+        left: -30vw;
+    }
+}
+
+.contact_container {
+    width: 80vw;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    transform: translateX(5vw);
+}
+
+.contact_title {
+    width: 15vw;
+    height: auto;
+    margin: 5vh auto;
+    transform: translateX(30vw);
+}
+
+.form {
+    padding: 5px 5vw 5px 0;
+    display: grid;
+}
+
+.contact_form {
+    font-weight: bold;
+    margin: 5vh 10vw 5vh 5vw;
+    float: left;
+    justify-content: start;
+}
+
+.formbox {
+    width: 50vw;
+    height: 6vh;
+    font-size: 2vh;
+    font-family: "Zen Maru Gothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+    font-weight: bold;
+    float: right;
+    justify-content: end;
+}
+
+select {
+    width: 50vw;
+    height: 6vh;
+    font-size: 1.5vh;
+    font-weight: bold;
+    float: right;
+    justify-content: end;
+}
+
+textarea {
+    width: 50vw;
+    height: 18vh;
+    font-size: 1.5vh;
+    font-family: "Zen Maru Gothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+    font-weight: bold;
+    float: right;
+    justify-content: end;
+}
+
+.policy_check {
+    margin: 0 auto;
+    transform: translateX(25vw);
+}
+
+.btn_send {
+    width: 20vw;
+    height: 8vh;
+    margin: 5vh 0;
+    color: #fff;
+    background-color: #666666;
+    border: none;
+    transform: translateX(25vw);
+}
+
+@media screen and (max-width: 768px) {
+    .contact_container {
+        transform: translate(0, 110vh);
+    }    
 }
