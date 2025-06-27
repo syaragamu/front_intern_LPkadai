@@ -945,10 +945,14 @@ hr {
 
 .recipe_content_wrap {
     display: flex;
-    overflow: scroll;
+    overflow: hidden;
     width: 70%;
     gap: 30px;
     padding: 20px;
+}
+
+.recipe_content_wrap:hover {
+    overflow: scroll;
 }
 
 @media print, screen and (min-width: 768px) {
@@ -1131,15 +1135,35 @@ hr {
     text-decoration: none;
 }
 
+@media print, screen and (min-width: 768px) {
+    .shop_latest_link {
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0); /* translateはブロック要素にしか使えない */
+}
+}
+
 .shop_latest, .online_shop_latest {
     display: flex;
     justify-content: center;
     align-items: center;
     border: solid 1px #000;
-    width: 400px;
+    width: 320px;
     height: 50px;
     margin: 0 auto
 }
+
+.shop_latest:hover, .online_shop_latest:hover {
+    background-color: #ececec;
+}
+
+@media print, screen and (min-width: 768px) {
+    .shop_latest {
+    max-width: 100%;
+}
+}
+
 
 .online_shop {
     padding: 40px;
@@ -1292,7 +1316,15 @@ hr {
     height: 40px;
     background-color: #6a6a6a;
     color: #fff;
-    border-color: #6a6a6a;
+    border-width: 1px;
+    border-color: #757575;
+}
+
+.submit-btn:hover {
+    background-color: #eaeaea;
+    color: #000000;
+    border-color: #000000;
+    transition: 0.5s;
 }
 
 @media print, screen and (min-width: 768px) {
