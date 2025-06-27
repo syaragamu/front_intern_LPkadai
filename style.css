@@ -918,8 +918,8 @@ hr {
 .recipe_header_ttl {
     width: 50%;
     writing-mode: vertical-rl;
-    padding: 10% 10%;
-    font-size: 40px;
+    padding: 17% 10%;
+    font-size: 6vw;
     font-weight: bold;
 }
 
@@ -932,8 +932,8 @@ hr {
 .recipe_header_text {
     width: 50%;
     writing-mode: vertical-rl;
-    padding: 10% 15%;
-    font-size: 22px;
+    padding: 17% 15%;
+    font-size: 4vw;
     font-weight: bold;
 }
 
