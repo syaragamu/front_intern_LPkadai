@@ -343,6 +343,7 @@ a {
     font-family: "Zen Maru Gothic", sans-serif;
     font-size: 20px;
     font-weight: 800;
+    text-decoration: underline;
 }
 
 .news_date {
@@ -434,6 +435,7 @@ a {
     font-family: "Zen Maru Gothic", sans-serif;
     font-size: 15px;
     font-weight: 800;
+    text-decoration: underline;
 }
 
 .news_date {
@@ -513,7 +515,7 @@ a {
 
     .about_big {
         font-family: "Zen Maru Gothic", sans-serif;
-        font-size: 20px;
+        font-size: 14px;
         font-weight: 900;
         line-height: 36px;
         margin-bottom: 50px;
@@ -531,10 +533,10 @@ a {
         font-family: "Zen Maru Gothic", sans-serif;
         font-weight: 900;
         display: block;
-        font-size: 20px;
+        font-size: 12px;
         width: auto;
         height: auto;
-        line-height: 32px;
+        line-height: 28px;
         margin-bottom: 15px;
     }
 
@@ -543,11 +545,11 @@ a {
         font-weight: 500;
         display: block;
         height: auto;
-        font-size: 18px;
+        font-size: 12px;
         position: relative;
         width: 100%;
         left: 0;
-        line-height: 30px;
+        line-height: 20px;
     }
 
     .about_content2 {
@@ -555,11 +557,11 @@ a {
         font-weight: 500;
         display: block;
         height: auto;
-        font-size: 18px;
+        font-size: 12px;
         position: relative;
         width: 100%;
         left: 0;
-        line-height: 30px;
+        line-height: 20px;
     }
 }
 
@@ -1042,8 +1044,12 @@ a {
     position: relative;
     left: 50px;
     width: calc(100% - 140px);
-    overflow-x: scroll;
+    overflow-x: hidden;
     gap: 60px;
+}
+
+.recipe_container:hover {
+    overflow-x: scroll;
 }
 
 .recipe_content {
@@ -1182,6 +1188,9 @@ a {
 }
 
 .shop {
+    margin-right: auto;
+    margin-left: auto;
+    width: 1210px;
     margin-bottom: 160px;
 }
 
@@ -1300,6 +1309,10 @@ a {
     padding-left: 72px;
 }
 
+.newest_info2:hover {
+    background-color: #edebeb;
+}
+
 .newest_info_b2::before {
     content: url(img/icon_ig.svg);
     display: inline;
@@ -1371,6 +1384,10 @@ a {
     top: 70px;
 }
 
+.onlineshop_jump_box:hover {
+    background-color: #edebeb;
+}
+
 .onlineshop_jump {
     text-decoration: none;
     position: relative;
@@ -1387,6 +1404,10 @@ a {
 }
 
 @media screen and (max-width:670px)  {
+
+    .shop {
+        width: 100%;
+    }
 
     .shop_info_title {
         width: 280px ;
@@ -1671,6 +1692,10 @@ a {
     color: #fff;
     background-color: #68686b;
     border: 0;
+}
+
+.submit_botton:hover {
+    color: #edebeb;
 }
 
 @media screen and (max-width:670px) {
