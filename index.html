@@ -107,8 +107,10 @@
     </section><!--about-->
     <section class="product">
         <div class="product-ceylontea">
-            <img src="img/products/products_ttl_tea.svg" alt="セイロンティー文字" class="product-ceylontea-title">
-            <img src="img/products/products_tea.jpg" alt="セイロンティー画像" class="product-ceylontea-img">
+            <div class="product-ceylontea-imgwrap">
+                <img src="img/products/products_tea.jpg" alt="セイロンティー画像" class="product-ceylontea-img">
+                <img src="img/products/products_ttl_tea.svg" alt="セイロンティー文字" class="product-ceylontea-title">
+            </div>
             <div class="product-ceylontea-textbox">
                 <h2 class="heading02">セイロンティー</h2>
                 <p class="text-2">スリランカの中でも世界三代紅茶として知られるウバで生産された爽やかな香りが特徴のセイロンティー。</p>
@@ -116,8 +118,10 @@
             </div>
         </div>
         <div class="product-scone">
-            <img src="img/products/products_ttl_scone.svg" alt="スコーン文字" class="product-scone-title">
-            <img src="img/products/products_scone.jpg" alt="スコーン画像" class="product-scone-img">
+            <div class="product-scone-imgwrap">
+                <img src="img/products/products_scone.jpg" alt="スコーン画像" class="product-scone-img">
+                <img src="img/products/products_ttl_scone.svg" alt="スコーン文字" class="product-scone-title">
+            </div>
             <div class="product-scone-textbox">
                 <h2 class="heading02">スコーン</h2>
                 <p class="text-2">世界中の小麦粉を取り寄せ、我がカフェ独自の生地の配合を研究し、お茶菓子としては究極の域に達したスコーン。</p>
@@ -240,20 +244,20 @@
             </div>
             <div class="form-container">
                 <p class="form-text">件名：</p>
-                <select name="kenmei" class="form-input">
+                <select name="title" class="form-input">
                     <option value="product">商品について</option>
                     <option value="others">その他</option>
                 </select>
             </div>
             <div class="form-container">
                 <p class="form-text">内容：</p>
-                <textarea name="naiyou" class="form-input" style="height: 156px;" required></textarea>
+                <textarea name="content" class="form-input" style="height: 156px;" required></textarea>
             </div>
             <div class="form-privacy">
                 <input type="checkbox" name="checkbox" required>プライバシーポリシーに同意します
             </div>
             <input type="checkbox" id="submit" style="display: none;">
-            <button for="submit" class="form-submit">送信</button>
+            <button type="submit" class="form-submit">送信</button>
         </form>
     </section><!--form-->
 </body>
