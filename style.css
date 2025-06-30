@@ -205,8 +205,9 @@ a{
     width: 2vw;
 }
 .icon-wrap, .icon-wrap > .icons{
-    transform-origin: center center;
-    transform: scaleX(-1);
+    display: flex;
+    justify-content: flex-end; 
+    margin-right: 5vw;
 } 
 @media (max-width: 767px){
 
@@ -560,7 +561,10 @@ span{
 .overflow{
     margin-left: 5%;
     display: flex;
-    overflow-x: scroll;
+    overflow: hidden;
+}
+.overflow:hover{
+    overflow: auto;
 }
 .recipe{
     margin: 3vw;
@@ -749,9 +753,10 @@ input, select, textarea{
 }
 .center{
     display: flex;
-    max-width: 270px;
     margin: 0 auto;
     text-align: center;
+    justify-content: center;
+    
 }
 textarea{
     vertical-align: top;
@@ -763,7 +768,7 @@ form > p{
     width: 13px;
     margin: 0;
 }
-.submit > .center{
+.center > .submit{
     appearance: none;
     width: 30vw;
     padding:3vh 0;
@@ -780,6 +785,11 @@ form > p{
     margin: 15vh auto 30vh auto;
     width: 170px;
 }
+.centerwrap{
+    display: block;
+    margin: 0 auto;
+}
+
 @media (max-width: 767px){
     form > p{
         display: block;
@@ -789,7 +799,7 @@ form > p{
         display: block;
         margin: 0 auto;
     }
-    .submit > .center{
+    .center > .submit{
         width: 70vw;
     }
 }
