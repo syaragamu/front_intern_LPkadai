@@ -71,45 +71,42 @@
     <article>
         <!-- ========================= news ========================= -->
         <section id="news">
-            <div class="news-title-container">
-                <h2 class="news-ttl">
-                <img src="img/news/news_ttl.svg" alt="NEWS" width="120" height="42">
-                </h2>
-                <!-- PC 専用リンク：タイトルの右側 -->
-                <p class="news-more news-more--pc"><a href="#" class="icon-ig">最新情報はこちら</a></p>
-            </div>
-
-            <!-- 横スクロールできるカードストリップ -->
-            <div class="news-strip scroll-snap-x" aria-label="最新ニュース一覧">
-
-            <!-- CARD 1 -->
-            <a class="news-card scroll-snap-child" href="#">
-            <img src="img/news/tea_day.jpg" alt="紅茶の日" width="280" height="180" loading="lazy" decoding="async">
-                <div class="news-card-body">
-                    <h3 class="news-card-title">「紅茶の日」</h3>
-                    <p class="news-card-text">11月1日は、大黒屋光太夫が日本人として初めて外国の正式な茶会で紅茶を飲んだ記念日。</p>
-                    <p class="news-card-text">2022年11月1日から一週間限定商品を発売予定です。</p>
-                    <time datetime="2022-09-10" class="news-card-date">2022.09.10</time>
+            <div class="box-c">
+                <div class="news-title-container">
+                    <h2 class="news-ttl">
+                    <img src="img/news/news_ttl.svg" alt="NEWS" width="120" height="42" class="news-ttl-img">
+                    </h2>
+                    <!-- PC 専用リンク：タイトルの右側 -->
+                    <p class="news-more news-more--pc"><a href="#" class="icon-ig">最新情報はこちら</a></p>
                 </div>
-            </a>
 
-            <!-- CARD 2 -->
-            <a class="news-card scroll-snap-child" href="#">
-                
-                <img src="img/news/notion.jpg" alt="大切なお知らせ" width="280" height="180" loading="lazy" decoding="async">
-                <div class="news-card-body">
-                <h3 class="news-card-title">大切なお知らせ</h3>
-                <p class="news-card-text">この度、創業10周年を記念して、セールを開催します。</p>
-                <p class="news-card-text">セールには、定番商品の各種フレーバーティーからその他アレンジ商品まで様々なものが対象になっています。</p>
-                <time datetime="2022-06-30" class="news-card-date">2022.06.30</time>
+                <div class="news-list"><!-- 横 2 枚固定 -->
+    <!-- card 1 -->
+    <article class="news-card">
+      <img src="img/news/tea_day.jpg" alt="紅茶の日キャンペーン">
+      <h3 class="news-card-ttl">「紅茶の日」</h3>
+      <p>11月1日は、日本人が初めて外国の正式な茶会で紅茶を飲んだ記念日。
+        2022年11月1日から一週間限定商品を発売予定です。</p>
+      <p class="news-link"><a href="#">詳細はこちら</a></p>
+      <footer><time datetime="2022-09-10">2022.09.10</time></footer>
+    </article>
+
+    <!-- card 2 -->
+    <article class="news-card">
+      <img src="img/news/notion.jpg" alt="創業10周年セール">
+      <h3 class="news-card-ttl">大切なお知らせ</h3>
+      <p>この度、創業10周年を記念して、セールを開催します。各種フレーバーティー
+        からアレンジ商品まで対象となっています。</p>
+      <p class="news-link"><a href="#">詳細はこちら</a></p>
+      <footer><time datetime="2022-06-30">2022.06.30</time></footer>
+    </article>
+  </div>
+
+                    <!-- モバイル専用リンク：カード帯の下中央 -->
+                <div class="news-more news-more--sp">
+                                    <a class="btn-wide btn-ig" href="#" aria-label="Instagram で最新情報を見る"><span class="icon-ig" aria-hidden="true"></span><span>最新情報はこちら</span></a>
                 </div>
-            </a>
-
-            <!-- 追加カードは同テンプレートで挿入 -->
             </div>
-
-            <!-- モバイル専用リンク：カード帯の下中央 -->
-            <p class="news-more news-more--sp"><a href="#" class="icon-ig">最新情報はこちら</a></p>
         </section>
         <!-- ================ about ================ -->
         <section id="about" aria-labelledby="about-heading">
@@ -206,30 +203,27 @@
         <section id="feature" aria-labelledby="feature-heading">
             <div class="box-c">
                 <h2 id="feature-heading" class="feature-ttl">伝統と魅惑のティープロダクツ</h2>
+                <section class="feature-slider">
+                    <!-- ■ 1. 紅茶 -->
+                    <article class="feature-item" aria-labelledby="feature-tea-ja">
+                        <img src="img/feature/feature_img01.jpg" alt="スリランカの茶畑" class="feature-figure-img">
+                        <div class="feature-body">
+                            <h3 id="feature-tea-ja" class="feature-subttl">丁寧に生産された<br>スリランカの紅茶</h3>
+                            <p class="feature-text">ティープロダクツの主役はやはり紅茶。当カフェが懇意にしている一流のスリランカの茶畑から茶葉を主に仕入れ、販売しています。</p>
+                        </div>
+                    </article>
 
-                <!-- ■ 1. 紅茶 -->
-                <article class="feature-item" aria-labelledby="feature-tea-ja">
-                    <figure class="feature-figure">
-                        <img src="img/feature/feature_img01.jpg" alt="スリランカの茶畑" loading="lazy" decoding="async">
-                    </figure>
-                    <div class="feature-body">
-                        <h3 id="feature-tea-ja" class="feature-subttl">丁寧に生産された<br>スリランカの紅茶</h3>
-                        <p class="feature-text">ティープロダクツの主役はやはり紅茶。当カフェが懇意にしている一流のスリランカの茶畑から茶葉を主に仕入れ、販売しています。</p>
-                    </div>
-                </article>
-
-                <!-- ■ 2. お茶菓子 -->
-                <article class="feature-item" aria-labelledby="feature-sweets-ja">
-                    <figure class="feature-figure">
-                        <img src="img/feature/feature_img02.jpg" alt="紅茶に合うお菓子" loading="lazy" decoding="async">
-                    </figure>
-                    <div class="feature-body">
-                        <h3 id="feature-sweets-ja" class="feature-subttl">研究を重ねた<br>究極のお茶菓子</h3>
-                        <p class="feature-text">我々は、１０数年前紅茶文化に衝撃を受けて以来、世界中から食材を取り寄せ、紅茶に合うお菓子の研究を日々重ねています。
-                        </p>
-                        <p class="feature-text">それらのお菓子を店舗で販売したりレシピとして紹介しています。</p>
-                    </div>
-                </article>
+                    <!-- ■ 2. お茶菓子 -->
+                    <article class="feature-item" aria-labelledby="feature-sweets-ja">
+                        <img src="img/feature/feature_img02.jpg" alt="紅茶に合うお菓子" class="feature-figure-img">
+                        <div class="feature-body">
+                            <h3 id="feature-sweets-ja" class="feature-subttl">研究を重ねた<br>究極のお茶菓子</h3>
+                            <p class="feature-text">我々は、１０数年前紅茶文化に衝撃を受けて以来、世界中から食材を取り寄せ、紅茶に合うお菓子の研究を日々重ねています。
+                            </p>
+                            <p class="feature-text">それらのお菓子を店舗で販売したりレシピとして紹介しています。</p>
+                        </div>
+                    </article>
+                </section>
             </div><!-- /.box-c -->
         </section>
 
@@ -290,13 +284,14 @@
 
                     <div class="shop-about">
                         <h3 class="shop-subttl">CAFE</h3>
-                        <p>
-                        2019年6月に、出町柳駅の近くにカフェがオープンしました。営業する日には、紅茶と共においしいお茶菓子、食事をご堪能いただけます。
-                        </p>
-                        <p>
-                        カフェ営業日以外でも、茶葉やテイクアウト用茶菓子はお買い求めいただけます。紹介していないレシピを用いた料理教室や紅茶の知識を学べるワークショップも定期的に開催しています。
-                        </p>
-
+                        <div class="shop-contenttext">
+                            <p>
+                            2019年6月に、出町柳駅の近くにカフェがオープンしました。営業する日には、紅茶と共においしいお茶菓子、食事をご堪能いただけます。
+                            </p>
+                            <p>
+                            カフェ営業日以外でも、茶葉やテイクアウト用茶菓子はお買い求めいただけます。紹介していないレシピを用いた料理教室や紅茶の知識を学べるワークショップも定期的に開催しています。
+                            </p>
+                        </div>
                         <table class="shop-table">
                         <tr><th>住所</th><td>〒600‑0000 〇〇〇〇〇〇〇〇〇〇〇〇〇〇</td></tr>
                         <tr><th>アクセス</th><td>京阪出町柳駅から徒歩12分</td></tr>
@@ -312,34 +307,54 @@
                     <!-- ---------- ONLINE SHOP ---------- -->
                     <section class="online-shop" aria-labelledby="online-heading">
                         <h3 id="online-heading" class="onlineshop-ttl">ONLINE&nbsp;SHOP</h3>
-                        <div class="online-flex">
-                            <div class="shop-text">
-                            オンラインショップをオープンしています。<br>
-                            <small>※売り切れ次第閉店します。</small>
+                        <div class="online-pc">
+                            <div class="online-flex">
+                                <div class="shop-text">
+                                オンラインショップをオープンしています。<br>
+                                <small>※売り切れ次第閉店します。</small>
+                                </div>
                             </div>
-                                <a class="btn-wide -cart" href="#" aria-label="オンラインショップを開く">
-                                    <span class="icon-cart" aria-hidden="true"></span>
-                                    <span>OPEN</span>
-                                </a>
+                            <a class="btn-wide -cart" href="#" aria-label="オンラインショップを開く">
+                                <span class="icon-cart" aria-hidden="true"></span>
+                                <span>OPEN</span>
+                            </a>
                         </div>
                     </section>
             </div><!-- // .box-c -->
         </section>
 
         <!-- ---------- CONTACT ---------- -->
-        <section id="contact" aria-labelledby="contact-heading">
-            <div class="box-c contact-wrap">
-                <h2 id="contact-heading" class="contact-ttl">CONTACT</h2>
-                <form class="contact-form" action="#" method="post" novalidate>
-                <div class="form-row"><label for="cf-name">お名前 <span>*</span></label><input id="cf-name" name="name" type="text" placeholder="三津祥介" required></div>
-                <div class="form-row"><label for="cf-mail">メールアドレス <span>*</span></label><input id="cf-mail" name="email" type="email" placeholder="example@domain.com" required></div>
-                <div class="form-row"><label for="cf-sub">件名</label><select id="cf-sub" name="subject"><option value="prod">商品について</option><option value="shop">ショップについて</option><option value="other">その他</option></select></div>
-                <div class="form-row"><label for="cf-msg">お問い合わせ内容 <span>*</span></label><textarea id="cf-msg" name="message" rows="8" required></textarea></div>
-                <div class="form-consent"><input id="cf-privacy" type="checkbox" required><label for="cf-privacy">プライバシーポリシーに同意します</label></div>
-                <button type="submit" class="btn-submit">送 信</button>
-                </form>
+         <section id="contact">
+        <div class="box-c">
+          <h2 class="contact-ttl"><img src="img/contact/contact_ttl.svg" width="180" height="42" alt="CONTACT"></h2>
+          <form action="#" class="form-container">
+            <div class="form-inner-container">
+              <p class="form-label">名前：</p><input type="text" name="name" placeholder="例) 出見亜 太郎" class="form" required>
             </div>
-        </section>
+            <div class="form-inner-container">
+              <p class="form-label">メールアドレス：</p><input type="email" name="email" placeholder="例) example@example.com"
+                class="form" required>
+            </div>
+            <div class="form-inner-container">
+              <p class="form-label">件名：</p>
+              <select name="category" class="form">
+                <option value="products">商品について</option>
+                <option value="others">その他</option>
+              </select>
+            </div>
+            <div class="form-inner-container">
+              <p class="form-label">内容：</p><textarea name="contents" cols="30" rows="10" class="form"
+                required></textarea>
+            </div>
+            <div class="privacy">
+              <input type="checkbox" name="checkbox" required>
+              プライバシーポリシーに同意します
+            </div>
+            <input type="submit" value="送信" class="btn01 submit-btn">
+
+          </form>
+        </div>
+      </section>
 
 
     </article>
@@ -347,13 +362,6 @@
   <!-- ---------- FOOTER ---------- -->
 <footer id="ft">
   <div class="box-c footer-wrap">
-    <nav class="footer-nav" aria-label="フッターナビ"><ul>
-      <li><a href="#news">News</a></li>
-      <li><a href="#products">Products</a></li>
-      <li><a href="#shop">Shop</a></li>
-      <li><a href="#recipe">Recipe</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul></nav>
     <p class="footer-copy">&copy; <span id="copy-year"></span> DeMiA CAFE</p>
   </div>
   <script>document.getElementById('copy-year').textContent=new Date().getFullYear();</script>
