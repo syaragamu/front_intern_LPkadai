@@ -1,0 +1,132 @@
+@charset "UTF-8";
+body {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+}
+
+@media (min-width: 769px) {
+    .overall-content {
+        display:flex;
+        flex-direction: column;
+    }
+    
+    .item {
+        width: 40vw;
+        height: 40vw;
+        margin: 4vw;
+    }
+
+    h1 {
+        font-size: 2vw;
+        font-weight: bold;
+    }
+    
+    footer {
+        font-size: 1vw;
+        margin-left: 2vw;
+    }
+    
+    main {
+        margin: 2vw;
+    }
+    
+    .tea-img {
+        width: 40vw;
+        height: 40vw;
+        position: absolute;
+    }
+    
+    .tea-title {
+        width: 20vw;
+        height: 12vw;
+        position: relative;
+        top: -37vw;
+        left: -4vw;
+    }
+    
+    .content1 {
+        width: 20vw;
+        height: 38vw;
+        font-size: 1.5vw;
+        padding: 3.5vw 1.5vw;
+        background-color: white;
+        position: relative;
+        top: 1vw;
+        left: 30vw;
+        z-index: 1;
+    }
+    
+    .scone-img {
+        width: 40vw;
+        height: 40vw;
+        position: absolute;
+        margin-left: 15vw;
+    }
+    
+    .scone-title {
+        width: 15vw;
+        height: 9vw;
+        position: relative;
+        top: -25vw;
+        left: 45vw;
+    }
+    
+    .content2 {
+        width: 20vw;
+        height: 28vw;
+        font-size: 1.5vw;
+        padding: 3.5vw 1.5vw;
+        background-color: white;
+        position: relative;
+        top: 6vw;
+        z-index: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 4vw;
+        font-weight: bold;
+        margin: 2.5vw;
+    }
+    
+    footer {
+        font-size: 2vw;
+        font-weight: bold;
+        margin-left: 3vw;
+    }
+    
+    main {
+        margin: 3vw;
+        font-weight: bold;
+    }
+    
+    .tea-img{
+        width: 70vw;
+        height: 70vw;
+        margin: 6vw;
+    }
+    
+    .tea-title {
+        width: 20vw;
+        height: 12vw;
+    }
+    
+    .scone-img {
+        width: 70vw;
+        height: 70vw;
+        margin: 6vw;
+    }
+
+    .scone-title {
+        width: 15vw;
+        height: 9vw;
+    }
+}
