@@ -1,0 +1,73 @@
+@charset "UTF-8";
+body {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-img {
+    width: 30vw;
+    height: 30vw;
+}
+
+h1 {
+    font-size: 4vw;
+    font-weight: bold;
+    text-align: center;
+}
+
+.main {
+    display: flex;
+}
+
+.sub-title {
+    writing-mode: tb-rl;
+    margin: 3vw;
+    padding: 1.5vw;
+    font-weight: bold;
+    border-top: solid 10px black;
+}
+
+.sub-ttl-s {
+    font-size: 1.5vw;
+}
+
+.sub-ttl-l {
+    font-size: 3.5vw;
+}
+
+.contents {
+    display: flex;
+    overflow-x: visible;
+    overflow-y: scroll;
+    gap: 5vw;
+    margin: 3vw;
+}
+
+.content {
+    width: 30vw;
+}
+
+.item-img {
+    width: 25vw;
+    height: 25vw;
+}
+
+h2 {
+    font-size: 2.5vw;
+    font-weight: bold;
+    margin: 1vw;
+}
+
+.items {
+    font-size: 1.5vw;
+    font-weight: 500;
+    margin: 1vw;
+}
