@@ -38,7 +38,7 @@ html, body {
     padding: 0;
     height: 32px;
     width: 32px;
-    overflow: hidden; /*ここから2行はちゃんと理解できていない(おいおい理解する予定)*/
+    overflow: hidden; 
     flex-shrink: 0;
 }
 

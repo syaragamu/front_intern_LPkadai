@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="icon" href="img/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <title>recipe</title>
+</head>
+<body>
+    <div class="ttl-img"><img src="img/contact/contact_ttl.svg" alt="" class="title-img"></div>
+    <form action="〜" method="post">
+        <div class="forms">
+            <div class="formname">名前 : </div>
+            <input type="text" name="person" placeholder="例）出見亜 太郎" class="input-form">
+        </div>
+        <div class="forms">
+            <div class="formname">メールアドレス : </div>
+            <input type="email" name="mail" placeholder="例）example@exapmle.com" autocomplete="off" class="input-form">
+        </div>
+        <div class="forms">
+            <div class="formname">件名 : </div>
+            <select name="件名">
+                <option aria-checked="">商品について</option>
+                <option>その他</option>
+            </select>
+        </div>
+        <div class="forms">
+            <div class="formname">内容 :</div>
+            <textarea name="comment" rows="4"></textarea>
+        </div>
+        <div class="checker">
+            <input type="checkbox"><label for="checker">プライバシーポリシーに同意します</label>
+        </div>
+        <button type="submit">送信</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,90 @@
+@charset "UTF-8";
+body {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+}
+
+.ttl-img {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.title-img {
+    width: 30vw;
+    height: 10vw;
+}
+
+.forms {
+    display:flex;
+    align-content: center;
+    margin: 5vw;
+}
+
+.formname {
+    font-size: 2.5vw;
+    width: 20vw;
+    height: 5vw;
+}
+
+select {
+    width: 50vw;
+    height: 6vw;
+    margin: 1.5vw;
+}
+
+.input-form {
+    width: 50vw;
+    height: 6vw;
+    font-size: 1.5vw;
+    margin: 1.5vw;
+}
+
+textarea {
+    width: 50vw;
+    height: 24vw;
+    margin: 1.5vw;
+}
+
+.checker {
+    font-size: 2.5vw;
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    line-height: normal;
+    text-align: center;
+    margin: 5vw;
+}
+
+button {
+    width: 15vw;
+    height: 5vw;
+    font-size: 1.5vw;
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    line-height: normal;
+    background-color: #666;
+    color: white;
+    border: none;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .forms {
+        flex-direction: column;
+    }
+
+    select, textarea {
+        width: 90%;
+    }
+
+    .input-form {
+        width: 90%;
+    }
+}
