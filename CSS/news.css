@@ -1,0 +1,153 @@
+.news {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    padding: 11vw 6vw 0 6vw;
+}
+
+.news-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.news-title {
+    width: auto;
+}
+
+.ig-container {
+    width: auto;
+    height: auto;
+}
+
+.news-ig {
+    width: auto;
+    height: auto;
+}
+
+.ig-contents {
+    width: 15vw;
+    height: 2vw;
+    align-items: center;
+    display: flex;
+}
+
+.ig-text {
+    font-size: 1.5vw;
+    color: #000;
+    margin-left: 1vw;
+}
+
+.articles {
+    margin-top: 5vw;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.article {
+    width: 44%;
+}
+
+.article-title {
+    margin-top: 2vw;
+    font-size: 1.5vw;
+    font-weight: 700;
+}
+
+.article-text {
+    margin-top: 1vw;
+    font-size: 1.1vw;
+    font-weight: 300;
+    line-height: 2.5vw;
+}
+
+.article-link {
+    margin-top: 2vw;
+}
+
+.article-link>a {
+    font-size: 1.2vw;
+    color: #000;
+}
+
+.article-date {
+    margin-top: 3vw;
+    padding-top: 1vw;
+    border-top: 1px solid #000;
+    font-size: 1.1vw;
+    font-weight: 700;
+}
+
+@media (max-width: 767px) {
+    .news {
+        padding-top: 22vw;
+    }
+
+    .articles {
+        width: 100%;
+    }
+
+    .article {
+        width: 48%;
+    }
+
+    .article-title {
+        font-size: 2vw;
+    }
+
+    .article-text {
+        font-size: 1.5vw;
+    }
+
+    .article-link {
+        margin-top: 2vw;
+    }
+
+    .article-link>a {
+        font-size: 1.7vw;
+    }
+
+    .article-date {
+        margin-top: 5vw;
+        font-size: 1.5vw;
+        padding-top: 2vw;
+    }
+}
+
+@media (max-width: 767px) {
+    .news-top {
+        display: contents;
+    }
+
+    .news-title {
+        order: 1;
+        width: 50%;
+    }
+    
+    .articles {
+        order: 2;
+        margin-top: 5vw;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .ig-container {
+        order: 3;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+    }
+    
+    .news-ig {
+        display: flex;
+        justify-content: center;
+        margin-top: 5vw;
+        padding: 2vw 0;
+        border: #000 solid 1px;
+        width: 70vw;
+    }
+}
