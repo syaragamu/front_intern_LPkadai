@@ -83,7 +83,7 @@
 
 @media (max-width: 767px) {
     .news {
-        padding-top: 22vw;
+        padding-top: 40vw;
     }
 
     .articles {
@@ -95,25 +95,29 @@
     }
 
     .article-title {
-        font-size: 2vw;
+        margin-top: 3vw;
+        font-size: 4vw;
     }
 
     .article-text {
-        font-size: 1.5vw;
+        margin-top: 3vw;
+        font-size: 3vw;
+        line-height: 5vw;
     }
 
     .article-link {
-        margin-top: 2vw;
+        margin-top: 3vw;
     }
 
     .article-link>a {
-        font-size: 1.7vw;
+        font-size: 3.2vw;
+        font-weight: 700;
     }
 
     .article-date {
         margin-top: 5vw;
-        font-size: 1.5vw;
-        padding-top: 2vw;
+        font-size: 3vw;
+        padding-top: 4vw;
     }
 }
 
@@ -141,13 +145,22 @@
         width: 100%;
         height: auto;
     }
+
+    .ig-contents {
+        width: 30vw;
+    }
+
+    .ig-text {
+        font-size: 3vw;
+        color: #000;
+    }
     
     .news-ig {
         display: flex;
         justify-content: center;
-        margin-top: 5vw;
-        padding: 2vw 0;
+        margin-top: 10vw;
+        padding: 4vw 0;
         border: #000 solid 1px;
-        width: 70vw;
+        width: 60vw;
     }
 }

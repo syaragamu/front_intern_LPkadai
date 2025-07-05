@@ -1,0 +1,78 @@
+.about {
+    position: relative;
+    width: 100vw;
+    padding: 11vw 11vw 0 11vw;
+}
+
+.about-top {
+    font-size: 1.5vw;
+    font-weight: 700;
+    line-height: 3vw;
+    color: #000;
+    width: 100%;
+}
+
+.about-textblock .about-sub{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6vw;
+}
+
+.about-label {
+    font-size: 1.5vw;
+    font-weight: 700;
+    color: #000;
+}
+
+.about-sentence {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+}
+
+.about-text {
+    font-size: 1.4vw;
+    font-weight: 400;
+    color: #000;
+    line-height: 2.8vw;
+    margin-bottom: 3vw;
+}
+
+.about-sentence>.about-text:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+    .about-textblock {
+        display: contents;
+    }
+    
+    .about {
+        padding-top: 36vw;
+    }
+
+    .about-top {
+        font-size: 3.6vw;
+        line-height: 7vw;
+    }
+
+    .about-sub {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-label {
+        font-size: 3.4vw;
+        margin-top: 14vw;
+    }
+
+    .about-sentence {
+        max-width: 100%;
+    }
+
+    .about-text {
+        font-size: 3vw;
+        line-height: 5vw;
+        margin: 8vw 0 0 0;
+    }
+}
