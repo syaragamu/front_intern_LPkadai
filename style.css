@@ -749,7 +749,7 @@ select {
   }
   /*---------- icon, button ----------*/
   .btn01 {
-    min-width: 64%;
+    min-width: 6vw;
     padding: 16px;
     font-size: 1.2rem;
   }
@@ -765,31 +765,28 @@ select {
   .hd-logo {
     left: 16px;
     bottom: 8px;
-    width: 64%;
+    width: 64vw;
     height: 24px;
   }
   .hd-btns {
     right: 16px;
     bottom: 0;
-    transform: translateY(12%);
+    transform: translateY(12vw);
   }
   .hd-btns a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 12%;
+    width: 12vw;
   }
   .hd-btns span {
-    width: 5%;
+    width: 5vw;
   }
   /*---------- icon, button end ----------*/
 
   /*---------- news ----------*/
   .news-ttl {
     padding: 0 16px;
-  }
-  .news-ttl img {
-    width: 20%;
   }
   .news-slider-wrap {
     margin-top: 24px;
