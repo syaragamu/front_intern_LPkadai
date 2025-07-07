@@ -557,8 +557,8 @@ img {
 }
  /* バー非表示 */
 .recipe-slider .slick-track{
-  display:flex !important;   
-  flex-wrap:nowrap !important;
+  display:flex ;   
+  flex-wrap:nowrap ;
 }
 .recipe-slider .slick-list{
   overflow-x:auto;           /* 横スクロール   */
