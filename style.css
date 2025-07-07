@@ -193,7 +193,7 @@ a:visited {
   color: #000;
   text-decoration: none;
 }
-/*---------- aタグ 終 ----------*/
+/*---------- aタグ end ----------*/
 
 /* .sp: スマホでは改行 */
 .sp {
@@ -247,7 +247,7 @@ a:visited {
   height: 24px;
   width: 24px;
 }
-/*---------- icon, button 終 ----------*/
+/*---------- icon, button end ----------*/
 
 /*---------- generic utility ----------*/
 img {
@@ -268,7 +268,7 @@ img {
 .slick-initialized .slick-slide {
   display: block;
 }
-/*---------- generic utility 終 ----------*/
+/*---------- generic utility end ----------*/
 
 /*---------- header ----------*/
 #hd {
@@ -333,7 +333,7 @@ img {
 .hd-btns .hd-btn-menu span::before {
   background-image: url(img/icon_menu.svg);
 }
-/*---------- header 終 ----------*/
+/*---------- header end ----------*/
 
 /*---------- news ----------*/
 #news {
@@ -390,7 +390,7 @@ img {
   position: relative;
   font-weight: 700;
 }
-/*---------- news 終 ----------*/
+/*---------- news end ----------*/
 
 /*---------- about ----------*/
 #about {
@@ -419,7 +419,7 @@ img {
 .about-sct-text p + p {
   margin-top: 32px;
 }
-/*---------- about 終 ----------*/
+/*---------- about end ----------*/
 
 /*---------- product ----------*/
 #products {
@@ -452,7 +452,7 @@ img {
 .products-slide-text p + p {
   margin-top: 24px;
 }
-/*---------- product 終 ----------*/
+/*---------- product end ----------*/
 
 /*---------- feature ----------*/
 #feature {
@@ -485,7 +485,7 @@ img {
 .feature-sct-text p + p {
   margin-top: 24px;
 }
-/*---------- feature 終 ----------*/
+/*---------- feature end ----------*/
 
 /*---------- recipe  ----------*/
 #recipe {
@@ -595,7 +595,7 @@ img {
   margin-top: 16px;
   font-size: 1.4rem;
 }
-/*---------- recipe 終 ----------*/
+/*---------- recipe end ----------*/
 
 /*---------- shop ----------*/
 #shop {
@@ -667,7 +667,7 @@ td {
   margin-top: 16px;
   font-size: 1.4rem;
 }
-/*---------- shop 終 ----------*/
+/*---------- shop end ----------*/
 
 /*---------- contact ----------*/
 #contact {
@@ -728,7 +728,7 @@ select {
 .submit-btn:hover {
   color: #000;
 }
-/*----------  contact 終 ----------*/
+/*----------  contact end ----------*/
 
 /*---------- footer ----------*/
 #ft {
@@ -736,7 +736,7 @@ select {
   padding: 160px 0;
   text-align: center;
 }
-/*---------- footer 終 ----------*/
+/*---------- footer end ----------*/
 
 /*========== responsive ==========*/
 @media screen and (max-width: 767px) {
@@ -781,7 +781,7 @@ select {
   .hd-btns span {
     width: 5%;
   }
-  /*---------- icon, button 終 ----------*/
+  /*---------- icon, button end ----------*/
 
   /*---------- news ----------*/
   .news-ttl {
@@ -822,7 +822,7 @@ select {
     margin-top: 40px;
     text-align: center;
   }
-  /*---------- news 終 ----------*/
+  /*---------- news end ----------*/
 
   /*---------- about  ----------*/
   #section {
@@ -853,7 +853,7 @@ select {
   .about-sct-text p + p {
     margin-top: 20px;
   }
-  /*---------- about 終 ----------*/
+  /*---------- about end ----------*/
 
   /*---------- product ----------*/
   .products-sct {
@@ -866,7 +866,7 @@ select {
   .products-sct:nth-child(even) .products-sct-ttl {
     right: 16px;
   }
-  /* 左右対称 終 */
+  /* 左右対称 end */
   .products-sct-ttl {
     top: 16px;
   }
@@ -889,7 +889,7 @@ select {
   .products-slide-text p + p {
     margin-top: 16px;
   }
-  /*---------- product 終 ----------*/
+  /*---------- product end ----------*/
 
   /*---------- feature ----------*/
   .feature-ttl {
@@ -914,7 +914,7 @@ select {
   .feature-sct-text p + p {
     margin-top: 8px;
   }
-  /*---------- feature 終 ----------*/
+  /*---------- feature end ----------*/
 
   /*---------- recipe ----------*/
   .recipe-ttl img {
@@ -969,7 +969,7 @@ select {
     margin-top: 8px;
     font-size: 1.2rem;
   }
-  /*---------- recipe 終 ----------*/
+  /*---------- recipe end ----------*/
 
   /*---------- shop ----------*/
   .shop-ttl img {
@@ -1015,11 +1015,11 @@ select {
     text-align: center;
     width: 100%;
   }
-  /*---------- shop 終 ----------*/
+  /*---------- shop end ----------*/
 
   /*---------- contact ----------*/
   .contact-ttl img {
-    width: 32vw;
+    width: 32%;
   }
   .form-container {
     margin-top: 24px;
@@ -1031,9 +1031,9 @@ select {
   }
   .form-label,
   .form {
-    width: 100vw;
+    width: 100%;
   }
-  /*---------- contact 終 ----------*/
+  /*---------- contact end ----------*/
 
   /*---------- footer ----------*/
   #ft {
@@ -1042,7 +1042,7 @@ select {
   .ft-copyright img {
         width: 128px
   } 
-  /*---------- footer 終 ----------*/
+  /*---------- footer end ----------*/
   .pc {
     display: none;
   }
@@ -1067,13 +1067,13 @@ select {
   .hd-logo {
     left: 64px;
     bottom: 16px;
-    width: 40vw;
+    width: 40%;
     height: 24px;
   }
   .hd-btns li + li {
     margin-left: 32px;
   }
-  /*---------- icon, button 終 ----------*/
+  /*---------- icon, button end ----------*/
 
   /*---------- news ----------*/
    #news {
@@ -1091,7 +1091,7 @@ select {
     padding: 0;
     min-width: 0;
   }
-  /*---------- news 終 ----------*/
+  /*---------- news end ----------*/
 
   /*---------- products ----------*/
   .products-sct {
@@ -1127,7 +1127,7 @@ select {
     transform: translateY(-50%);
     width: 40%;
   }
-  /*---------- products 終 ----------*/
+  /*---------- products end ----------*/
 
   /*---------- feature ----------*/
   .feature-sct {
@@ -1148,12 +1148,12 @@ select {
   .feature-sct:nth-child(even) .feature-sct-in {
     padding-right: 56px;
   }
-  /* 左右 終 */
+  /* 左右 end */
   .feature-sct-img {
     width: 64%;
     object-fit: cover;
   }
-  /*---------- feature 終 ----------*/
+  /*---------- feature end ----------*/
 
   /*---------- recipe ----------*/
   .recipe-lead span {
@@ -1165,7 +1165,7 @@ select {
   .recipe-slider .slick-slide {
     width: 400px;
   }
-  /*---------- recipe 終 ----------*/
+  /*---------- recipe end ----------*/
 
   /*---------- shop ----------*/
   .shop-img {
@@ -1182,7 +1182,7 @@ select {
     margin-bottom: 24px;
     position: static;
   }
-  /*---------- shop 終 ----------*/
+  /*---------- shop end ----------*/
 
   .sp {
     display: none;
