@@ -786,7 +786,10 @@ select {
 
   /*---------- news ----------*/
   .news-ttl {
-    padding: 0 16px;
+    padding: 0 14px;
+  }
+  .news-ttl img {
+    width: 25vw;
   }
   .news-slider-wrap {
     margin-top: 24px;
