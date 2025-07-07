@@ -555,11 +555,11 @@ img {
   padding-top: 24px;
   position: relative;
 }
+ /* バー非表示 */
 .recipe-slider .slick-track{
-  display:flex ;   
-  flex-wrap:nowrap ;
+  display:flex !important;   
+  flex-wrap:nowrap !important;
 }
-/* バー非表示 */
 .recipe-slider .slick-list{
   overflow-x:auto;           /* 横スクロール   */
   -ms-overflow-style:none;   /* IE/Edge                    */
@@ -575,6 +575,7 @@ img {
   display:block;height:6px;
 }
 /* バー非表示 ここまで */
+
 .recipe-slide-content {
   padding: 0 32px;
 }
@@ -917,8 +918,8 @@ select {
   /*---------- feature end ----------*/
 
   /*---------- recipe ----------*/
-  .recipe-ttl img {
-    width: 24%;
+ .recipe-ttl img {
+    width: 24vw;
   }
   .recipe-lead {
     margin-top: 16px;
@@ -927,37 +928,37 @@ select {
   }
   .recipe-sct {
     margin-top: 16px;
-    padding-left: 24%;
-    padding-right: 8%;
+    padding-left: 24vw;
+    padding-right: 8vw;
   }
   .recipe-sct-ttl-wrap {
     left: 32px;
-    width: 12%;
+    width: 12vw;
   }
   .recipe-sct-ttl-wrap::before {
     height: 2px;
-    width: 16%;
+    width: 16vw;
   }
   .recipe-sct-ttl > span {
-    font-size: 5.6%;
+    font-size: 5.6vw;
   }
   .recipe-sct-lead {
-    left: 8%;
+    left: 8vw;
   }
   .recipe-sct-lead > span {
-    font-size: 3.2%;
+    font-size: 3.2vw;
   }
   .recipe-slider-wrap {
     padding-top: 16px;
   }
   .recipe-slider {
-    width: 72%;
+    width: 72vw;
   }
-  .recipe-slide-content {
+  .recipe-slide-in {
     padding: 0 24px;
   }
   .recipe-slide-img {
-    width: 64%;
+    width: 64vw;
     height: auto;
   }
   .recipe-slide-ttl {
@@ -1165,6 +1166,7 @@ select {
   .recipe-slider .slick-slide {
     width: 400px;
   }
+ 
   /*---------- recipe end ----------*/
 
   /*---------- shop ----------*/
