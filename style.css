@@ -167,4 +167,814 @@ body * {
     box-sizing: border-box;
 }
 
+/* ------------------- */
 /* ここまで リセットcss */
+/* ------------------- */
+
+body * {
+    font-family: "Zen Maru Gothic", sans-serif;
+}
+
+body {
+    width: 100%;
+}
+
+header {
+    display: block;
+    width: 100%;
+}
+
+.hd_logo {
+    position: relative;
+    width: 20%;
+    left: 4%;
+    top: -30px;
+}
+
+@media print, screen and (max-width: 767px) {
+    .hd_logo {
+        width: 50%;
+        left: 10%;
+    }
+}
+
+.icon {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    justify-content: flex-end;
+    top: -70px;
+    right: 60px;
+    display: flex;
+    gap: 30px;
+}
+
+.icon > li * {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+@media print, screen and (max-width: 767px) {
+    .icon {
+        top: 0;
+        right: 30px;
+        gap: 20px;
+    }
+
+    .icon > li * {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/* -----ニュース----- */
+.news {
+    padding: 0 5%;
+}
+
+h1 {
+    width: 100px;
+    margin: 80px 0 40px;
+}
+
+.ig-button {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.ig-button a {
+    position: absolute;
+    display: inline-flex;
+    align-items: center;
+    width: auto;
+    gap: 8px;
+    top: -700px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+}
+
+.ig-button img {
+    height: 25px;
+    width: 25px;
+}
+
+@media print, screen and (max-width: 767px) {
+    .ig-button {
+        justify-content: center;
+    }
+
+    .ig-button a {
+        position: relative;
+        padding: 10px 20%;
+        margin-top: 30px;
+        border: solid 2px #000;
+        top: auto;
+    }
+}
+
+.news-article {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 70px;
+    align-items: stretch;
+}
+
+.news-article > article {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+}
+
+.news-article article img {
+    display: block;
+    width: 100%;
+}
+
+@media print, screen and (max-width: 767px) {
+    .news-article {
+        gap: 3%;
+        
+        justify-content: baseline;
+    }
+    .news-article > article {
+        flex: 0 1 48.5%;
+    }
+}
+
+h2 {
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 2;
+}
+
+.bottom {
+    margin-top: auto;
+}
+
+.news-article > article > p {
+    font-size: 14px;
+    margin: 20px 0;
+    line-height: 2;
+}
+
+p > a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    text-decoration: underline;
+}
+
+hr {
+    border: none;
+    border-top: solid 1px #000;
+}
+
+time {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* -----会社概要----- */
+.about {
+    margin-top: 100px;
+    padding: 0 180px;
+}
+
+@media print, screen and (max-width: 767px) {
+    .about {
+        padding: 0 40px;
+    }
+}
+
+.about article * {
+    font-size: 17px;
+    line-height: 2;
+}
+
+@media print, screen and (max-width: 767px) {
+    .about h2 {
+        font-size: 12px;
+    }
+
+    .about article * {
+        font-size: 12px;
+    }
+}
+
+.about article div:nth-child(1) {
+    font-weight: bold;
+    flex: 0 0 200px;
+    margin-right: auto;
+}
+
+.about h2 {
+    margin: 100px 0;
+}
+
+.about article {
+    display: flex;
+    margin: 100px 0;
+    gap: 10px;
+}
+
+@media print, screen and (max-width: 767px) {
+    .about article {
+        display: inline;
+    }
+    
+    .about article div:nth-child(1) {
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+}
+
+/* -----商品紹介----- */
+.goods {
+    padding: 0 50px;
+    margin: 60px 0;
+}
+
+@media print, screen and (max-width: 767px) {
+    .goods {
+        padding: 0 40px;
+    }
+}
+
+.goods section {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+
+@media print, screen and (min-width: 768px) {
+    .goods section {
+        height: 750px;
+    }
+    
+    .goods section .photo {
+        position: absolute;
+        max-width: 600px;
+        width: 100%;
+        height: 80%;
+        object-fit: contain;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+    }
+    
+    .goods section .goods-title {
+        position: absolute;
+        width: auto;
+        height: 5%;
+        top: 20%;
+    }
+    
+    .goods section:nth-child(odd) .photo {
+        left: 35%;
+    }
+    
+    .goods section:nth-child(odd) .goods-title {
+        left: 3%;
+    }
+    
+    .goods section:nth-child(even) .photo {
+        left: 65%;
+    }
+    
+    .goods section:nth-child(even) .goods-title {
+        right: 10%;
+    }
+    
+    .goods article {
+        position: absolute;
+        font-size: large;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 500px;
+        height: auto;
+        font-size: 15px;
+        line-height: 2;
+        padding: 50px 50px;
+        background-color: #fff;
+    }
+    
+    .goods section:nth-child(odd) .products-info {
+        left: 70%;
+    }
+    
+    .goods section:nth-child(even) .products-info {
+        left: 30%;
+    }
+
+    .goods .products-info {
+        font-size: 15px;
+        line-height: 2;
+    }
+} 
+
+@media print, screen and (max-width: 767px) {
+    .goods section {
+        height: auto;
+    }
+    
+    .goods section > * {
+        position: relative;
+    }
+    
+    .goods section * {
+        left: auto;
+        right: auto;
+    }
+    
+    .goods section {
+        width: 100%;
+    }
+    
+    .goods section img {
+        width: 100%;
+        display: block;
+    }
+    
+    .goods .goods-title {
+        position: absolute;
+        height: 6%;
+        width: auto;
+        top: 10px;
+    }
+    
+    .goods section:nth-child(odd) img:nth-child(2) {
+        left: 0;
+    }
+    
+    .goods section:nth-child(even) img:nth-child(2) {
+        right: 0;
+    }
+    
+    .goods .products-info span {
+        font-size: 1.3rem;
+    }
+
+    .goods .products-info {
+        font-size: 13px;
+        line-height: 2;
+        padding-bottom: 30px;
+    }
+}
+
+
+.goods span {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+/* -----商品の特色----- */
+.feature {
+    margin: 10% 10%;
+}
+
+.feature > span {
+    width: 100%;
+    text-align: center;
+}
+
+.feature .container {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 5% 0;
+}
+
+@media print, screen and (max-width: 767px) {
+    .feature .container {
+        display: block;
+    }
+}
+
+.feature span {
+    display: block;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+@media print, screen and (max-width: 767px) {
+    .feature span {
+        font-size: 1.2rem;
+    }
+}
+
+.feature .container img {
+    width: 100%;
+}
+
+.feature .container div {
+    flex: 2 2 0;
+}
+
+.feature .container article {
+    flex: 1 1 0;
+    padding: 5%;
+    line-height: 1.7;
+}
+
+@media print, screen and (max-width: 767px) {
+    .feature .container article {
+        padding: 0;
+        padding-top: 15px;
+        line-height: 1.7;
+    }
+}
+
+.feature .container:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+/* -----レシピ紹介----- */
+.recipe {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.recipe-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 30px 0 100px;
+}
+
+.recipe > span {
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+.recipe > span > img {
+    width: 10%;
+}
+
+.recipe-menu > article {
+    writing-mode: vertical-lr;
+    padding: 1%;
+    margin-top: -2%;
+    border-top: solid 8px #000;
+    font-weight: bold;
+}
+
+.recipe-menu > article {
+    font-size: 1.1rem;
+}
+
+.recipe-menu > article > span {
+    font-size: 2.2rem;
+}
+
+.recipe-menu {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    gap: 30px;
+}
+
+.scroll {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 40px;
+    scroll-snap-type: x none;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.scroll > div {
+    flex-shrink: 0;
+    flex: 0 0 30%;
+}
+
+@media print, screen and (max-width: 767px) {
+    .scroll > div {
+        flex: 0 0 95%;
+    }
+}
+
+.scroll img {
+    width: 100%;
+}
+
+.scroll article span {
+    display: block;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+
+.scroll article {
+    font-size: 0.9rem;
+    line-height: 2;
+}
+
+/* -----店の情報----- */
+.info {
+    margin-top: 120px;
+    padding: 0 5%;
+}
+    
+@media print, screen and (max-width: 767px) {
+    .info {
+        margin-top: 120px;
+        padding: 0;
+    }
+}
+
+.info > span {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 50px 0;
+}
+
+
+.info > span > img {
+    width: 30%;
+}
+
+.info .info-container span img {
+    width: 100%;
+}
+
+.info .info-container {
+    display: flex;
+    width: 100%;
+    gap: 5%;
+    padding-bottom: 50px;
+}
+
+@media print, screen and (max-width: 767px) {
+    .info .info-container {
+        display: block;
+    }
+}
+
+.info .info-container > * {
+    flex: 0 0 47.5%;
+}
+
+.info .text > img {
+    width: 20%;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+@media print, screen and (max-width: 767px) {
+    .info .text > img {
+        width: 15%;
+        display: flex;
+        padding: 60px 0 30px;
+    }
+}
+
+.info-container .text article {
+    line-height: 2;
+}
+
+@media print, screen and (max-width: 767px) {
+    .info-container * {
+        font-size: 13px;
+        line-height: 2;
+    }
+}
+
+@media print, screen and (max-width: 767px) {
+    .info .text {
+        padding: 0 30px;
+    }
+}
+
+table * {
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+th {
+    padding: 1rem 40px;
+}
+
+.ig-button2 {
+    position: relative;
+    display: flex;
+    justify-content: flex;
+    padding-top: 30px;
+}
+
+.ig-button2 a {
+    border: solid 1px #000;
+    position: absolute;
+    display: inline-flex;
+    align-items: center;
+    width: 50%;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+    justify-content: center;
+}
+
+.ig-button2 img {
+    width: 25px;
+    padding: 20px 0;
+}
+
+@media print, screen and (max-width: 767px) {
+    .ig-button2 {
+        justify-content: center;
+        padding: 0;
+    }
+
+    .ig-button2 a {
+        position: relative;
+        padding: 10px 10%;
+        margin-top: 30px;
+        border: solid 1px #000;
+        top: auto;
+    }
+
+    .ig-button2 img {
+        padding: 0;
+    }
+}
+
+.online {
+    margin: 0 70px;
+    border-top: solid 3px #000;
+}
+
+.online > img {
+    width: 11%;
+    margin: 30px 120px;
+}
+
+@media print, screen and (max-width: 767px) {
+    .online {
+        border-top: none;
+    }
+    
+    .online > img {
+        margin: 0;
+        margin-left: 20px;
+    }
+    
+    .online article {
+        font-size: 13px;
+    }
+}
+
+.shop-button {
+    display: flex;
+    justify-content: center;
+}
+
+.shop-button a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    border: solid 1px #000;
+    padding: 20px 40%;
+    text-decoration: none;
+}
+
+@media print, screen and (max-width: 767px) {
+    .shop-button {
+        justify-content: center;
+        padding: 0;
+    }
+
+    .shop-button a {
+        position: relative;
+        padding: 10px 22%;
+    }
+
+    .shop-button img {
+        padding: 0;
+    }
+}
+
+.online-container {
+    display: flex;
+    justify-content: center;
+    margin: 0 100px;
+}
+
+.online-container > * {
+    flex: 1 1 0;
+}
+
+@media print, screen and (max-width: 767px) {
+    .online-container {
+        display: inline;
+    }
+    
+    .online > img {
+        width: 30%;
+    }
+}
+
+.online-container article {
+    line-height: 2;
+}
+
+.online-container span {
+    font-size: 0.8rem;
+}
+
+/* -----問い合わせ----- */
+.contact > span {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 100px 0 50px;
+}
+
+.contact > span > img {
+    width: 12%;
+}
+
+.contact form {
+    padding: 0 10%;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+@media print, screen and (max-width: 767px) {
+    .contact form {
+        display: block;
+    }
+
+    .contact form > * {
+        width: 100%;
+    }
+}
+
+.contact form label {
+    flex: 0 0 25%;
+}
+
+.contact form input, .contact form select, .contact form textarea {
+    flex: 0 0 75%;
+    padding: 15px 0;
+    padding-left: 10px;
+    border: solid 1px #000;
+    margin-bottom: 30px;
+    font-size: 0.9rem;
+}
+
+#content {
+    padding-bottom: 90px;
+    resize: both;
+}
+
+.checkbox {
+    text-align: center;
+}
+
+input[type="submit"] {
+    appearance: none;
+    text-decoration: none;
+    margin-top: 30px;
+    padding: 20px 150px;
+    background-color: #666666;
+    border: #666666;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+input[type="submit"]:hover {
+    background-color: #F5F5F5;
+    border: solid 1px #000;
+    color: #000;
+    animation: myanim 0.5s;
+}
+
+
+/* フッター */
+footer {
+    text-align: center;
+    padding: 150px 0;
+    font-size: smaller;
+    font-weight: bold;
+}
