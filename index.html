@@ -17,6 +17,7 @@
         <link rel="stylesheet" href="CSS/feature.css">
         <link rel="stylesheet" href="CSS/recipe.css">
         <link rel="stylesheet" href="CSS/shop.css">
+        <link rel="stylesheet" href="CSS/contact.css">
     </head>
     <body>
         <header class="header">
@@ -221,6 +222,37 @@
                         </div>
                     </div>
                 </div>
+            </section>
+            <section class="contact">
+                <img src="img/contact/contact_ttl.svg" alt="コンタクト" class="contact-title">
+                <form action="#" method="post" class="contact-form">
+                    <p class="contact-form-line">
+                        <label for="name">名前：</label>
+                        <input type="text" id="contact-name" name="name" placeholder="例）出見亜 太郎">
+                    </p>
+                    <p class="contact-form-line">
+                        <label for="email">メールアドレス：</label>
+                        <input type="email" id="contact-email" name="email" placeholder="例）example@example.com">
+                    </p>
+                    <p class="contact-form-line">
+                        <label for="about">件名：</label>
+                        <select name="about" id="contact-about">
+                            <option selected>商品について</option>
+                            <option >その他</option>
+                        </select>
+                    </p>
+                    <p class="contact-form-line">
+                        <label for="content">内容：</label>
+                        <input type="text" id="contact-content" name="content">
+                    </p>
+                    <p class="contact-form-check">
+                        <input type="checkbox" id="contact-privacy" name="privacy" required>
+                        <label class="contact-privacy-text">プライバシーポリシーに同意します</label>
+                    </p>
+                    <p class="contact-form-submit">
+                        <input type="submit" value="送信" class="contact-submit-button">
+                    </p>
+                </form>
             </section>
         </main>
     </body>

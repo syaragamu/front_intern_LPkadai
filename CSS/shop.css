@@ -240,13 +240,13 @@
     width: 140px;
     height: 21px;
     margin-bottom: 2vw;
-    margin-left: 7vw;
 }
 
 @media (max-width: 767px) {
     .shop-footer-title {
         width: 20vw;
         height: auto;
+        margin-left: 7vw;
     }
 }
 
@@ -282,19 +282,20 @@
 }
 
 .shop-footer-link-wrap {
-    width: 100%;
+    width: 30%;
     display: flex;
 }
 
 @media (max-width: 767px) {
     .shop-footer-link-wrap {
+        width: 100%;
         align-items: center;
         justify-content: center;
     }
 }
 
 .shop-footer-link-a {
-    width: 30%;
+    width: 100%;
     font-size: 16px;
     color: #000;
     text-decoration: none;
