@@ -5,6 +5,15 @@
     padding-top: 11vw;
     padding-left: 11vw;
     padding-right: 11vw;
+    max-width: 1248px;
+    margin: 0 auto;
+}
+
+@media (min-width: 1248px) {
+    .contact {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 @media (max-width: 767px) {
