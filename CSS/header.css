@@ -4,6 +4,25 @@
     z-index: 1000;
 }
 
+.swiper  {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.swiper.sp {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    .swiper.pc {
+        display: none;
+    }
+    .swiper.sp {
+        display: block;
+    }
+}
+
 .hd-img  {
     width: 100%;
     height: auto;

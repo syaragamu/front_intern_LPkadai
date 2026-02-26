@@ -8,6 +8,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700&amp;display=swap">
         <link rel="shortcut icon" href="img\favicon.svg">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
         <link rel="stylesheet" href="CSS/style.css">
         <link rel="stylesheet" href="CSS/common.css">
         <link rel="stylesheet" href="CSS/header.css">
@@ -22,8 +23,22 @@
     </head>
     <body>
         <header class="header">
-            <img src="img\header\hd_img01_a.jpg" alt="背景画像 PC" class="hd-img pc">
-            <img src="img\header\hd_img01_a_sp.jpg" alt="背景画像 SP" class="hd-img sp">
+            <div class="swiper pc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/header/hd_img01_a.jpg" alt="背景画像 PC" class="hd-img pc"></div>
+                    <div class="swiper-slide"><img src="img/header/hd_img01_b.jpg" alt="背景画像 PC" class="hd-img pc"></div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <div class="swiper sp">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/header/hd_img01_a_sp.jpg" alt="背景画像 SP" class="hd-img sp"></div>
+                    <div class="swiper-slide"><img src="img/header/hd_img01_b_sp.jpg" alt="背景画像 SP" class="hd-img sp"></div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>          
             <img src="img\header\hd_logo.svg" alt="ロゴ" class="hd-logo">
             <ul class="hd-icons">
                 <li class="hd-icon"><a href="#"><img src="img/icon_cart.svg" alt="アイコン カート" width="100%" height="100%"></a></li>
@@ -256,6 +271,8 @@
                 </form>
             </section>
         </main>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <script src="JS/header.js"></script>
         <footer class="footer">
             <img src="img/ft_copyright.svg" alt="フッター" class="footer-img">
         </footer>
