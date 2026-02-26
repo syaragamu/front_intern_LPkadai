@@ -9,3 +9,8 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev',
   },
 });
+
+function tellTime(){
+  const date = new Date();
+  alert(date);
+}
