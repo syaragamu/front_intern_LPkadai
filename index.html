@@ -19,9 +19,29 @@
         <link rel="stylesheet" href="CSS/recipe.css">
         <link rel="stylesheet" href="CSS/shop.css">
         <link rel="stylesheet" href="CSS/contact.css">
+        <link rel="stylesheet" href="CSS/modal.css">
         <link rel="stylesheet" href="CSS/footer.css">
     </head>
-    <body>
+    <body class="body">
+        <section class="modal">
+            <div class="modal-blackBG">
+                <div class="modal-content">
+                    <div class="modal-top">
+                        <div class="modal-title">送信内容確認</div>
+                        <div class="modal-block">
+                            <div class="modal-text">名前:<span class="modal-inner" id="modal-name"></span></div>
+                            <div class="modal-text">メールアドレス:<span class="modal-inner" id="modal-email"></span></div>
+                            <div class="modal-text">件名:<span class="modal-inner" id="modal-about"></span></div>
+                            <div class="modal-text">内容:<span class="modal-inner" id="modal-content"></span></div>
+                        </div>
+                    </div>
+                    <div class="modal-bottom">
+                        <button class="close-btn" onclick="closeModal()">キャンセル</button>
+                        <button type="submit" class="sub-btn" form="contact-form">送信</button>
+                    </div>                   
+                </div>
+            </div>
+        </section>
         <header class="header">
             <div class="swiper pc">
                 <div class="swiper-wrapper">
@@ -241,14 +261,14 @@
             </section>
             <section class="contact">
                 <img src="img/contact/contact_ttl.svg" alt="コンタクト" class="contact-title">
-                <form action="#" method="post" class="contact-form">
+                <form action="#" method="post" class="contact-form" id="contact-form">
                     <p class="contact-form-line">
                         <label for="name">名前：</label>
                         <input type="text" id="contact-name" name="name" placeholder="例）出見亜 太郎">
                     </p>
                     <p class="contact-form-line">
                         <label for="email">メールアドレス：</label>
-                        <input type="email" id="contact-email" name="email" placeholder="例）example@example.com">
+                        <input type="text" id="contact-email" name="email" placeholder="例）example@example.com">
                     </p>
                     <p class="contact-form-line">
                         <label for="about">件名：</label>
@@ -262,13 +282,11 @@
                         <input type="text" id="contact-content" name="content">
                     </p>
                     <p class="contact-form-check">
-                        <input type="checkbox" id="contact-privacy" name="privacy" required>
+                        <input type="checkbox" id="contact-privacy" name="privacy">
                         <label class="contact-privacy-text">プライバシーポリシーに同意します</label>
                     </p>
-                    <p class="contact-form-submit">
-                        <input type="submit" value="送信" class="contact-submit-button">
-                    </p>
                 </form>
+                <button class="contact-submit-button" onclick="openModal()">送信</button>
             </section>
         </main>
         <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>

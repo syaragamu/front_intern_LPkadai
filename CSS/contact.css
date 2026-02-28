@@ -1,5 +1,5 @@
 .contact {
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     padding-top: 11vw;
@@ -118,6 +118,7 @@
     background-color: #666666;
     color: #FFFFFF;
     font-weight: 700;
+    margin: 3vw auto;
 }
 
 @media (max-width: 767px) {
