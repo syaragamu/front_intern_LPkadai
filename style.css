@@ -189,6 +189,7 @@ header {
     width: 20%;
     left: 4%;
     top: -30px;
+    z-index: 2;
 }
 
 @media print, screen and (max-width: 767px) {
@@ -977,4 +978,21 @@ footer {
     padding: 150px 0;
     font-size: smaller;
     font-weight: bold;
+}
+
+
+/* スライド */
+.swiper {
+    width: 100%;
+}
+
+.swiper-slide {
+  height: auto !important;
+  display: flex !important;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

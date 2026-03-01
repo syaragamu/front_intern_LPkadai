@@ -9,14 +9,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 <body>
 <header>
-    <picture>
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="img/header/hd_img01_b.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/header/hd_img01_b_sp.jpg" alt="">
+            </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+    <!-- <picture>
         <source media="(max-width: 767px)" srcset="img/header/hd_img01_a_sp.jpg">
         <source media="(min-width: 768px)" srcset="img/header/hd_img01_a.jpg">
         <img src="img/header/hd_img01_a.jpg" style="width: 100%; height: auto;" alt="">
-    </picture>
+    </picture> -->
     <img class="hd_logo" src="img/header/hd_logo.svg" alt="TEA PRODUCTS by DeMiA CAFE">
     <ul class="icon">
         <li><a href="#"><img src="img/icon_cart.svg" alt="カート"></a></li>
@@ -182,5 +195,7 @@
 </form>
 </section>
 <footer>Copyright &copy; DeMiA CAFE</footer>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
