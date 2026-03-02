@@ -14,3 +14,9 @@ const swiper = new Swiper('.swiper', {
     disableOnInteraction: false, // ユーザーが手動でスライドを触っても、自動再生を止めない設定
   },
 });
+
+const btn = document.getElementById('Btn');
+
+btn.addEventListener('click', function() {
+  alert(Date());
+});
