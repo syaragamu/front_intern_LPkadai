@@ -955,9 +955,9 @@ input[type="submit"] {
     appearance: none;
     text-decoration: none;
     margin-top: 30px;
-    padding: 20px 150px;
+    padding: 20px 30px;
     background-color: #666666;
-    border: #666666;
+    border: solid 1px #666666;
     color: #fff;
     font-size: 16px;
     cursor: pointer;
@@ -987,12 +987,83 @@ footer {
 }
 
 .swiper-slide {
-  height: auto !important;
-  display: flex !important;
+    height: auto !important;
+    display: flex !important;
 }
 
 .swiper-slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* モーダル */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 3;
+}
+
+.box {
+    position: relative;
+    width: 66%;
+    height: 100%;
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 60px;
+    line-height: 2rem;
+}
+
+.box strong div {
+    text-align: center;
+}
+
+.box .container {
+    height: 80%;
+    overflow: scroll;
+}
+
+#submit_before {
+    appearance: none;
+    text-decoration: none;
+    margin-top: 30px;
+    padding: 20px 150px;
+    background-color: #666666;
+    border: solid 1px #666666;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#cancel {
+    appearance: none;
+    text-decoration: none;
+    margin-top: 30px;
+    padding: 20px 30px;
+    background-color: #fff;
+    border: solid 1px #000;
+    color: #000;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#cancel:hover {
+    background-color: #F5F5F5;
+    animation: myanim 0.5s;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+body.is-modal-open {
+    overflow: hidden;
 }

@@ -170,7 +170,7 @@
 </section>
 <section class="contact"><!-- 問い合わせ -->
     <span><img src="img/contact/contact_ttl.svg" alt="CONTACT"></span>
-    <form action="#" method="post">
+    <form id="inquiry" action="#" method="post">
         <label for="name">名前：</label>
         <input type="text" id="name" name="name" placeholder="例）出見亜 太郎" required>
         <br><br>
@@ -190,7 +190,30 @@
         <input type="checkbox">
         <label for="checkbox">プライバシーポリシーに同意します</label>
         <br>
-        <input type="submit" value="送信">
+        <button id="submit_before">送信</button>
+    </div>
+    <div class="modal" id="modalArea" style="display: none;">
+        <div class="box">
+            <strong><div>送信内容確認</div></strong>
+            <div class="container">
+                <span>名前：</span>
+                <span id="modalName"></span>
+                <br>
+                <span>メールアドレス：</span>
+                <span id="modalEmail"></span>
+                <br>
+                <span>件名：</span>
+                <span id="modalTitle"></span>
+                <br>
+                <span>内容：</span>
+                <span id="modalContent"></span>
+                <br>
+            </div>
+            <div class="button-container">
+                <button id="cancel">キャンセル</button>
+                <input form="inquiry" type="submit" id="submit" value="送信">
+            </div>
+        </div>
     </div>
 </form>
 </section>
