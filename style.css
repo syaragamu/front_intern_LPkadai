@@ -246,7 +246,7 @@ h5 {
   padding-top: 6%;
   border-top: 1px solid #000;
 }
-.news button {
+.normal-button {
   display: block;
   margin: 0 auto;
   margin-top: 7%;
@@ -257,7 +257,7 @@ h5 {
   border: 1px solid #000;
   cursor: pointer;
 }
-.news button::before {
+.normal-button::before {
   content: "";
   display: inline-block;
   background-image: url("img/icon_ig.svg");
