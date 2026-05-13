@@ -193,11 +193,6 @@ body * {
 .header-icons {
   text-align: right;
 }
-h0{
-    font-size:20px;
-    line-height:2;
-    font-weight:bold;
-  }
 h1 {
   font-size: 20px;
   line-height: 2;
@@ -218,6 +213,9 @@ h4 {
 h5 {
   font-size: 8px;
   font-weight: normal;
+}
+.sp-br {
+  display: none;
 }
 .news-ttl {
   width: 20%;
@@ -325,6 +323,58 @@ h5 {
 .products-detail-content{
   margin-top: 15px;
 }
+.recipe{
+  text-align: center;
+}
+.recipe-title-img{
+  height: 30px;
+  margin-bottom: 20px;
+}
+.recipe-title{
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+.recipe-contents{
+  text-align: left;
+  display: flex;
+  margin-left:30px;
+  justify-content: space-between;
+}
+.recipe-texts{
+  writing-mode: vertical-rl;
+  display:flex;
+  flex-direction: column;
+  border-top: 2px solid #000;
+  margin-top: -10px;
+  padding-top: 10px;
+}
+.recipe-subtitle{
+  font-size: 5vw;
+}
+.recipe-subsubtitle{
+  font-size: 3vw;
+  margin-top: 2px;
+  margin-left:-8px;
+}
+.recipe-container{
+  width: 80%;
+  display: flex;
+  overflow-x: auto;
+}
+.recipe-box{
+  width:80%;
+  flex-shrink: 0;
+  margin:0 10%;
+}
+.recipe-box img{
+  width: 100%;
+}
+.recipe-name{
+  margin-top: 10px;
+}
+.recipe-detail{
+  margin-top: 5px;
+}
 
 
 /* 768px以上のとき（PC） */
@@ -349,9 +399,6 @@ h5 {
   .header-icons img {
     width: 3.5%;
     margin-right: 3.5%;
-  }
-  h0{
-    font-size:35px;
   }
   h1{
     font-size: 30px;
