@@ -193,6 +193,11 @@ body * {
 .header-icons {
   text-align: right;
 }
+h0{
+    font-size:20px;
+    line-height:2;
+    font-weight:bold;
+  }
 h1 {
   font-size: 20px;
   line-height: 2;
@@ -300,7 +305,14 @@ h5 {
 .detail-content{
   margin-top:5px;
 }
-
+.products{
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+.products-texts{
+  text-align:left;
+}
 
 /* 768px以上のとき（PC） */
 @media (min-width: 768px) {
@@ -324,6 +336,9 @@ h5 {
   .header-icons img {
     width: 3.5%;
     margin-right: 3.5%;
+  }
+  h0{
+    font-size:35px;
   }
   h1{
     font-size: 30px;
