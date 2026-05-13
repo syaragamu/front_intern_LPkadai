@@ -357,7 +357,7 @@ h5 {
   margin-left:-8px;
 }
 .recipe-container{
-  width: 80%;
+  width: 100%;
   display: flex;
   overflow-x: auto;
 }
@@ -404,7 +404,7 @@ h5 {
     font-size: 30px;
   }
   h2 {
-    font-size: 20px;
+    font-size: 24px;
   }
   h3 {
     font-size: 18px;
@@ -542,7 +542,43 @@ h5 {
   .products-boxes-2{
     flex-direction: row-reverse;
   }
-
+  .recipe-title-img{
+    height: 42px;
+    margin-bottom: 40px;
+  }
+  .recipe-title{
+    margin-bottom: 120px;
+    font-size:35px;
+  }
+  .recipe-contents{
+    margin-left:60px;
+  }
+  .recipe-texts{
+    border-top: 10px solid #000;
+    margin-top: -10px;
+    padding-top: 10px;
+  }
+  .recipe-subtitle{
+    font-size: 35px;
+  }
+  .recipe-subsubtitle{
+    font-size: 18px;
+    margin-left:0px;
+  }
+  .recipe-container{
+    width: 82%;
+  }
+  .recipe-box{
+    width:50%;
+    flex-shrink: 0;
+    margin:0 3%;
+  }
+  .recipe-name{
+    margin-top: 20px;
+  }
+  .recipe-detail{
+    margin-top: 10px;
+  }
 }
 
 /* 767px以下のとき（スマホ） */
