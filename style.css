@@ -193,6 +193,10 @@ body * {
 .header-icons {
   text-align: right;
 }
+h1 {
+  font-size: 20px;
+  line-height: 2;
+}
 h2 {
   font-size: 16px;
   line-height: 2;
@@ -269,6 +273,33 @@ h5 {
 .content-content {
   margin-top: 3%;
 }
+.detail-box{
+  position: relative;
+  margin-bottom: 40px;
+}
+.detail-title-img{
+  height: 40px;
+  position:absolute;
+  top:30px;
+  left:60px;
+}
+.detail-title-img-2{
+  right: 60px;
+  left: auto;
+}
+.detail-contents{
+  margin:0 40px;
+}
+.detail-contents img{
+  width: 100%;
+  height: 600px;
+}
+.detail-title{
+  margin-top: 20px;
+}
+.detail-content{
+  margin-top:5px;
+}
 
 
 /* 768px以上のとき（PC） */
@@ -294,17 +325,20 @@ h5 {
     width: 3.5%;
     margin-right: 3.5%;
   }
+  h1{
+    font-size: 30px;
+  }
   h2 {
     font-size: 20px;
   }
   h3 {
-    font-size: 17px;
+    font-size: 18px;
   }
   h4 {
-    font-size: 14px;
+    font-size: 17px;
   }
   h5 {
-    font-size: 10px;
+    font-size: 15px;
   }
   .news-ttl{
     width:120px;
@@ -313,6 +347,7 @@ h5 {
   }
   .news-content{
     margin-top: 10px;
+    font-size: 14px;
   }
   .news-box{
     width:250px;
@@ -357,6 +392,48 @@ h5 {
     margin-right: 10px;
     margin-top:15px;
     font-weight: normal;
+  }
+  .detail-box{
+  margin-bottom: 100px;
+  }
+  .detail-title-img{
+    top:60px;
+    left:75px;
+  }
+  .detail-title-img-2{
+    right: 80px;
+    left: auto;
+    height: 50px;
+  }
+  .detail-contents{
+    display: flex;
+    margin: auto 80px;
+  }
+  .detail-contents-2{
+    flex-direction: row-reverse;
+  }
+  .detail-contents img{
+    width: min(calc(100% - 250px), 600px);
+    object-fit: cover;
+  }
+  .detail-texts{
+    margin:auto auto auto -100px;
+    padding: 40px 10px;
+    height:auto;
+    background-color: #fff;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .detail-texts-2{
+    margin: auto -100px auto auto;
+  }
+  .detail-title{
+    padding: 0 60px;
+  }
+  .detail-content{
+    margin:50px 60px;
   }
 }
 
