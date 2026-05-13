@@ -307,12 +307,25 @@ h5 {
 }
 .products{
   width: 80%;
-  margin: 0 auto;
+  margin: 100px auto;
   text-align: center;
+
 }
 .products-texts{
   text-align:left;
+  margin-bottom: 30px;
 }
+.products-title{
+  margin-bottom:20px;
+}
+.products-detail-title{
+  line-height: 1.5;
+  margin-top: 15px;
+}
+.products-detail-content{
+  margin-top: 15px;
+}
+
 
 /* 768px以上のとき（PC） */
 @media (min-width: 768px) {
@@ -450,6 +463,39 @@ h5 {
   .detail-content{
     margin:50px 60px;
   }
+  .products{
+    margin: 150px 100px;
+    text-align: center;
+  }
+  .products img{
+    width:60%;
+    height: 500px;
+    object-fit: cover;
+  }
+  .products-boxes{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+  }
+  .products-texts{
+    width: 30%;
+    margin-bottom: 30px;
+  }
+  .products-title{
+    margin-bottom:50px;
+    font-size: 35px;
+  }
+  .products-detail-title{
+    font-size: 30px;
+    margin-top: 30px;
+  }
+  .products-detail-content{
+    margin-top: 40px;
+  }  
+  .products-boxes-2{
+    flex-direction: row-reverse;
+  }
+
 }
 
 /* 767px以下のとき（スマホ） */
@@ -463,4 +509,7 @@ h5 {
   .news button.pc-button {
     display: none;
   } /* newsの、pc仕様の最新情報はこちらボタンを、スマホ時に消す */
+  .sp-br {
+    display: block;
+  }
 }
