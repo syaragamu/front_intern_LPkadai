@@ -132,27 +132,78 @@
         <div class="shop">
             <img src="img/shop/shop_ttl.svg" alt="" class="shop-title-img">
             <div class="shop-contents">
-                <img src="img/shop/shop_img01_sp.jpg" alt="" class="sp-img">
-                <img src="img/shop/shop_img01.jpg" alt="" class="pc-img">
+                <div>
+                    <img src="img/shop/shop_img01_sp.jpg" alt="" class="sp-img shop-img">
+                    <img src="img/shop/shop_img01.jpg" alt="" class="pc-img shop-img">
+                </div>
                 <div class="shop-texts">
                     <img src="img/shop/shop_ttl_cafe.svg" alt="" class="cafe-title-img">
-                    <h4 class="shop-detail">2019年6月に、出町柳駅の近くにカフェがオープンしました。営業する日には、紅茶と共においしいお茶菓子、食事をご堪能いただけます。 <br><br>カフェ営業日以外でも、茶葉やテイクアウト用茶菓子はお買い求めいただけます。 <br>紹介していないレシピを用いた料理教室や紅茶の知識を学べるワークショップも定期的に開催しています。</h4>
-                    <div class="shop-infos">
-                        <h5 class="shop-info"><span class="bold">住所　　　　　</span>〒600-0000 <br>　　　　　　　〇〇〇〇〇〇〇〇〇〇〇〇〇〇</h5>
-                        <h5 class="shop-info"><span class="bold">アクセス　　　　</span>京阪出町柳駅から徒歩12分</h5>
-                        <h5 class="shop-info"><span class="bold">営業時間　　　　</span>営業日・時間ともに不定期</h5>
-                    </div>
-                    <h4 class="shop-comment">※営業日など最新情報はInstagramでご確認ください。</h4>
-                    <button class="bold normal-button">最新情報はこちら</button>
+                    <h5 class="shop-detail">2019年6月に、出町柳駅の近くにカフェがオープンしました。営業する日には、紅茶と共においしいお茶菓子、食事をご堪能いただけます。 <br><br>カフェ営業日以外でも、茶葉やテイクアウト用茶菓子はお買い求めいただけます。 <br>紹介していないレシピを用いた料理教室や紅茶の知識を学べるワークショップも定期的に開催しています。</h5>
+                      <table class="shop-table">
+                        <tr>
+                          <th>住所</th>
+                          <td>〒600-0000<br>〇〇〇〇〇〇〇〇〇〇〇〇</td>
+                        </tr>
+                        <tr>
+                          <th>アクセス</th>
+                          <td>京阪出町柳駅から徒歩12分</td>
+                        </tr>
+                        <tr>
+                          <th>営業時間</th>
+                          <td>営業日・時間ともに不定期</td>
+                        </tr>
+                      </table>
+                    <h5 class="shop-comment">※営業日など最新情報はInstagramでご確認ください。</h5>
+                    <button class="bold normal-button pc-button">最新情報はこちら</button>
                 </div>
             </div>
         </div>
         <div class="online-shop">
             <img src="img/shop/shop_ttl_online.svg" alt="" class="online-shop-title-img">
             <div class="online-shop-contents">
-                <div class="h4">オンラインショップをオープンしています。<br><br><span class="sp-online-shop-comment">※売り切れ次第閉店します。</span></div>
-                <button class="normal-button">OPEN</button>
+                <h5 class="online-shop-detail">オンラインショップをオープンしています。<br><br><span class="sp-online-shop-comment">※売り切れ次第閉店します。</span></h5>
+                <button class="normal-button open-button pc-button">OPEN</button>
             </div>
+        </div>
+        <div class="contact">
+            <div class="contact-title">
+                <img src="img/contact/contact_ttl.svg" alt="" class="contact-title-img">
+            </div>
+            <form class="contact-form">
+                <div class="form-item">
+                  <label for="name">名前：</label>
+                  <input type="text" id="name" placeholder="例）出見亜 太郎">
+                </div>
+        
+                <div class="form-item">
+                  <label for="email">メールアドレス：</label>
+                  <input type="email" placeholder="例）example@example.com">
+                </div>
+            
+                <div class="form-item">
+                  <label for="subject">件名：</label>
+                  <select>
+                    <option>商品について</option>
+                    <option>その他</option>
+                  </select>
+                </div>
+            
+                <div class="form-item">
+                  <label for="message">内容：</label>
+                  <textarea></textarea>
+                </div>
+            
+                <div class="form-policy">
+                  <label>
+                    <input type="checkbox"> プライバシーポリシーに同意します
+                  </label>
+                </div>
+            
+                <div class="form-submit">
+                  <button type="submit">送信</button>
+                </div>
+            </form>
+            <img src="img/ft_copyright.svg" alt="" class="copyright-img">
         </div>
     </main>
     <footer>

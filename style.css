@@ -186,9 +186,13 @@ body * {
   margin-left: 5%;
   width: 60%;
 }
-.header-icons img {
+.header-icons a {
+  display: inline-block;
   width: 5%;
   margin-right: 5%;
+}
+.header-icons img {
+  width:100%;
 }
 .header-icons {
   text-align: right;
@@ -211,8 +215,9 @@ h4 {
   line-height: 1.8;
 }
 h5 {
-  font-size: 8px;
+  font-size: 14px;
   font-weight: normal;
+  line-height:1.8;
 }
 .sp-br {
   display: none;
@@ -247,10 +252,11 @@ h5 {
   border-top: 1px solid #000;
 }
 .normal-button {
+  width:calc(100% - 80px);
   display: block;
-  margin: 0 auto;
-  margin-top: 7%;
-  padding: 13px 15%;
+  margin: 0 40px;
+  margin-top: 30px;
+  padding: 13px 0;
   font-size: 12px;
   background-color: #fff;
   color: #000;
@@ -267,6 +273,8 @@ h5 {
   margin-right: 5px;
   transform: translateY(3px);
 }
+
+
 .contents {
   margin: 150px 10%;
 }
@@ -303,6 +311,8 @@ h5 {
 .detail-content{
   margin-top:5px;
 }
+
+
 .products{
   width: 80%;
   margin: 100px auto;
@@ -323,6 +333,9 @@ h5 {
 .products-detail-content{
   margin-top: 15px;
 }
+
+
+
 .recipe{
   text-align: center;
 }
@@ -377,17 +390,178 @@ h5 {
 }
 
 
+.shop{
+  text-align:center;
+  margin-top:150px;
+}
+.shop-title-img{
+  height:35px;
+  margin-bottom:40px;
+}
+.shop-img{
+  width:100%;
+}
+.shop-texts{
+  text-align: left;
+  margin:0 40px;
+}
+.cafe-title-img{
+  height:40px;
+  margin-top: 80px;
+}
+.shop-detail{
+  margin-top:30px;
+}
+.shop-table {
+  font-size:13px;
+  margin:40px 0;
+  width: 100%;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+}
+.shop-table th, .shop-table td {
+  padding: 15px 10px; 
+}
+.shop-table th {
+  width: 120px;     
+  text-align: center; 
+  font-weight: bold;
+  white-space: nowrap;
+}
+.shop-table td {
+  text-align: left;
+  line-height: 1.4; 
+}
+.online-shop{
+  margin:60px 40px;
+}
+.online-shop-title-img{
+  height:22px;
+}
+.online-shop-detail{
+  margin:20px 0 10px 0;
+  line-height:1.2;
+}
+.open-button::before{
+  background-image: url("img/icon_cart.svg");
+}
+
+
+
+.contact {
+  margin: 0 auto;
+  padding: 60px 20px;
+  text-align: center;
+}
+.contact-title {
+  display: flex;
+  justify-content: center;
+  margin-bottom:40px;
+}
+.contact-title-img{
+  height:30px;
+}
+.form-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+  text-align: left;
+}
+.form-item label {
+  font-weight: 500;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+.form-item input,
+.form-item select,
+.form-item textarea {
+  width: 100%;
+  padding: 15px 10px;
+  border: 1px solid #7f7f7f;
+  font-size: 14px; 
+}
+.form-item textarea {
+  height: 180px;
+  resize: vertical;
+}
+.form-policy {
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+.form-submit button {
+  width: calc(100% - 120px);
+  padding: 15px;
+  background-color: #666;
+  color: #fff;
+  border: 1px solid #000;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+.form-submit button:hover {
+  color: #000;
+}
+.copyright-img{
+  width:150px;
+  margin:60px 0 100px 0;
+  
+}
+@media screen and (min-width: 768px) {
+  .contact{
+    padding:60px 100px;
+  }
+  .contact-title-img{
+    height:40px;
+  }
+  .form-item {
+    flex-direction: row;     
+    align-items: flex-start; 
+    margin-bottom: 40px;
+  }  
+  .form-item label {
+    width: 30%;         
+    margin-bottom: 0;   
+    padding-top: 10px; 
+    font-size:16px;
+  }
+  .form-policy{
+    font-size: 16px;
+  }
+  .form-submit button{
+    width:330px;
+    padding:25px;
+    font-size:15px;
+  }
+  .form-submit button:hover{
+    background-color: #fff;
+  }
+  .form-item input[type="text"],
+  .form-item input[type="email"],
+  .form-item select,
+  .form-item textarea {
+    width: 75%;
+  }
+  .copyright-img{
+    width:180px;
+    margin:180px 0 120px 0;
+  }
+}
+
+
 /* 768px以上のとき（PC） */
 @media (min-width: 768px) {
   .sp-img {
     display: none;
-  } /* スマホ用を消す */
+  }
   .pc-img {
     display: block;
-  } /* PC用を出す */
+  } 
   .news button.sp-button {
     display: none;
-  } /* newsの、スマホ仕様の最新情報はこちらボタンを、PC時に消す */
+  } 
+
+
   .header-message {
     width: 40%;
     left: 2%;
@@ -396,9 +570,13 @@ h5 {
     transform: translateY(-220%);
     margin-right: 3%;
   }
+  .header-icons a{
+    display: inline-block;
+    width:3.5%;
+    margin-right:3.5%;
+  }
   .header-icons img {
-    width: 3.5%;
-    margin-right: 3.5%;
+    width:100%;
   }
   h1{
     font-size: 30px;
@@ -415,6 +593,8 @@ h5 {
   h5 {
     font-size: 15px;
   }
+
+
   .news-ttl{
     width:120px;
     margin-left:70px;
@@ -437,18 +617,22 @@ h5 {
   .news button{
     border:none;
     display: flex;
+    flex-direction: row-reverse;
     margin-left: auto;
     margin-right:70px;
     margin-top:70px;
     padding: 0;
     font-size: 16px;
+    width:200px;
   }
   .news button::before {
     width: 24px;
     height: 24px;
-    margin-right: 10px;
     transform: translateY(1px);
+    transform: translateX(-155px);
   }
+
+
   .content-top{
     font-size: 20px;
   }
@@ -468,6 +652,8 @@ h5 {
     margin-top:15px;
     font-weight: normal;
   }
+
+
   .detail-box{
   margin-bottom: 100px;
   }
@@ -510,6 +696,8 @@ h5 {
   .detail-content{
     margin:50px 60px;
   }
+
+
   .products{
     margin: 150px 100px;
     text-align: center;
@@ -542,6 +730,8 @@ h5 {
   .products-boxes-2{
     flex-direction: row-reverse;
   }
+
+
   .recipe-title-img{
     height: 42px;
     margin-bottom: 40px;
@@ -579,19 +769,119 @@ h5 {
   .recipe-detail{
     margin-top: 10px;
   }
+
+
+  .shop{
+  margin-top:150px;
+  }
+  .shop-title-img{
+    height:40px;
+    margin-bottom:80px;
+  }
+  .shop-contents{
+    display: flex;
+    gap:0px;
+    justify-content: center;
+  }
+  .shop-img{
+    width:90%;
+  }
+  .shop-texts{
+    width:500px;
+    margin-right:80px;
+  }
+  .cafe-title-img{
+    height:35px;
+    margin-top: 30px;
+  }
+  .shop-detail{
+    margin-top:15px;
+    line-height:2.0;
+    font-weight:500;
+  }
+  .shop-table {
+    font-size:13px;
+    margin:40px 0 10px 0;
+  }
+  .shop-table th, .shop-table td {
+    padding: 15px 10px; 
+  }
+  .shop-table th {
+    width: 60px;     
+    font-weight: bold;
+    white-space: nowrap;
+  }
+  .normal-button {
+    width:100%;
+    margin:20px 0 0 0 ;
+    padding: 12px 0 20px 0;
+    font-size: 14px;
+  }
+  .normal-button::before {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    transform: translateY(7px);
+  }
+  .shop-table td {
+    text-align: left;
+    line-height: 1.4;
+  }
+
+  .online-shop{
+    margin:60px 80px;
+    border-top:3px solid #000;
+    max-width:960px;
+  }
+  .online-shop-title-img{
+    height:22px;
+    margin:40px 0 0 60px;
+  }
+  .online-shop-contents{
+    display: flex;
+    justify-content: space-between;
+    width:90%;
+    margin: auto;
+    gap:20px
+  }
+  .online-shop-detail{
+    margin:20px 0 10px 0;
+    line-height:1.2;
+    font-weight:500;
+    width:50%;
+  }
+  .open-button{
+    width:300px;
+  }
+  .open-button::before{
+    background-image: url("img/icon_cart.svg");
+  }
+  
+}
+
+/* (shop,二段階調整用)*/
+@media (min-width:960px) {
+  .shop-texts{
+    width:400px;
+  }
+}
+@media (min-width:1120px) {
+  .online-shop{
+    margin:60px auto;
+  }
 }
 
 /* 767px以下のとき（スマホ） */
 @media (max-width: 767px) {
   .pc-img {
     display: none;
-  } /* PC用を消す */
+  } 
   .sp-img {
     display: block;
-  } /* スマホ用を出す */
+  } 
   .news button.pc-button {
     display: none;
-  } /* newsの、pc仕様の最新情報はこちらボタンを、スマホ時に消す */
+  } 
   .sp-br {
     display: block;
   }
